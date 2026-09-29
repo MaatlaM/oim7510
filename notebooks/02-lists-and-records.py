@@ -177,7 +177,6 @@ def _(mo):
 def _():
     cost2 = "16.5"
     cost2 * 2
-
     return (cost2,)
 
 
@@ -415,11 +414,19 @@ def _(mo):
 
     **A ·**
 
+    When a score satisfies two of the tests at once, the first test decides what gets printed.
+
     **C ·**
+
+    .append() adds one item, regardless of whether the contents within the bracket are a list or not.
 
     **D ·**
 
+    tickers.sort() works directly in the list, meaning it rearranges the existing list itself, and doesn't return anything.
+
     **E ·**
+
+    We want two names pointing at the same list when we want a change made through either name to show up for both lists.
     """)
     return
 
@@ -521,8 +528,8 @@ def _(statuses):
 @app.cell
 def _(statuses):
     not_shipped_count = 0
-    for processing in statuses:
-        if processing != "shipped":
+    for status_2 in statuses:
+        if status_2 != "shipped":
             not_shipped_count = not_shipped_count + 1
 
     not_shipped_count
@@ -561,6 +568,42 @@ def _():
     order_lines = ["notebook", "pen"]
     order_lines.append(["stapler", "tape"])
     len(order_lines)
+    return (order_lines,)
+
+
+@app.cell
+def _(order_lines):
+    order_lines[2]
+    return
+
+
+@app.cell
+def _():
+    order_lines_2 = ["notebook", "pen"]
+    order_lines_2.extend(["stapler", "tape"])
+    len(order_lines_2)
+    return (order_lines_2,)
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    .append() adds one item, regardless of whether the contents within the bracket are a list or not.
+    """)
+    return
+
+
+@app.cell
+def _(order_lines_2):
+    order_lines_2[2]
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    On the other hand, .extend() adds each item within the bracket separately.
+    """)
     return
 
 
@@ -591,6 +634,28 @@ def _():
     print(sorted(tickers))
     print(tickers.sort())
     tickers
+    return (tickers,)
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **tickers.sort()** works directly in the list, meaning it rearranges the existing list itself, and doesn't return anything. The sorting happened which we can see through **tickers**.
+    """)
+    return
+
+
+@app.cell
+def _(tickers):
+    sorted(tickers, reverse=True)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **sorted(tickers, reverse=True)** looked at **tickers** and built a brand new list — it did not touch the original. Normally, sorting text puts it A to Z; **reverse=True** flips that, so this new list is Z to A, largest first. **tickers** itself is left exactly as it was.
+    """)
     return
 
 
@@ -627,6 +692,45 @@ def _():
     sale_prices = prices
     sale_prices.append(4.99)
     prices
+    return prices, sale_prices
+
+
+@app.cell
+def _(prices, sale_prices):
+    prices is sale_prices
+    return
+
+
+@app.cell
+def _():
+    prices_2 = [12.50, 8.00, 19.99]
+    sale_prices_2 = prices_2[:]
+    sale_prices_2.append(4.99)
+    prices_2
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **[:]** makes a copy of a list which is a second, separate list with the same items in it, rather than a second name for the same list.
+
+    Without it, **sale_prices_2 = prices_2** would just give the same list a second name. Both names would point to the one list, so changing it through either name, be it **sale_prices_2.append(4.99)** or **prices_2.append(4.99)**, would show the same list in both, because there is really only one list to change.
+
+    **[:]** breaks that link. It takes everything from the start to the end of **prices_2** and builds a new list out of it. So **sale_prices_2** becomes its own list, holding the same three values **prices_2** had at that moment, but living separately from it.
+
+    That's why your result makes sense. **sale_prices_2.append(4.99)** only grew **sale_prices_2**. **prices_2** was a separate list by then, so it stayed at its original three items, [12.5, 8.0, 19.99].
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **Question 4 Answer**
+
+    We want two names pointing at the same list when we want a change made through either name to show up for both lists.
+    """)
     return
 
 
