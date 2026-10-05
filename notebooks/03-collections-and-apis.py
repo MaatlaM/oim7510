@@ -156,12 +156,16 @@ def _(mo):
     Several questions below ask for a sentence. This cell is where they go. Click into it, write under the letter, and press `Ctrl+Enter` (Windows) or `Cmd+Enter` (macOS).
 
     **B ·**
+    The closing price for AAPL is $280.81.
 
     **C ·**
+    There is no TSLA ticker, so a retrieval of the closing price gives us 0.
 
     **D ·**
+    AAPL, MSFT, and GOOG are the tickers above $200.
 
     **G ·**
+    MSFT has the highest price.
     """)
     return
 
@@ -192,6 +196,46 @@ def _():
     return (closing_prices,)
 
 
+@app.cell
+def _(closing_prices):
+    closing_prices["AAPL"]
+    return
+
+
+@app.cell
+def _(closing_prices):
+    closing_prices.get("TSLA",0)
+    return
+
+
+@app.cell
+def _(closing_prices):
+    above_200 = []
+    for _ticker, _price in closing_prices.items():
+        if _price > 200:
+            above_200.append(_ticker)
+    above_200
+    return
+
+
+@app.cell
+def _(closing_prices):
+    highest_price = 0
+    highest_ticker = ""
+    for _ticker, _price in closing_prices.items():
+        if _price > highest_price:
+            highest_price = _price
+            highest_ticker = _ticker
+    highest_ticker
+    return
+
+
+@app.cell
+def _(closing_prices):
+    closing_prices["MSFT"]
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -217,6 +261,16 @@ def _():
     ]
     len(ship_countries)
     return (ship_countries,)
+
+
+@app.cell
+def _(ship_countries):
+    country_counts = {}
+    for _countries in ship_countries:
+        country_counts[_countries] = country_counts.get(_countries, 0) + 1
+
+    country_counts
+    return
 
 
 @app.cell(hide_code=True)
