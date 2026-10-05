@@ -719,7 +719,7 @@ def _(mo):
 
     **[:]** breaks that link. It takes everything from the start to the end of **prices_2** and builds a new list out of it. So **sale_prices_2** becomes its own list, holding the same three values **prices_2** had at that moment, but living separately from it.
 
-    That's why your result makes sense. **sale_prices_2.append(4.99)** only grew **sale_prices_2**. **prices_2** was a separate list by then, so it stayed at its original three items, [12.5, 8.0, 19.99].
+    That's why the result makes sense. **sale_prices_2.append(4.99)** only grew **sale_prices_2**. **prices_2** was a separate list by then, so it stayed at its original three items, [12.5, 8.0, 19.99].
     """)
     return
 
@@ -843,6 +843,20 @@ def _(mo):
     return
 
 
+@app.cell
+def _(first_order):
+    first_order["Freight"]
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **first_order["freight"]** and **first_order[0]** fail both fail citing KeyError 'freight' and 0 respectively. So it could not find either of the keys "freight" and "0" in the **first_order** object.
+    """)
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -932,6 +946,66 @@ def _(mo):
     return
 
 
+@app.cell
+def _(orders):
+    len(orders)
+    return
+
+
+@app.cell
+def _(orders):
+    total_freight = 0
+    for order in orders:
+        total_freight += order["Freight"]
+
+    print(total_freight)
+    return
+
+
+@app.cell
+def _(orders):
+    no_ship_count = 0
+    for order_2 in orders:
+        if order_2["ShippedDate"] is None:
+            no_ship_count = no_ship_count + 1
+
+    no_ship_count
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    This uses the same pattern as **shipped_count** and **total_freight** — a counter starting at zero, a loop over orders, and this time the condition checks **order_2["ShippedDate"] is None**, which asks "does this order have no ship date recorded?" **is None** is how we test for a missing value, as opposed to **==** which tests for equality to an actual value. Each time that's true, the counter goes up by one.
+    """)
+    return
+
+
+@app.cell
+def _(orders):
+    best_order = orders[0]
+    for order_3 in orders:
+        if order_3["Freight"] > best_order["Freight"]:
+            best_order = order_3
+
+    best_order["OrderID"]
+    return (best_order,)
+
+
+@app.cell
+def _(best_order):
+    best_order["Freight"]
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **best_order = orders[0**] starts by assuming the first order is the largest, as a starting guess — same idea as starting a running total at zero, just starting at the first item instead. for **order_3 in orders:** walks through every record. if **order_3["Freight"] > best_order["Freight"]:** compares this order's freight to the best one found so far, by name. When it's bigger, **best_order = order_3 **replaces the best-so-far with this one. After the loop finishes, **best_order** holds the whole record with the largest freight, and **best_order["OrderID"]** reads its order number out of it.
+    """)
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -954,9 +1028,14 @@ def _(mo):
     mo.md(r"""
     *One row is ...*
 
-    *(Replace this line with your own sentence. If this cell shows you code instead of
-    text, use the cell menu to turn it into a markdown cell.)*
+    One row is a single order placed by a customer, including when the order was placed and shipped, where it was sent, and what it cost to freight.
     """)
+    return
+
+
+@app.cell
+def _(orders):
+    len(orders)
     return
 
 
@@ -993,6 +1072,82 @@ def _():
         {"Symbol": "TSLA", "Shares": 150, "Price": 255.70},
     ]
     portfolio
+    return (portfolio,)
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **Question 1**
+
+    To find what it costs to buy the whole portfolio, for each holdinging, I would multiply the number of shares by the price of each share, and then add all the amounts to find the total.
+    """)
+    return
+
+
+@app.cell
+def _(portfolio):
+    total_value = 0
+    for holding in portfolio:
+        total_value = total_value + holding["Shares"] * holding["Price"]
+
+    total_value
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **Question 2**
+
+    **total_value = 0 **starts the running total at zero. **for holding in portfolio:** looks at each holding one at a time — each holding is one record, like first_order was one record.** holding["Shares"] * holding["Price"]** reads the two fields out of that record by name and multiplies them — the cost of that one holding. **total_value = total_value + ...** adds it to the running total, same pattern as total_freight.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **Question 3**
+
+    In line 3, I would not have included **total_value** on the right of the "=" sign. The agent explains that in math, x = x + 1 looks odd or even wrong. In Python, = does not mean "is equal to" — it means "take whatever is on the right, and store it under the name on the left." So the line is really two separate steps happening in order:
+
+    **1.** First, Python works out the right-hand side: it looks up the current value of **total_value** (the running total so far), looks up **holding["Shares"]** and **holding["Price"]** for this one holding, multiplies the two fields, and adds that to the current **total_value**.
+    **2.** Then, Python takes that result and stores it back under the name **total_value**, replacing the old value.
+
+    So each time through the loop, **total_value** is being updated to "what it already was, plus this holding's cost." By the time the loop has gone through every holding, **total_value** holds the sum of all of them.
+    """)
+    return
+
+
+@app.cell
+def _():
+    inventory = [
+        {"Item": "Boxes", "Quantity": 500, "UnitCost": 0.85},
+        {"Item": "Pallets", "Quantity": 40, "UnitCost": 12.50},
+        {"Item": "Tape rolls", "Quantity": 200, "UnitCost": 1.20},
+        {"Item": "Labels", "Quantity": 3000, "UnitCost": 0.04},
+    ]
+    return (inventory,)
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **Question 4**
+
+    AI Question: What is the total value of everything in inventory?
+    """)
+    return
+
+
+@app.cell
+def _(inventory):
+    total_inventory_value = 0
+    for item in inventory:
+        total_inventory_value = total_inventory_value + item["Quantity"] * item["UnitCost"]
+
+    total_inventory_value
     return
 
 
@@ -1043,6 +1198,48 @@ def _(mo):
         _where = f"could not write into {_data_dir}: {_error}"
 
     _where
+    return (portfolio_csv,)
+
+
+@app.cell
+def _(portfolio_csv):
+    with open(portfolio_csv) as _file:
+        _lines_from_file = _file.readlines()
+
+    _header = _lines_from_file[0].strip().split(",")
+    print(f"{_header[0]:<10} {_header[1]:>6} {_header[2]:>8}")
+
+    file_total = 0
+    for _line in _lines_from_file[1:]:
+        _name, _shares, _price = _line.strip().split(",")
+        _shares = int(_shares)
+        _price = float(_price)
+        print(f"{_name:<10} {_shares:>6} {_price:>8.2f}")
+        file_total = file_total + _shares * _price
+
+    print(f"Total cost: ${file_total:.2f}")
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    Line-by-line, since this uses things we haven't met yet:
+
+    with **open(portfolio_csv) as _file:** — opens the file for reading. "Opening a file" is a new idea: it's how Python gets access to something saved on disk, rather than data already typed into the notebook. with ... as _file: is a safe pattern that automatically closes the file when done. _file.readlines() reads every line of the file into a list, one string per line — so _lines_from_file is a list of text, like ["name,shares,price\n", "AAPL,100,173.93\n", ...].
+
+    **_header = _lines_from_file[0].strip().split(",")** — takes the first line (the header), .strip() removes the trailing newline character, and .split(",") breaks the text apart wherever there's a comma, turning "name,shares,price" into the list ["name", "shares", "price"].
+
+    **f"{_header[0]:<10} ..."** — this is our f-string, but with extra formatting codes we haven't seen: <10 means "left-align in a 10-character-wide space," and >6 means "right-align in a 6-character space." These just make the columns line up neatly.
+
+    **for _line in _lines_from_file[1:]:** — loops over every line except the header ([1:] skips index 0, the same slicing we've used on charges).
+
+    **_name, _shares, _price = _line.strip().split(",")** — splits each line by comma into three pieces and stores them under three names at once. This is a new idea called unpacking: when you have exactly as many values as names, Python assigns them left to right in one line.
+
+    **_shares = int(_shares) and _price = float(_price) **— everything read from a file comes back as text, same as input(). These convert the quantity to a whole number and the price to a decimal number so they can be multiplied.
+
+    **file_total = file_total + _shares * _price** — our familiar running total.
+    """)
     return
 
 

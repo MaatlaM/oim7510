@@ -412,12 +412,12 @@
     },
     {
       "id": "pHFh",
-      "code_hash": "446ba399d61de237f88fe3e2772fb836",
+      "code_hash": "12318de6a55df28edcf7bcceb7eb220e",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"your-written-answers\">Your written answers</h3>\n<span class=\"paragraph\">Four of the drills below ask for a sentence. This cell is where they go. Click into\nit, write under the letter, and press <code>Ctrl+Enter</code>. Code still goes in cells of your\nown, added with the <strong>+</strong> button.</span>\n<span class=\"paragraph\"><strong>A \u00b7</strong></span>\n<span class=\"paragraph\">When a score satisfies two of the tests at once, the first test decides what gets printed.</span>\n<span class=\"paragraph\"><strong>C \u00b7</strong></span>\n<span class=\"paragraph\">.append() adds one item, regardless of whether the contents within the bracket are a list or not. </span>\n<span class=\"paragraph\"><strong>D \u00b7</strong></span>\n<span class=\"paragraph\">tickers.sort() works directly in the list, meaning it rearranges the existing list itself, and doesn't return anything.</span>\n<span class=\"paragraph\"><strong>E \u00b7</strong></span>\n<span class=\"paragraph\">We want two names pointing at the same list when we want a change made through either name to show up for both lists. </span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"your-written-answers\">Your written answers</h3>\n<span class=\"paragraph\">Four of the drills below ask for a sentence. This cell is where they go. Click into\nit, write under the letter, and press <code>Ctrl+Enter</code>. Code still goes in cells of your\nown, added with the <strong>+</strong> button.</span>\n<span class=\"paragraph\"><strong>A \u00b7</strong></span>\n<span class=\"paragraph\">When a score satisfies two of the tests at once, the first test decides what gets printed.</span>\n<span class=\"paragraph\"><strong>C \u00b7</strong></span>\n<span class=\"paragraph\">.append() adds one item, regardless of whether the contents within the bracket are a list or not.</span>\n<span class=\"paragraph\"><strong>D \u00b7</strong></span>\n<span class=\"paragraph\">tickers.sort() works directly in the list, meaning it rearranges the existing list itself, and doesn't return anything.</span>\n<span class=\"paragraph\"><strong>E \u00b7</strong></span>\n<span class=\"paragraph\">We want two names pointing at the same list when we want a change made through either name to show up for both lists.</span></span>"
           }
         }
       ],
@@ -581,7 +581,7 @@
       "console": []
     },
     {
-      "id": "OYkB",
+      "id": "SdmI",
       "code_hash": "dc4562b11af0fc62ed5e1f1dc59956c4",
       "outputs": [
         {
@@ -594,7 +594,7 @@
       "console": []
     },
     {
-      "id": "TmMR",
+      "id": "lgWD",
       "code_hash": "7bf3e6305fb4f01e185f8ab7320dd577",
       "outputs": [
         {
@@ -607,20 +607,20 @@
       "console": []
     },
     {
-      "id": "Sarp",
-      "code_hash": "f6f6c49503d3c5f66d058e0b5c2e7ef1",
+      "id": "yOPj",
+      "code_hash": "4092aec294114a0734852131d9181fe1",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">.append() adds one item, regardless of whether the contents within the bracket are a list or not. </span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">.append() adds one item, regardless of whether the contents within the bracket are a list or not.</span></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "JmtT",
+      "id": "fwwy",
       "code_hash": "f0e944c787d3f050bb383a99b6673f49",
       "outputs": [
         {
@@ -633,7 +633,7 @@
       "console": []
     },
     {
-      "id": "PhER",
+      "id": "LJZf",
       "code_hash": "d3f3769a0ba6b0d826e1319f2183afc1",
       "outputs": [
         {
@@ -646,7 +646,7 @@
       "console": []
     },
     {
-      "id": "SdmI",
+      "id": "urSm",
       "code_hash": "6935532a36f420a3c62570d37b41c982",
       "outputs": [
         {
@@ -659,7 +659,7 @@
       "console": []
     },
     {
-      "id": "lgWD",
+      "id": "jxvo",
       "code_hash": "01a8d5269858a498482cb962fade9d87",
       "outputs": [
         {
@@ -679,7 +679,7 @@
       ]
     },
     {
-      "id": "hlZS",
+      "id": "mWxS",
       "code_hash": "e085c4f9bfbca7780d9451e8c7fa0446",
       "outputs": [
         {
@@ -692,7 +692,7 @@
       "console": []
     },
     {
-      "id": "Ragj",
+      "id": "CcZR",
       "code_hash": "976ab415ada8b578bfa5f54bec60eec0",
       "outputs": [
         {
@@ -705,7 +705,7 @@
       "console": []
     },
     {
-      "id": "WFOD",
+      "id": "YWSi",
       "code_hash": "ee5c123ce082e31184162ec6ea9ae55a",
       "outputs": [
         {
@@ -718,7 +718,7 @@
       "console": []
     },
     {
-      "id": "yOPj",
+      "id": "zlud",
       "code_hash": "f405b348260f91aaa0a73e40c618af25",
       "outputs": [
         {
@@ -731,7 +731,7 @@
       "console": []
     },
     {
-      "id": "fwwy",
+      "id": "tZnO",
       "code_hash": "8d95c8f244caaf7e1606caf938476e98",
       "outputs": [
         {
@@ -744,7 +744,7 @@
       "console": []
     },
     {
-      "id": "AdEy",
+      "id": "xvXZ",
       "code_hash": "da56d086dd6116a545e315bc3806642d",
       "outputs": [
         {
@@ -757,7 +757,7 @@
       "console": []
     },
     {
-      "id": "ErJq",
+      "id": "CLip",
       "code_hash": "8caa29d76305327e42172bb287289072",
       "outputs": [
         {
@@ -770,33 +770,33 @@
       "console": []
     },
     {
-      "id": "KELh",
-      "code_hash": "da3dfd9b72aad95f35603d7ca3b8d624",
+      "id": "YECM",
+      "code_hash": "a8e7bf1d9d6c165007106c5adf4cacc6",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>[:]</strong> makes a copy of a list which is a second, separate list with the same items in it, rather than a second name for the same list.</span>\n<span class=\"paragraph\">Without it, <strong>sale_prices_2 = prices_2</strong> would just give the same list a second name. Both names would point to the one list, so changing it through either name, be it <strong>sale_prices_2.append(4.99)</strong> or <strong>prices_2.append(4.99)</strong>, would show the same list in both, because there is really only one list to change.</span>\n<span class=\"paragraph\"><strong>[:]</strong> breaks that link. It takes everything from the start to the end of <strong>prices_2</strong> and builds a new list out of it. So <strong>sale_prices_2</strong> becomes its own list, holding the same three values <strong>prices_2</strong> had at that moment, but living separately from it.</span>\n<span class=\"paragraph\">That's why your result makes sense. <strong>sale_prices_2.append(4.99)</strong> only grew <strong>sale_prices_2</strong>. <strong>prices_2</strong> was a separate list by then, so it stayed at its original three items, [12.5, 8.0, 19.99].</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>[:]</strong> makes a copy of a list which is a second, separate list with the same items in it, rather than a second name for the same list.</span>\n<span class=\"paragraph\">Without it, <strong>sale_prices_2 = prices_2</strong> would just give the same list a second name. Both names would point to the one list, so changing it through either name, be it <strong>sale_prices_2.append(4.99)</strong> or <strong>prices_2.append(4.99)</strong>, would show the same list in both, because there is really only one list to change.</span>\n<span class=\"paragraph\"><strong>[:]</strong> breaks that link. It takes everything from the start to the end of <strong>prices_2</strong> and builds a new list out of it. So <strong>sale_prices_2</strong> becomes its own list, holding the same three values <strong>prices_2</strong> had at that moment, but living separately from it.</span>\n<span class=\"paragraph\">That's why the result makes sense. <strong>sale_prices_2.append(4.99)</strong> only grew <strong>sale_prices_2</strong>. <strong>prices_2</strong> was a separate list by then, so it stayed at its original three items, [12.5, 8.0, 19.99].</span></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "dTRI",
-      "code_hash": "1e949ea5dd152573a85f5cde59dc8a26",
+      "id": "cEAS",
+      "code_hash": "f9aae8d6f517a0c79aeeceed4bd581e9",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Question 4 Answer</strong></span>\n<span class=\"paragraph\">We want two names pointing at the same list when we want a change made through either name to show up for both lists. </span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Question 4 Answer</strong></span>\n<span class=\"paragraph\">We want two names pointing at the same list when we want a change made through either name to show up for both lists.</span></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "LJZf",
+      "id": "iXej",
       "code_hash": "8e5e2a59e9f4c3607fa0b5cb1f86f715",
       "outputs": [
         {
@@ -809,7 +809,7 @@
       "console": []
     },
     {
-      "id": "urSm",
+      "id": "EJmg",
       "code_hash": "e22c9fe5df8633ecd9c695b5510cb87f",
       "outputs": [
         {
@@ -829,7 +829,7 @@
       ]
     },
     {
-      "id": "jxvo",
+      "id": "UmEG",
       "code_hash": "1d4cd33d87f69cef37de87f6bdd519ca",
       "outputs": [
         {
@@ -842,7 +842,7 @@
       "console": []
     },
     {
-      "id": "mWxS",
+      "id": "vEBW",
       "code_hash": "b9a8a3f558e3abd939892755cdb675a5",
       "outputs": [
         {
@@ -855,7 +855,7 @@
       "console": []
     },
     {
-      "id": "CcZR",
+      "id": "kLmu",
       "code_hash": "53f7fdf6f5abd48e8964538bd017999e",
       "outputs": [
         {
@@ -868,7 +868,7 @@
       "console": []
     },
     {
-      "id": "YWSi",
+      "id": "IpqN",
       "code_hash": "692b58e986493ab11653c79bccc2af34",
       "outputs": [
         {
@@ -881,7 +881,7 @@
       "console": []
     },
     {
-      "id": "zlud",
+      "id": "dxZZ",
       "code_hash": "332446c7b3958fd46ca5386ebac32217",
       "outputs": [
         {
@@ -894,7 +894,7 @@
       "console": []
     },
     {
-      "id": "tZnO",
+      "id": "dlnW",
       "code_hash": "b4c4fb6a4f42fd5d98b6b18739a03241",
       "outputs": [
         {
@@ -907,7 +907,33 @@
       "console": []
     },
     {
-      "id": "xvXZ",
+      "id": "aUnA",
+      "code_hash": "2bfc2c56d92d1252dcea892b8285d87a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>16.75</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ssYY",
+      "code_hash": "b502c74df265a84aa00d9e300cfab4b8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>first_order[\"freight\"]</strong> and <strong>first_order[0]</strong> fail both fail citing KeyError 'freight' and 0 respectively. So it could not find either of the keys \"freight\" and \"0\" in the <strong>first_order</strong> object.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TTti",
       "code_hash": "0ed1e9cc210d89a44e791cc8866fac27",
       "outputs": [
         {
@@ -920,7 +946,7 @@
       "console": []
     },
     {
-      "id": "CLip",
+      "id": "RKFZ",
       "code_hash": "2e78ba09148c2840a0ce57701f538f5b",
       "outputs": [
         {
@@ -933,7 +959,7 @@
       "console": []
     },
     {
-      "id": "YECM",
+      "id": "IaQp",
       "code_hash": "215e85cc1d798eb376e760e2e6876215",
       "outputs": [
         {
@@ -946,7 +972,7 @@
       "console": []
     },
     {
-      "id": "cEAS",
+      "id": "IWgg",
       "code_hash": "56ae7cf264083e0936598623c21b783a",
       "outputs": [
         {
@@ -959,7 +985,7 @@
       "console": []
     },
     {
-      "id": "iXej",
+      "id": "fCoF",
       "code_hash": "362a604c80a321d2e4d5c0c5e80b4671",
       "outputs": [
         {
@@ -972,7 +998,105 @@
       "console": []
     },
     {
-      "id": "EJmg",
+      "id": "sRIb",
+      "code_hash": "dcdb5686d152ccc2cbdedf160299d54e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>30</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "XVFz",
+      "code_hash": "1a7db94b1d3a6dcb21b84010b581a524",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "827.0\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "UGDE",
+      "code_hash": "dd3b82207801338e9a3d61650ef2c92b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>3</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "jLTJ",
+      "code_hash": "1dc2f1ee71a63c9f6a6472818a17f5b6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">This uses the same pattern as <strong>shipped_count</strong> and <strong>total_freight</strong> \u2014 a counter starting at zero, a loop over orders, and this time the condition checks <strong>order_2[\"ShippedDate\"] is None</strong>, which asks \"does this order have no ship date recorded?\" <strong>is None</strong> is how we test for a missing value, as opposed to <strong>==</strong> which tests for equality to an actual value. Each time that's true, the counter goes up by one.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "DirK",
+      "code_hash": "be5ec9a4a8352d626587e8156777d7bd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>10263</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "fPgP",
+      "code_hash": "d17b86196af1921157cb4481bfc55824",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>56.0</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "aKvb",
+      "code_hash": "90e51f725d0cf50f12f3a6c579ade616",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>best_order = orders[0</strong>] starts by assuming the first order is the largest, as a starting guess \u2014 same idea as starting a running total at zero, just starting at the first item instead. for <strong>order_3 in orders:</strong> walks through every record. if <strong>order_3[\"Freight\"] &gt; best_order[\"Freight\"]:</strong> compares this order's freight to the best one found so far, by name. When it's bigger, <strong>best_order = order_3 </strong>replaces the best-so-far with this one. After the loop finishes, <strong>best_order</strong> holds the whole record with the largest freight, and <strong>best_order[\"OrderID\"]</strong> reads its order number out of it.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "LkGn",
       "code_hash": "276567fb8e96c73de1480e5e345ad8c1",
       "outputs": [
         {
@@ -985,20 +1109,33 @@
       "console": []
     },
     {
-      "id": "UmEG",
-      "code_hash": "1a951e63750454427afca99d94d5c044",
+      "id": "zVRe",
+      "code_hash": "2c9635db1437f61b5b566f03082ab44a",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><em>One row is ...</em></span>\n<span class=\"paragraph\"><em>(Replace this line with your own sentence. If this cell shows you code instead of\ntext, use the cell menu to turn it into a markdown cell.)</em></span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><em>One row is ...</em></span>\n<span class=\"paragraph\">One row is a single order placed by a customer, including when the order was placed and shipped, where it was sent, and what it cost to freight. </span></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "vEBW",
+      "id": "UDUc",
+      "code_hash": "dcdb5686d152ccc2cbdedf160299d54e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>30</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "woaO",
       "code_hash": "33f3e6ba51f144e4af890984773e0cfc",
       "outputs": [
         {
@@ -1011,7 +1148,7 @@
       "console": []
     },
     {
-      "id": "kLmu",
+      "id": "HnMC",
       "code_hash": "ee04f5dc9b3e474ede5f3f883c3aa33e",
       "outputs": [
         {
@@ -1024,7 +1161,98 @@
       "console": []
     },
     {
-      "id": "IpqN",
+      "id": "QDpy",
+      "code_hash": "5b63943f5b17188eb17d8755cd03c8c5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Question 1</strong></span>\n<span class=\"paragraph\">To find what it costs to buy the whole portfolio, for each holdinging, I would multiply the number of shares by the price of each share, and then add all the amounts to find the total.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Anps",
+      "code_hash": "104b739ebbc508f6bf6445469afa1446",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>116302.7</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "saUc",
+      "code_hash": "fc70da3adafc55b87e30bfcc04901c31",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Question 2</strong></span>\n<span class=\"paragraph\"><strong>total_value = 0 </strong>starts the running total at zero. <strong>for holding in portfolio:</strong> looks at each holding one at a time \u2014 each holding is one record, like first_order was one record.<strong> holding[\"Shares\"] * holding[\"Price\"]</strong> reads the two fields out of that record by name and multiplies them \u2014 the cost of that one holding. <strong>total_value = total_value + ...</strong> adds it to the running total, same pattern as total_freight.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "WPCC",
+      "code_hash": "a2c69402b2f7d91d3df057e5199ebda3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Question 3</strong></span>\n<span class=\"paragraph\">In line 3, I would not have included <strong>total_value</strong> on the right of the \"=\" sign. The agent explains that in math, x = x + 1 looks odd or even wrong. In Python, = does not mean \"is equal to\" \u2014 it means \"take whatever is on the right, and store it under the name on the left.\" So the line is really two separate steps happening in order:</span>\n<span class=\"paragraph\"><strong>1.</strong> First, Python works out the right-hand side: it looks up the current value of <strong>total_value</strong> (the running total so far), looks up <strong>holding[\"Shares\"]</strong> and <strong>holding[\"Price\"]</strong> for this one holding, multiplies the two fields, and adds that to the current <strong>total_value</strong>.\n<strong>2.</strong> Then, Python takes that result and stores it back under the name <strong>total_value</strong>, replacing the old value.</span>\n<span class=\"paragraph\">So each time through the loop, <strong>total_value</strong> is being updated to \"what it already was, plus this holding's cost.\" By the time the loop has gone through every holding, <strong>total_value</strong> holds the sum of all of them.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "LCNM",
+      "code_hash": "58b46d7ffababfa6d306aeaf3f489992",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "eAqt",
+      "code_hash": "f6104ba4ca4914478e57c29f9c6af38a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Question 4</strong></span>\n<span class=\"paragraph\">AI Question: What is the total value of everything in inventory? </span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "zlUX",
+      "code_hash": "6d994bafd91285bb6bfc6deb324b976d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>1285.0</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "wadT",
       "code_hash": "d7c2e174de0e810f192e0ebcd5f38e05",
       "outputs": [
         {
@@ -1037,7 +1265,7 @@
       "console": []
     },
     {
-      "id": "dxZZ",
+      "id": "VCRE",
       "code_hash": "84a6141f626588f299934afdd739184b",
       "outputs": [
         {
@@ -1050,7 +1278,40 @@
       "console": []
     },
     {
-      "id": "dlnW",
+      "id": "XCLP",
+      "code_hash": "38f7656beaa0417e9b8a5117658cae98",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "name       shares    price\nAAPL          100   173.93\nMSFT           50   319.53\nGOOG           80   131.36\nAMZN          200   129.33\nNVDA           20   410.17\nTSLA          150   255.70\nTotal cost: $116302.70\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "BnTa",
+      "code_hash": "4e3f8c79d501af74498a14c4fee19468",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Line-by-line, since this uses things we haven't met yet:</span>\n<span class=\"paragraph\">with <strong>open(portfolio_csv) as _file:</strong> \u2014 opens the file for reading. \"Opening a file\" is a new idea: it's how Python gets access to something saved on disk, rather than data already typed into the notebook. with ... as _file: is a safe pattern that automatically closes the file when done. _file.readlines() reads every line of the file into a list, one string per line \u2014 so _lines_from_file is a list of text, like [\"name,shares,price\\n\", \"AAPL,100,173.93\\n\", ...].</span>\n<span class=\"paragraph\"><strong>_header = _lines_from_file[0].strip().split(\",\")</strong> \u2014 takes the first line (the header), .strip() removes the trailing newline character, and .split(\",\") breaks the text apart wherever there's a comma, turning \"name,shares,price\" into the list [\"name\", \"shares\", \"price\"].</span>\n<span class=\"paragraph\"><strong>f\"{_header[0]:&lt;10} ...\"</strong> \u2014 this is our f-string, but with extra formatting codes we haven't seen: &lt;10 means \"left-align in a 10-character-wide space,\" and &gt;6 means \"right-align in a 6-character space.\" These just make the columns line up neatly.</span>\n<span class=\"paragraph\"><strong>for _line in _lines_from_file[1:]:</strong> \u2014 loops over every line except the header ([1:] skips index 0, the same slicing we've used on charges).</span>\n<span class=\"paragraph\"><strong>_name, _shares, _price = _line.strip().split(\",\")</strong> \u2014 splits each line by comma into three pieces and stores them under three names at once. This is a new idea called unpacking: when you have exactly as many values as names, Python assigns them left to right in one line.</span>\n<span class=\"paragraph\"><strong>_shares = int(_shares) and _price = float(_price) </strong>\u2014 everything read from a file comes back as text, same as input(). These convert the quantity to a whole number and the price to a decimal number so they can be multiplied.</span>\n<span class=\"paragraph\"><strong>file_total = file_total + _shares * _price</strong> \u2014 our familiar running total.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "hgqU",
       "code_hash": "d8cb88a4a782aa1a3abecba9ae2a81aa",
       "outputs": [
         {
