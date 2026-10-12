@@ -98,8 +98,15 @@
     },
     {
       "id": "PKri",
-      "code_hash": "54436c443c60319e53020cf945095f3d",
-      "outputs": [],
+      "code_hash": "fe58c70ad53b375f7376460b237e3f39",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -118,7 +125,14 @@
     {
       "id": "SFPL",
       "code_hash": null,
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -137,7 +151,14 @@
     {
       "id": "RGSE",
       "code_hash": null,
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -156,7 +177,14 @@
     {
       "id": "emfo",
       "code_hash": null,
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {

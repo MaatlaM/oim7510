@@ -8,14 +8,7 @@
     {
       "id": "Hbol",
       "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -47,53 +40,25 @@
     {
       "id": "bkHC",
       "code_hash": "7492387ca7ddb7b0156ea3e656d5b7ee",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "lEQa",
       "code_hash": "bd584f485531dc8a8612f58924a3ce3c",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>19.75</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "PKri",
       "code_hash": "b329912142512f5404a3b441c5348d71",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>33.0</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "Xref",
       "code_hash": "9bc20ec431429cc424aa1c2fdfac1894",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>&lt;class &#x27;float&#x27;&gt;</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -112,74 +77,32 @@
     {
       "id": "BYtC",
       "code_hash": "90abffacf865739fbfca7952d8b19eae",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>&#x27;16.516.5&#x27;</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "RGSE",
       "code_hash": "80ebdcefda7147ae5a1669e699301906",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>&#x27;16.53.25&#x27;</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "Kclp",
       "code_hash": "4e7a6dd0f1b6a1b3622b034deca4e18f",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>19.75</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "emfo",
       "code_hash": "3c4a26740825f59b11b815030eb2f279",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "Hstk",
       "code_hash": "1ad99931e080a3628b9e15fbdc1ac2fa",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "Enter the cost:  16.5\nEnter tax:  3.25\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "outputs": [],
+      "console": []
     },
     {
       "id": "nWHF",
@@ -197,60 +120,25 @@
     {
       "id": "iLit",
       "code_hash": "37e0f25cf7a76724ac33e274ae4d3f47",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "The total cost is $33.00.\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "outputs": [],
+      "console": []
     },
     {
       "id": "ZHCJ",
       "code_hash": "4f727280ab2c9373617635b2876a62d4",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "ROlb",
       "code_hash": "66927e2eb4a810c3c1c2aad26e788b03",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>&lt;class &#x27;list&#x27;&gt;</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "qnkX",
       "code_hash": "5913d644968fe5d6d63d9a412774dd08",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>350</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -269,93 +157,37 @@
     {
       "id": "Vxnm",
       "code_hash": "1c21640217ea9bef1b22f351c9a1f90a",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[\"text/plain+float:20.5\", \"text/plain+float:22.25\", \"text/plain+float:25.0\"]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "DnEU",
       "code_hash": "d38fb4d508bb535ba90429dc47a75543",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "Pre-tax: $16.75, total: $54.44\nPre-tax: $22.25, total: $72.31\nPre-tax: $25.00, total: $81.25\nPre-tax: $20.25, total: $65.81\nPre-tax: $36.25, total: $117.81\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "outputs": [],
+      "console": []
     },
     {
       "id": "ulZA",
       "code_hash": "86bfec09c8970a8636016fde8a88aa8d",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "Total charges below $25 is 59.25.\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "outputs": [],
+      "console": []
     },
     {
       "id": "ecfG",
       "code_hash": "25f0878dabb983c67f9815ba17ce7d39",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>811.0</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "Pvdt",
       "code_hash": "52044e62d3a5f79a541887e91128d73e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[\"text/plain+float:36.25\", \"text/plain+float:25.0\", \"text/plain+float:22.25\", \"text/plain+float:20.25\", \"text/plain+float:16.75\"]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "ZBYS",
       "code_hash": "115cdc766461e63d887742e99ed47a5d",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -387,14 +219,7 @@
     {
       "id": "xXTn",
       "code_hash": "3162e71c11ea9d96662b50a13fe21705",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[\"text/plain+float:16.75\", \"text/plain+float:22.25\", \"text/plain+float:25.0\", \"text/plain+float:20.25\", \"text/plain+float:36.25\"]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -439,42 +264,14 @@
     {
       "id": "aqbW",
       "code_hash": "242a1d372762d255a2591679001f94c9",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "A\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "outputs": [],
+      "console": []
     },
     {
       "id": "TRpd",
       "code_hash": "c1c530235a9a2c60734d99c9a5855a9d",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "B\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "outputs": [],
+      "console": []
     },
     {
       "id": "TXez",
@@ -505,53 +302,25 @@
     {
       "id": "yCnT",
       "code_hash": "413f573172b95d2cba69850b5e98a1e1",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[\"shipped\", \"pending\", \"shipped\", \"cancelled\", \"shipped\"]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "wlCL",
       "code_hash": "3f6bca76ec708d275c2453487d117977",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>3</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "kqZH",
       "code_hash": "56a95b76c3fc5583b69b6658f93baade",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>2</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "wAgl",
       "code_hash": "fbfc44ddf60a339f434b19eaf1a5a6cc",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>60.0</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -570,40 +339,19 @@
     {
       "id": "dGlV",
       "code_hash": "d7f1e30a273b00c372f58d2c77801a99",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>3</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "SdmI",
       "code_hash": "dc4562b11af0fc62ed5e1f1dc59956c4",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[\"stapler\", \"tape\"]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "lgWD",
       "code_hash": "7bf3e6305fb4f01e185f8ab7320dd577",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>4</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -622,14 +370,7 @@
     {
       "id": "fwwy",
       "code_hash": "f0e944c787d3f050bb383a99b6673f49",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>&#x27;stapler&#x27;</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -661,22 +402,8 @@
     {
       "id": "jxvo",
       "code_hash": "01a8d5269858a498482cb962fade9d87",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[\"AAPL\", \"MSFT\", \"NVDA\"]"
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "['AAPL', 'MSFT', 'NVDA']\nNone\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "outputs": [],
+      "console": []
     },
     {
       "id": "mWxS",
@@ -694,14 +421,7 @@
     {
       "id": "CcZR",
       "code_hash": "976ab415ada8b578bfa5f54bec60eec0",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[\"NVDA\", \"MSFT\", \"AAPL\"]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -733,40 +453,19 @@
     {
       "id": "tZnO",
       "code_hash": "8d95c8f244caaf7e1606caf938476e98",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[\"text/plain+float:12.5\", \"text/plain+float:8.0\", \"text/plain+float:19.99\", \"text/plain+float:4.99\"]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "xvXZ",
       "code_hash": "da56d086dd6116a545e315bc3806642d",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>True</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "CLip",
       "code_hash": "8caa29d76305327e42172bb287289072",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[\"text/plain+float:12.5\", \"text/plain+float:8.0\", \"text/plain+float:19.99\"]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -811,22 +510,8 @@
     {
       "id": "EJmg",
       "code_hash": "e22c9fe5df8633ecd9c695b5510cb87f",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "10050\n150\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "outputs": [],
+      "console": []
     },
     {
       "id": "UmEG",
@@ -857,14 +542,7 @@
     {
       "id": "kLmu",
       "code_hash": "53f7fdf6f5abd48e8964538bd017999e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "{\"OrderID\": 10248, \"CustomerID\": \"VINET\", \"ShipCountry\": \"France\", \"ShipCity\": \"Reims\", \"OrderDate\": \"2016-07-04\", \"ShippedDate\": \"2016-07-16\", \"Freight\": \"text/plain+float:16.75\"}"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -883,14 +561,7 @@
     {
       "id": "dxZZ",
       "code_hash": "332446c7b3958fd46ca5386ebac32217",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>&#x27;France&#x27;</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -907,20 +578,13 @@
       "console": []
     },
     {
-      "id": "aUnA",
+      "id": "TTti",
       "code_hash": "2bfc2c56d92d1252dcea892b8285d87a",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>16.75</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "ssYY",
+      "id": "RKFZ",
       "code_hash": "b502c74df265a84aa00d9e300cfab4b8",
       "outputs": [
         {
@@ -933,7 +597,7 @@
       "console": []
     },
     {
-      "id": "TTti",
+      "id": "IaQp",
       "code_hash": "0ed1e9cc210d89a44e791cc8866fac27",
       "outputs": [
         {
@@ -946,20 +610,13 @@
       "console": []
     },
     {
-      "id": "RKFZ",
+      "id": "IWgg",
       "code_hash": "2e78ba09148c2840a0ce57701f538f5b",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>30</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "IaQp",
+      "id": "fCoF",
       "code_hash": "215e85cc1d798eb376e760e2e6876215",
       "outputs": [
         {
@@ -972,20 +629,13 @@
       "console": []
     },
     {
-      "id": "IWgg",
+      "id": "LkGn",
       "code_hash": "56ae7cf264083e0936598623c21b783a",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>&#x27;France&#x27;</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "fCoF",
+      "id": "zVRe",
       "code_hash": "362a604c80a321d2e4d5c0c5e80b4671",
       "outputs": [
         {
@@ -998,53 +648,25 @@
       "console": []
     },
     {
-      "id": "sRIb",
+      "id": "woaO",
       "code_hash": "dcdb5686d152ccc2cbdedf160299d54e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>30</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "XVFz",
+      "id": "HnMC",
       "code_hash": "1a7db94b1d3a6dcb21b84010b581a524",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "827.0\n",
-          "mimetype": "text/plain"
-        }
-      ]
-    },
-    {
-      "id": "UGDE",
-      "code_hash": "dd3b82207801338e9a3d61650ef2c92b",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>3</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "jLTJ",
+      "id": "wadT",
+      "code_hash": "dd3b82207801338e9a3d61650ef2c92b",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "VCRE",
       "code_hash": "1dc2f1ee71a63c9f6a6472818a17f5b6",
       "outputs": [
         {
@@ -1057,33 +679,19 @@
       "console": []
     },
     {
-      "id": "DirK",
+      "id": "hgqU",
       "code_hash": "be5ec9a4a8352d626587e8156777d7bd",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>10263</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "fPgP",
+      "id": "PSUk",
       "code_hash": "d17b86196af1921157cb4481bfc55824",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>56.0</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "aKvb",
+      "id": "mfOT",
       "code_hash": "90e51f725d0cf50f12f3a6c579ade616",
       "outputs": [
         {
@@ -1096,7 +704,7 @@
       "console": []
     },
     {
-      "id": "LkGn",
+      "id": "vGiW",
       "code_hash": "276567fb8e96c73de1480e5e345ad8c1",
       "outputs": [
         {
@@ -1109,33 +717,26 @@
       "console": []
     },
     {
-      "id": "zVRe",
-      "code_hash": "2c9635db1437f61b5b566f03082ab44a",
+      "id": "SYQT",
+      "code_hash": "6fc6e82fb6b5139c029a46f16fd5a4de",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><em>One row is ...</em></span>\n<span class=\"paragraph\">One row is a single order placed by a customer, including when the order was placed and shipped, where it was sent, and what it cost to freight. </span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><em>One row is ...</em></span>\n<span class=\"paragraph\">One row is a single order placed by a customer, including when the order was placed and shipped, where it was sent, and what it cost to freight.</span></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "UDUc",
+      "id": "bMrW",
       "code_hash": "dcdb5686d152ccc2cbdedf160299d54e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>30</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "woaO",
+      "id": "PSQn",
       "code_hash": "33f3e6ba51f144e4af890984773e0cfc",
       "outputs": [
         {
@@ -1148,20 +749,13 @@
       "console": []
     },
     {
-      "id": "HnMC",
+      "id": "OfTS",
       "code_hash": "ee04f5dc9b3e474ede5f3f883c3aa33e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[{\"Symbol\": \"AAPL\", \"Shares\": 100, \"Price\": \"text/plain+float:173.93\"}, {\"Symbol\": \"MSFT\", \"Shares\": 50, \"Price\": \"text/plain+float:319.53\"}, {\"Symbol\": \"GOOG\", \"Shares\": 80, \"Price\": \"text/plain+float:131.36\"}, {\"Symbol\": \"AMZN\", \"Shares\": 200, \"Price\": \"text/plain+float:129.33\"}, {\"Symbol\": \"NVDA\", \"Shares\": 20, \"Price\": \"text/plain+float:410.17\"}, {\"Symbol\": \"TSLA\", \"Shares\": 150, \"Price\": \"text/plain+float:255.7\"}]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "QDpy",
+      "id": "lQxp",
       "code_hash": "5b63943f5b17188eb17d8755cd03c8c5",
       "outputs": [
         {
@@ -1174,20 +768,13 @@
       "console": []
     },
     {
-      "id": "Anps",
+      "id": "Plbk",
       "code_hash": "104b739ebbc508f6bf6445469afa1446",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>116302.7</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "saUc",
+      "id": "rSYo",
       "code_hash": "fc70da3adafc55b87e30bfcc04901c31",
       "outputs": [
         {
@@ -1200,8 +787,8 @@
       "console": []
     },
     {
-      "id": "WPCC",
-      "code_hash": "a2c69402b2f7d91d3df057e5199ebda3",
+      "id": "HuZB",
+      "code_hash": "69052594e9ce34fb0113422ced708fab",
       "outputs": [
         {
           "type": "data",
@@ -1213,46 +800,32 @@
       "console": []
     },
     {
-      "id": "LCNM",
+      "id": "WfYj",
       "code_hash": "58b46d7ffababfa6d306aeaf3f489992",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Ynfw",
+      "code_hash": "9331e6aa331eb50b82537211df8d51b4",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/plain": ""
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Question 4</strong></span>\n<span class=\"paragraph\">AI Question: What is the total value of everything in inventory?</span></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "eAqt",
-      "code_hash": "f6104ba4ca4914478e57c29f9c6af38a",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Question 4</strong></span>\n<span class=\"paragraph\">AI Question: What is the total value of everything in inventory? </span></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "zlUX",
+      "id": "LqFA",
       "code_hash": "6d994bafd91285bb6bfc6deb324b976d",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>1285.0</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "wadT",
+      "id": "uDnK",
       "code_hash": "d7c2e174de0e810f192e0ebcd5f38e05",
       "outputs": [
         {
@@ -1265,40 +838,19 @@
       "console": []
     },
     {
-      "id": "VCRE",
+      "id": "aWBL",
       "code_hash": "84a6141f626588f299934afdd739184b",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>&#x27;C:\\\\Users\\\\maatl\\\\OneDrive\\\\Documents\\\\GitHub\\\\oim7510\\\\data\\\\portfolio.csv&#x27;</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "XCLP",
+      "id": "MIsd",
       "code_hash": "38f7656beaa0417e9b8a5117658cae98",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "name       shares    price\nAAPL          100   173.93\nMSFT           50   319.53\nGOOG           80   131.36\nAMZN          200   129.33\nNVDA           20   410.17\nTSLA          150   255.70\nTotal cost: $116302.70\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "outputs": [],
+      "console": []
     },
     {
-      "id": "BnTa",
+      "id": "IrqS",
       "code_hash": "4e3f8c79d501af74498a14c4fee19468",
       "outputs": [
         {
@@ -1311,7 +863,7 @@
       "console": []
     },
     {
-      "id": "hgqU",
+      "id": "Lpqv",
       "code_hash": "d8cb88a4a782aa1a3abecba9ae2a81aa",
       "outputs": [
         {
