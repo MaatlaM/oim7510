@@ -112,7 +112,14 @@ def _():
     specified_reorder_point = 40
     daily_demand = [12, 15, 9, 14, 18, 11, 10, 16, 13, 17, 8, 12, 20, 14, 11,
                     9, 15, 13, 16, 12, 10, 14, 19, 11, 13, 15, 9, 12, 17, 14]
-    return
+    return (
+        daily_demand,
+        lead_time_days,
+        order_quantity,
+        reorder_points,
+        specified_reorder_point,
+        starting_stock,
+    )
 
 
 @app.cell(hide_code=True)
@@ -126,8 +133,59 @@ def _(mo):
 
 
 @app.cell
-def _():
-    return
+def _(daily_demand, lead_time_days, order_quantity, starting_stock):
+    def simulate(reorder_point):
+        stock = starting_stock
+        pending = {}
+        rows = []
+        day = 0
+        for demand in daily_demand:
+            day = day + 1
+            start = stock
+
+            # 1. Deliveries due today arrive first
+            arrived = pending.get(day, 0)
+            stock = stock + arrived
+
+            # 2. Sell up to today's demand; the rest is lost
+            if demand <= stock:
+                sold = demand
+            else:
+                sold = stock
+            lost = demand - sold
+            stock = stock - sold
+
+            # 3. Count cartons ordered but not yet delivered
+            on_order = 0
+            for arrival_day, cartons in pending.items():
+                if arrival_day > day:
+                    on_order = on_order + cartons
+
+            # 4. Order if stock plus what is on the way is at or below the reorder point
+            ordered = 0
+            if stock + on_order <= reorder_point:
+                ordered = order_quantity
+                due_day = day + lead_time_days
+                pending[due_day] = pending.get(due_day, 0) + order_quantity
+
+            rows.append({"Day": day, "Start": start, "Arrived": arrived,
+                         "Demand": demand, "Sold": sold, "Lost": lost,
+                         "End": stock, "Ordered": ordered})
+        return rows
+
+    return (simulate,)
+
+
+@app.cell
+def _(simulate, specified_reorder_point):
+    detail_rows = simulate(specified_reorder_point)
+
+    print(f"Daily results for a reorder point of {specified_reorder_point}")
+    print(f"{'Day':>4} {'Start':>6} {'Arrived':>8} {'Demand':>7} {'Sold':>5} {'Lost':>5} {'End':>5} {'Ordered':>8}")
+    for _row in detail_rows:
+        print(f"{_row['Day']:>4} {_row['Start']:>6} {_row['Arrived']:>8} {_row['Demand']:>7} "
+              f"{_row['Sold']:>5} {_row['Lost']:>5} {_row['End']:>5} {_row['Ordered']:>8}")
+    return (detail_rows,)
 
 
 @app.cell(hide_code=True)
@@ -141,7 +199,43 @@ def _(mo):
 
 
 @app.cell
-def _():
+def _(daily_demand, reorder_points, simulate):
+    summary = []
+    for _rp in reorder_points:
+        _rows = simulate(_rp)
+        _units_lost = 0
+        _lost_days = 0
+        _orders = 0
+        _end_total = 0
+        for _row in _rows:
+            _units_lost = _units_lost + _row["Lost"]
+            if _row["Lost"] > 0:
+                _lost_days = _lost_days + 1
+            if _row["Ordered"] > 0:
+                _orders = _orders + 1
+            _end_total = _end_total + _row["End"]
+        summary.append({"Reorder point": _rp, "Units lost": _units_lost,
+                        "Lost days": _lost_days, "Orders": _orders,
+                        "Avg end": _end_total / len(daily_demand)})
+
+    print(f"{'Reorder point':>13} {'Units lost':>10} {'Days with loss':>14} {'Orders':>6} {'Avg ending stock':>16}")
+    for _s in summary:
+        print(f"{_s['Reorder point']:>13} {_s['Units lost']:>10} {_s['Lost days']:>14} "
+              f"{_s['Orders']:>6} {_s['Avg end']:>16.1f}")
+    return (summary,)
+
+
+@app.cell
+def _(daily_demand, summary):
+    best = None
+    for _s in summary:
+        if _s["Units lost"] == 0:
+            if best is None or _s["Avg end"] < best["Avg end"]:
+                best = _s
+
+    print(f"Reorder when stock falls to {best['Reorder point']} cartons because at this level the shop lost no sales "
+          f"over {len(daily_demand)} days, with {best['Avg end']:.1f} cartons in the "
+          f"refrigerator on average, which is the least of any option where the shop never ran out of oat milk.")
     return
 
 
@@ -156,7 +250,37 @@ def _(mo):
 
 
 @app.cell
-def _():
+def _(daily_demand, detail_rows, starting_stock):
+    _total_arrived = 0
+    _total_sold = 0
+    _total_lost = 0
+    for _row in detail_rows:
+        _total_arrived = _total_arrived + _row["Arrived"]
+        _total_sold = _total_sold + _row["Sold"]
+        _total_lost = _total_lost + _row["Lost"]
+
+    _from_totals = starting_stock + _total_arrived - _total_sold
+    _from_simulation = detail_rows[-1]["End"]
+
+    print(f"Check 1 (stock): {starting_stock} + {_total_arrived} arrived - {_total_sold} sold "
+          f"= {_from_totals}; the simulation ended day {len(daily_demand)} with {_from_simulation}. "
+          f"Match: {_from_totals == _from_simulation}")
+    print(f"Check 2 (demand): {_total_sold} sold + {_total_lost} lost = {_total_sold + _total_lost}; "
+          f"total demand was {sum(daily_demand)}. Match: {_total_sold + _total_lost == sum(daily_demand)}")
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **Check 1, stock. **
+
+    The simulation carries stock forward one day at a time. As a second route, I added up the 30-day totals instead: starting stock (60) plus all deliveries (400) minus all sales (399) gives 61, the same as the simulation’s ending stock on day 30.
+
+    **Check 2, demand. **
+
+    Every carton a customer wanted was either sold or lost. Sold (399) plus lost (0) equals total demand from the input list (399).
+    """)
     return
 
 

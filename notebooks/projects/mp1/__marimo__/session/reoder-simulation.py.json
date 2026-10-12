@@ -98,7 +98,7 @@
     },
     {
       "id": "PKri",
-      "code_hash": "fe58c70ad53b375f7376460b237e3f39",
+      "code_hash": "f390cdb8824141cf51b927769956d028",
       "outputs": [
         {
           "type": "data",
@@ -124,7 +124,7 @@
     },
     {
       "id": "SFPL",
-      "code_hash": null,
+      "code_hash": "1db6f67820b1f493b2075740a1e8a86b",
       "outputs": [
         {
           "type": "data",
@@ -134,6 +134,26 @@
         }
       ],
       "console": []
+    },
+    {
+      "id": "rLLv",
+      "code_hash": "92b412234355e4fa409d62616ce88449",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Daily results for a reorder point of 40\n Day  Start  Arrived  Demand  Sold  Lost   End  Ordered\n   1     60        0      12    12     0    48        0\n   2     48        0      15    15     0    33      100\n   3     33        0       9     9     0    24        0\n   4     24        0      14    14     0    10        0\n   5     10      100      18    18     0    92        0\n   6     92        0      11    11     0    81        0\n   7     81        0      10    10     0    71        0\n   8     71        0      16    16     0    55        0\n   9     55        0      13    13     0    42        0\n  10     42        0      17    17     0    25      100\n  11     25        0       8     8     0    17        0\n  12     17        0      12    12     0     5        0\n  13      5      100      20    20     0    85        0\n  14     85        0      14    14     0    71        0\n  15     71        0      11    11     0    60        0\n  16     60        0       9     9     0    51        0\n  17     51        0      15    15     0    36      100\n  18     36        0      13    13     0    23        0\n  19     23        0      16    16     0     7        0\n  20      7      100      12    12     0    95        0\n  21     95        0      10    10     0    85        0\n  22     85        0      14    14     0    71        0\n  23     71        0      19    19     0    52        0\n  24     52        0      11    11     0    41        0\n  25     41        0      13    13     0    28      100\n  26     28        0      15    15     0    13        0\n  27     13        0       9     9     0     4        0\n  28      4      100      12    12     0    92        0\n  29     92        0      17    17     0    75        0\n  30     75        0      14    14     0    61        0\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "BYtC",
@@ -149,8 +169,8 @@
       "console": []
     },
     {
-      "id": "RGSE",
-      "code_hash": null,
+      "id": "pzgE",
+      "code_hash": "6a5f0e648d6b06aa2ae3694f069182cd",
       "outputs": [
         {
           "type": "data",
@@ -159,7 +179,34 @@
           }
         }
       ],
-      "console": []
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Reorder point Units lost Days with loss Orders Avg ending stock\n           20         59              6      4             37.4\n           30         15              2      4             42.9\n           40          0              0      4             48.4\n           50          0              0      4             58.4\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "aef918cd571e141dd04af0c8e5112303",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Reorder when stock falls to 40 cartons because at this level the shop lost no sales over 30 days, with 48.4 cartons in the refrigerator on average, which is the least of any option where the shop never ran out of oat milk.\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "Kclp",
@@ -176,12 +223,32 @@
     },
     {
       "id": "emfo",
-      "code_hash": null,
+      "code_hash": "fad89102c09a7123509571a472ab4a38",
       "outputs": [
         {
           "type": "data",
           "data": {
             "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Check 1 (stock): 60 + 400 arrived - 399 sold = 61; the simulation ended day 30 with 61. Match: True\nCheck 2 (demand): 399 sold + 0 lost = 399; total demand was 399. Match: True\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "WRRz",
+      "code_hash": "96d93111cf1199ab32bb4470cb9d72d0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">**Check 1, stock. **</span>\n<span class=\"paragraph\">The simulation carries stock forward one day at a time. As a second route, I added up the 30-day totals instead: starting stock (60) plus all deliveries (400) minus all sales (399) gives 61, the same as the simulation\u2019s ending stock on day 30.</span>\n<span class=\"paragraph\">**Check 2, demand. **</span>\n<span class=\"paragraph\">Every carton a customer wanted was either sold or lost. Sold (399) plus lost (0) equals total demand from the input list (399).</span></span>"
           }
         }
       ],
