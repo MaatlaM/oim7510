@@ -299,9 +299,85 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    **What it gave me.**
+
+    The agent’s first plan for the simulation stored each day’s results as a tuple of eight values and removed orders from the pending dictionary once they arrived.
+
+    **What I changed.**
+
+    I compared that plan against notebooks 2 and 3. We have not yet covered deleting from a dictionary, and notebook 3’s guide to choosing a data structure says that many things with named parts should be a list of dictionaries. I asked the agent to rework it, so each day is now a dictionary read by name (row["Lost"]), and orders still on the way are found by keeping only those with arrival_day > day, using .items() and an if, both of which we have covered.
+
+    **How I knew it was right.**
+
+    The daily table for a reorder point of 40 matched a hand trace of days 1 to 5: an order on day 2, arriving on day 5, with no order on day 3 because 100 cartons were already on the way. Both checks in section 6 also agree.
+
+    **Where.**
+
+    Cell 1 in section 4.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     ## 8. Going Further
 
     *Take at least one step past the main task, in any direction, and use your agent as much as you like. It does not have to work. State what you tried, what you found, and where it is in this notebook.*
+    """)
+    return
+
+
+@app.cell
+def _(daily_demand, simulate):
+    # Going further: put a dollar cost on each part of the trade-off
+    holding_cost = 0.50   # per carton, for each night in the refrigerator
+    delivery_fee = 40     # per order placed
+    lost_margin = 8       # per carton a customer wanted but could not buy
+    cost_reorder_points = [10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80]
+
+    cost_summary = []
+    for _rp in cost_reorder_points:
+        _fridge = 0
+        _delivery = 0
+        _lost = 0
+        for _row in simulate(_rp):
+            _fridge = _fridge + _row["End"] * holding_cost
+            if _row["Ordered"] > 0:
+                _delivery = _delivery + delivery_fee
+            _lost = _lost + _row["Lost"] * lost_margin
+        cost_summary.append({"Reorder point": _rp, "Fridge": _fridge, "Delivery": _delivery,
+                             "Lost": _lost, "Total": _fridge + _delivery + _lost})
+
+    print(f"{'Reorder point':>13} {'Fridge':>9} {'Deliveries':>10} {'Lost sales':>10} {'Total':>9}")
+    for _c in cost_summary:
+        print(f"{_c['Reorder point']:>13} {_c['Fridge']:>9,.2f} {_c['Delivery']:>10,.2f} "
+              f"{_c['Lost']:>10,.2f} {_c['Total']:>9,.2f}")
+
+    cheapest = cost_summary[0]
+    for _c in cost_summary:
+        if _c["Total"] < cheapest["Total"]:
+            cheapest = _c
+
+    print(f"\nCheapest: a reorder point of {cheapest['Reorder point']}, "
+          f"costing ${cheapest['Total']:,.2f} over {len(daily_demand)} days.")
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **What I tried.**
+
+    I put a dollar cost on each side of the trade-off: $0.50 per carton for each night in the refrigerator, $40 per delivery, and $8 of lost margin per carton a customer could not buy. I then tested reorder points from 10 to 80, reusing the same simulation function.
+
+    **What I found.**
+
+    A reorder point of 40 is the cheapest, at $886.50 over 30 days, which supports the recommendation in section 5. Reordering at 35 costs $904.00 because five lost cartons outweigh the fridge space saved, and every point above 40 costs more because extra stock sits in the refrigerator.
+
+    **Where.**
+
+    Cell 1 at the start of section 8.
     """)
     return
 

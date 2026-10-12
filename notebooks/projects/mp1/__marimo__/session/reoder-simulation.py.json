@@ -268,6 +268,19 @@
       "console": []
     },
     {
+      "id": "ZKTj",
+      "code_hash": "1414a7efd09647307a2bf1abed21082a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>What it gave me.</strong></span>\n<span class=\"paragraph\">The agent\u2019s first plan for the simulation stored each day\u2019s results as a tuple of eight values and removed orders from the pending dictionary once they arrived.</span>\n<span class=\"paragraph\"><strong>What I changed.</strong> </span>\n<span class=\"paragraph\">I compared that plan against notebooks 2 and 3. We have not yet covered deleting from a dictionary, and notebook 3\u2019s guide to choosing a data structure says that many things with named parts should be a list of dictionaries. I asked the agent to rework it, so each day is now a dictionary read by name (row[\"Lost\"]), and orders still on the way are found by keeping only those with arrival_day &gt; day, using .items() and an if, both of which we have covered.</span>\n<span class=\"paragraph\"><strong>How I knew it was right.</strong></span>\n<span class=\"paragraph\">The daily table for a reorder point of 40 matched a hand trace of days 1 to 5: an order on day 2, arriving on day 5, with no order on day 3 because 100 cartons were already on the way. Both checks in section 6 also agree.</span>\n<span class=\"paragraph\"><strong>Where.</strong> </span>\n<span class=\"paragraph\">Cell 1 in section 4.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "nWHF",
       "code_hash": "9e11622311558f577bd7fefb4cd2c3ec",
       "outputs": [
@@ -275,6 +288,39 @@
           "type": "data",
           "data": {
             "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"8-going-further\">8. Going Further</h2>\n<span class=\"paragraph\"><em>Take at least one step past the main task, in any direction, and use your agent as much as you like. It does not have to work. State what you tried, what you found, and where it is in this notebook.</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ihcU",
+      "code_hash": "fe7ec0802b80af57714249d3197fccc6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Reorder point    Fridge Deliveries Lost sales     Total\n           10    550.50     120.00     576.00  1,246.50\n           15    561.50     120.00     472.00  1,153.50\n           20    561.50     160.00     472.00  1,193.50\n           25    603.50     160.00     200.00    963.50\n           30    643.50     160.00     120.00    923.50\n           35    704.00     160.00      40.00    904.00\n           40    726.50     160.00       0.00    886.50\n           45    826.50     160.00       0.00    986.50\n           50    876.50     160.00       0.00  1,036.50\n           55  1,026.50     160.00       0.00  1,186.50\n           60  1,076.50     160.00       0.00  1,236.50\n           65  1,076.50     200.00       0.00  1,276.50\n           70  1,076.50     200.00       0.00  1,276.50\n           75  1,226.50     200.00       0.00  1,426.50\n           80  1,226.50     200.00       0.00  1,426.50\n\nCheapest: a reorder point of 40, costing $886.50 over 30 days.\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "djVf",
+      "code_hash": "ad4ae24e7a3b1d0e2e843dffa265b9ea",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>What I tried.</strong></span>\n<span class=\"paragraph\">I put a dollar cost on each side of the trade-off: $0.50 per carton for each night in the refrigerator, $40 per delivery, and $8 of lost margin per carton a customer could not buy. I then tested reorder points from 10 to 80, reusing the same simulation function.</span>\n<span class=\"paragraph\"><strong>What I found.</strong> </span>\n<span class=\"paragraph\">A reorder point of 40 is the cheapest, at $886.50 over 30 days, which supports the recommendation in section 5. Reordering at 35 costs $904.00 because five lost cartons outweigh the fridge space saved, and every point above 40 costs more because extra stock sits in the refrigerator.</span>\n<span class=\"paragraph\"><strong>Where.</strong></span>\n<span class=\"paragraph\">Cell 1 at the start of section 8.</span></span>"
           }
         }
       ],
