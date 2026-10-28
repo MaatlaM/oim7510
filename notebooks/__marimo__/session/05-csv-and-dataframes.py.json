@@ -8,27 +8,13 @@
     {
       "id": "Hbol",
       "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "MJUe",
       "code_hash": "0bc454bb292ca83d6c0578a8d0913695",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -73,14 +59,7 @@
     {
       "id": "PKri",
       "code_hash": "bef39265bbcfb02bcbc6c95625dcadcd",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[{\"name\": \"Barnstable\", \"towns\": 15, \"population\": 232570}, 14]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -99,27 +78,13 @@
     {
       "id": "SFPL",
       "code_hash": "460e9d4b6395a0be8d56dd84beab8151",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "BYtC",
       "code_hash": "c512f2c7a54c0b67eb104a13b0d8a4e3",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>351</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -138,14 +103,7 @@
     {
       "id": "Kclp",
       "code_hash": "1f2f7ce44bc3dd6e5f77bab9569dcf91",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>&#x27;ma-towns.csv&#x27;</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -164,14 +122,7 @@
     {
       "id": "Hstk",
       "code_hash": "9c68878466dd4b6ace6fe0b1425a2e32",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[351, {\"name\": \"Barnstable\", \"county\": \"Barnstable\", \"population\": \"49831\", \"income_per_capita_dollars\": \"52832\", \"average_single_family_value_dollars\": \"823363\", \"average_single_family_bill_dollars\": \"5599\"}]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -190,14 +141,7 @@
     {
       "id": "iLit",
       "code_hash": "391a35614888d4ac6eca417662cc235d",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[\"49831\", 49831]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -214,33 +158,19 @@
       "console": []
     },
     {
-      "id": "jfqt",
-      "code_hash": "597b37d1037a0ec438eacd435463f6c9",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "{\"Barnstable\": 7, \"Berkshire\": 1, \"Dukes\": 7, \"Essex\": 10, \"Middlesex\": 14, \"Nantucket\": 1, \"Norfolk\": 8, \"Plymouth\": 5}"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "OXhV",
-      "code_hash": "a79051ab269f74d4b37fa3a2dc0bc3d0",
-      "outputs": [
-        {
-          "type": "error",
-          "ename": "multiple-defs",
-          "evalue": "The variable 'county' was defined by another cell",
-          "traceback": []
-        }
-      ],
-      "console": []
-    },
-    {
       "id": "ROlb",
+      "code_hash": "597b37d1037a0ec438eacd435463f6c9",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "qnkX",
+      "code_hash": "a741d808b4d07a6c509d8e7590b0492c",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "TqIu",
       "code_hash": "96a98f89acadfc2825f603f78c04d328",
       "outputs": [
         {
@@ -253,13 +183,13 @@
       "console": []
     },
     {
-      "id": "qnkX",
+      "id": "Vxnm",
       "code_hash": "e5c40be846113c1c7b8aa51bdc3d215b",
       "outputs": [],
       "console": []
     },
     {
-      "id": "TqIu",
+      "id": "DnEU",
       "code_hash": "ca66d4f524160e128dc20f0b210f7fe2",
       "outputs": [
         {
@@ -272,13 +202,13 @@
       "console": []
     },
     {
-      "id": "Vxnm",
+      "id": "ulZA",
       "code_hash": "cc417b0b26bcf45183a0b87697b0f9e0",
       "outputs": [],
       "console": []
     },
     {
-      "id": "DnEU",
+      "id": "ecfG",
       "code_hash": "840e8460324fb8ca9667f11d8b22f3cf",
       "outputs": [
         {
@@ -291,13 +221,13 @@
       "console": []
     },
     {
-      "id": "ulZA",
+      "id": "Pvdt",
       "code_hash": "c9e68e995a7dd41a321073a8b52b55e9",
       "outputs": [],
       "console": []
     },
     {
-      "id": "ecfG",
+      "id": "ZBYS",
       "code_hash": "61c8950d81e4f3dda584c681c0b0bf08",
       "outputs": [
         {
@@ -310,13 +240,13 @@
       "console": []
     },
     {
-      "id": "Pvdt",
+      "id": "aLJB",
       "code_hash": "2315789fa1c117de962459a82f2e0bec",
       "outputs": [],
       "console": []
     },
     {
-      "id": "ZBYS",
+      "id": "nHfw",
       "code_hash": "a270c6e9e73679696ecb8f81f3832ee3",
       "outputs": [
         {
@@ -329,13 +259,13 @@
       "console": []
     },
     {
-      "id": "aLJB",
+      "id": "xXTn",
       "code_hash": "4a7cd01e9f02ef447fb1bd47cacce83d",
       "outputs": [],
       "console": []
     },
     {
-      "id": "nHfw",
+      "id": "AjVT",
       "code_hash": "e198428ce1cd286ed3ef3f9d5f5ba1b6",
       "outputs": [
         {
@@ -348,7 +278,7 @@
       "console": []
     },
     {
-      "id": "xXTn",
+      "id": "pHFh",
       "code_hash": "96e0919cb7888b6403f22712c338faad",
       "outputs": [
         {
@@ -361,7 +291,7 @@
       "console": []
     },
     {
-      "id": "AjVT",
+      "id": "NCOB",
       "code_hash": "11aaeaffe112242a9cbbffb89659ab93",
       "outputs": [
         {
@@ -374,13 +304,13 @@
       "console": []
     },
     {
-      "id": "pHFh",
+      "id": "aqbW",
       "code_hash": "115f927dba8c6aeca7b70fd70241cbd2",
       "outputs": [],
       "console": []
     },
     {
-      "id": "NCOB",
+      "id": "TRpd",
       "code_hash": "e4901566dea088abcd848af77c3065e4",
       "outputs": [
         {
@@ -393,7 +323,7 @@
       "console": []
     },
     {
-      "id": "aqbW",
+      "id": "TXez",
       "code_hash": "ebb70508c0cf72687684ca563c5cff73",
       "outputs": [
         {
@@ -406,7 +336,7 @@
       "console": []
     },
     {
-      "id": "TRpd",
+      "id": "dNNg",
       "code_hash": "f9d57717adb6e564a63b5cc2e9328347",
       "outputs": [
         {
@@ -419,13 +349,13 @@
       "console": []
     },
     {
-      "id": "TXez",
+      "id": "yCnT",
       "code_hash": "a7a045188ff812dcfd591dc44c884e1b",
       "outputs": [],
       "console": []
     },
     {
-      "id": "dNNg",
+      "id": "wlCL",
       "code_hash": "3333b99655f08cbaf1c0e5a89439309d",
       "outputs": [
         {
@@ -438,7 +368,7 @@
       "console": []
     },
     {
-      "id": "yCnT",
+      "id": "kqZH",
       "code_hash": "9036d2c3b1e700b17481fe8d9640a47a",
       "outputs": [
         {
@@ -451,7 +381,7 @@
       "console": []
     },
     {
-      "id": "wlCL",
+      "id": "wAgl",
       "code_hash": "78ee299d1182f7ed622a5146c5c7bd34",
       "outputs": [
         {
@@ -464,7 +394,7 @@
       "console": []
     },
     {
-      "id": "kqZH",
+      "id": "rEll",
       "code_hash": "d8862f074f20a51b92cd84ace1475881",
       "outputs": [
         {
