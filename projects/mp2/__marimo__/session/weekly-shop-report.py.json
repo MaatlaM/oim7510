@@ -110,6 +110,188 @@
       "console": []
     },
     {
+      "id": "AeLn",
+      "code_hash": "afaab5f057a228451c1659bc6adfd8dc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "tBNY",
+      "code_hash": "08e9458c245f7d6448539ff021546488",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"text/plain:2026-10-22\", \"text/plain:2026-10-28\"]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "mSSw",
+      "code_hash": "061406adeaefa653baa0b1d53c8f1505",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Fetch One Page</strong></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "FtGE",
+      "code_hash": "4278e13cf644b8a09967aa770d869cf0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "gopM",
+      "code_hash": "7f44f7cf5236ee39b117cc82e2a932ff",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Fetch Every Page</strong></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "dBqa",
+      "code_hash": "af6ad657db6bef18dde26683a7777f1d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "AUXG",
+      "code_hash": "0248420736530dc3b0e7f1c523aab82c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Fetch One Order's Lines</strong></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "WMpy",
+      "code_hash": "b247d9849782fc1c0e4e6b398e87f03a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vWgM",
+      "code_hash": "b38362455b9792d4b53635616dc23140",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Calculate The Results</strong></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ipNK",
+      "code_hash": "6147b05d34b6dc789d87d40114e8c562",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "dMDi",
+      "code_hash": "20ed4ac1cdf0b9812efc79af33994937",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Brief Notes</span>\n<span class=\"paragraph\"><strong>.get(country, 0) </strong>returns the running total so far for a country from the dictionary. If it is the first time a country appears, it uses 0 as the starting value.</span>\n<span class=\"paragraph\"><strong>sorted(..., key=units_by_product.get, reverse=True) </strong>orders the product names by how many units of each product were sold, largest first, and <strong>[:5] </strong>keeps the top five.</span>\n<span class=\"paragraph\"><strong>not order[\"shipped_date\"] </strong>is true when the shipped date is null (which becomes None in Python) or an empty string. It checks whether the order has a shipping date. If it doesn't, then the order has not shipped yet.</span>\n<span class=\"paragraph\">The function returns everything as one dictionary, so section 5 can pick out each part.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "JyTN",
+      "code_hash": "bef4946bc3e3d15c80a755036fc120df",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Use The Functions</strong></span>\n<span class=\"paragraph\">The functions are used to fetch the orders and their lines, and build the report.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TFfb",
+      "code_hash": "1be470679bfbd524e7f9c0f4493129e6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "jMeV",
+      "code_hash": "ce3ef08c0bcf15ca3b677b421f1e3330",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">First, collect all orders for the date range and get the reported total number of orders. </span>\n<span class=\"paragraph\">Then, go through each order, retrieve its details, and collect its product lines into one list. </span>\n<span class=\"paragraph\">Finally, pass the orders and product lines to <strong>build_report()</strong> to calculate the report results.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "nzyK",
       "code_hash": "7170c7207586648cbebcd62d39336366",
       "outputs": [
@@ -190,7 +372,14 @@
     {
       "id": "DvdG",
       "code_hash": null,
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     }
   ]

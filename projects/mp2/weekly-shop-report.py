@@ -116,7 +116,7 @@ def _():
     days = 7
     per_page = 50
     base_url = "https://oim.zhili.dev"
-    return
+    return base_url, days, per_page
 
 
 @app.cell(hide_code=True)
@@ -125,6 +125,180 @@ def _(mo):
     #4. The Work.
 
     Your functions, and the code that uses them.
+    """)
+    return
+
+
+@app.cell
+def _():
+    import requests
+    from datetime import date, timedelta
+
+    return date, requests, timedelta
+
+
+@app.cell
+def _(date, days, timedelta):
+    end_date = date.today()
+    start_date = end_date - timedelta(days=days - 1)
+    start_date, end_date
+    return end_date, start_date
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **Fetch One Page**
+    """)
+    return
+
+
+@app.cell
+def _(base_url, per_page, requests):
+    def get_orders(from_date, to_date, page):
+        reply = requests.get(
+            f"{base_url}/shop/orders",
+            params={
+                "from_date": str(from_date),
+                "to_date": str(to_date),
+                "page": page,
+                "per_page": per_page,
+            },
+            timeout=30,
+        )
+        reply.raise_for_status()
+        return reply.json()
+
+    return (get_orders,)
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **Fetch Every Page**
+    """)
+    return
+
+
+@app.cell
+def _(get_orders):
+    def get_all_orders(from_date, to_date):
+        orders = []
+        page = 1
+        while True:
+            data = get_orders(from_date, to_date, page)
+            orders.extend(data["items"])
+            if not data["pagination"]["has_next"]:
+                return orders, data["pagination"]["total"]
+            page += 1
+
+    return (get_all_orders,)
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **Fetch One Order's Lines**
+    """)
+    return
+
+
+@app.cell
+def _(base_url, requests):
+    def get_order_details(order_id):
+        reply = requests.get(f"{base_url}/shop/orders/{order_id}", timeout=30)
+        reply.raise_for_status()
+        return reply.json()
+
+    return (get_order_details,)
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **Calculate The Results**
+    """)
+    return
+
+
+@app.function
+def build_report(orders, lines):
+    revenue = 0
+    revenue_by_country = {}
+    for order in orders:
+        total = order["order_total_dollars"]
+        country = order["ship_country"]
+        revenue = revenue + total
+        revenue_by_country[country] = revenue_by_country.get(country, 0) + total
+
+    units_by_product = {}
+    for line in lines:
+        name = line["product_name"]
+        units_by_product[name] = units_by_product.get(name, 0) + line["quantity"]
+
+    top_products = sorted(units_by_product, key=units_by_product.get, reverse=True)[:5]
+
+    unshipped = []
+    for order in orders:
+        if not order["shipped_date"]:
+            unshipped.append(order)
+
+    return {
+        "order_count": len(orders),
+        "revenue": round(revenue, 2),
+        "revenue_by_country": revenue_by_country,
+        "top_products": [(name, units_by_product[name]) for name in top_products],
+        "unshipped": unshipped,
+    }
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    Brief Notes
+
+    **.get(country, 0) **returns the running total so far for a country from the dictionary. If it is the first time a country appears, it uses 0 as the starting value.
+
+    **sorted(..., key=units_by_product.get, reverse=True) **orders the product names by how many units of each product were sold, largest first, and **[:5] **keeps the top five.
+
+    **not order["shipped_date"] **is true when the shipped date is null (which becomes None in Python) or an empty string. It checks whether the order has a shipping date. If it doesn't, then the order has not shipped yet.
+
+    The function returns everything as one dictionary, so section 5 can pick out each part.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **Use The Functions**
+
+    The functions are used to fetch the orders and their lines, and build the report.
+    """)
+    return
+
+
+@app.cell
+def _(end_date, get_all_orders, get_order_details, start_date):
+    orders, reported_total = get_all_orders(start_date, end_date)
+
+    lines = []
+    for _order in orders:
+        _details = get_order_details(_order["order_id"])
+        lines.extend(_details["lines"])
+
+    report = build_report(orders, lines)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    First, collect all orders for the date range and get the reported total number of orders.
+
+    Then, go through each order, retrieve its details, and collect its product lines into one list.
+
+    Finally, pass the orders and product lines to **build_report()** to calculate the report results.
     """)
     return
 
