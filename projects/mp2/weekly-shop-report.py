@@ -288,7 +288,7 @@ def _(end_date, get_all_orders, get_order_details, start_date):
         lines.extend(_details["lines"])
 
     report = build_report(orders, lines)
-    return (report,)
+    return orders, report, reported_total
 
 
 @app.cell(hide_code=True)
@@ -366,6 +366,45 @@ def _(mo):
     #6. How I Know These Numbers Are Right.
 
     Reach at least one result a second way, in this notebook, and show that the two agree. Write a cell that gets the same number from other fields, or open the raw reply in your browser and find each number of one row of your table there. For instance: an average bill is close to the average value times the tax rate divided by 1,000; an order's total equals the sum of its lines; the number of records you collected equals the total the API reports.
+    """)
+    return
+
+
+@app.cell
+def _(get_order_details, orders, report, reported_total):
+    # Check 1: orders collected vs. the API's total
+    print(f"Orders collected: {len(orders)}   API total: {reported_total}   "
+          f"Agree: {len(orders) == reported_total}")
+
+    # Check 2: revenue by country adds up to total revenue
+    _country_sum = round(sum(report["revenue_by_country"].values()), 2)
+    print(f"Sum of countries: ${_country_sum:,.2f}   Total revenue: ${report['revenue']:,.2f}   "
+          f"Agree: {abs(_country_sum - report['revenue']) < 0.01}")
+
+    # Check 3: one order's total equals the sum of its lines
+    _check = get_order_details(orders[0]["order_id"])
+    _line_sum = round(sum(line["line_total_dollars"] for line in _check["lines"]), 2)
+    print(f"Order {_check['order_id']}: total ${_check['order_total_dollars']:,.2f}   "
+          f"sum of lines ${_line_sum:,.2f}   "
+          f"Agree: {abs(_line_sum - _check['order_total_dollars']) < 0.01}")
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **Brief Notes**
+
+    Check 1 confirms the pagination loop collected every order.
+
+    Check 2 confirms the revenue calculations are consistent: adding up the countries gives back the total.
+    Check 3 reaches a number a second way, using a different source: the order’s total from the API against the sum of its individual lines. This is one of the brief’s own examples.
+
+    abs(a - b) < 0.01 counts two amounts as equal when they’re less than a cent apart, because rounding can leave tiny differences.
+
+    When I ran the report on 28 October 2026, all three checks passed. First, the number of orders collected was 37, which matched the API's reported total of 37. Second, the revenue by country added up to $919,557.03, matching the total revenue of $919,557.03. Third, order 20700 had an order total of $45,714.84, which matched the sum of its individual product lines at $45,714.84. Order 20700 also had $327.75 in freight, so the match confirms that order_total_dollars excludes freight.
+
+    Since all three checks agree, this gives me confidence that I collected all the orders and that the revenue calculations are consistent with the API data.
     """)
     return
 

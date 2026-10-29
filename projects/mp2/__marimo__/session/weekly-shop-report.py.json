@@ -351,6 +351,39 @@
       "console": []
     },
     {
+      "id": "gMaA",
+      "code_hash": "48f2edd43bcf547bc677cf08dd6cbbaf",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Orders collected: 37   API total: 37   Agree: True\nSum of countries: $919,557.03   Total revenue: $919,557.03   Agree: True\nOrder 20700: total $45,714.84   sum of lines $45,714.84   Agree: True\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "GtPK",
+      "code_hash": "f560246f71b0a5f9e33b8b8ddc0904c3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Brief Notes</strong></span>\n<span class=\"paragraph\">Check 1 confirms the pagination loop collected every order.</span>\n<span class=\"paragraph\">Check 2 confirms the revenue calculations are consistent: adding up the countries gives back the total.\nCheck 3 reaches a number a second way, using a different source: the order\u2019s total from the API against the sum of its individual lines. This is one of the brief\u2019s own examples.</span>\n<span class=\"paragraph\">abs(a - b) &lt; 0.01 counts two amounts as equal when they\u2019re less than a cent apart, because rounding can leave tiny differences.</span>\n<span class=\"paragraph\">When I ran the report on 28 October 2026, all three checks passed. First, the number of orders collected was 37, which matched the API's reported total of 37. Second, the revenue by country added up to $919,557.03, matching the total revenue of $919,557.03. Third, order 20700 had an order total of $45,714.84, which matched the sum of its individual product lines at $45,714.84. Order 20700 also had $327.75 in freight, so the match confirms that order_total_dollars excludes freight.</span>\n<span class=\"paragraph\">Since all three checks agree, this gives me confidence that I collected all the orders and that the revenue calculations are consistent with the API data.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "qaoC",
       "code_hash": "12f598550701f8f02326f570917ed7b2",
       "outputs": [
