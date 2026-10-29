@@ -69,6 +69,116 @@
         }
       ],
       "console": []
+    },
+    {
+      "id": "kSUw",
+      "code_hash": "fce44226863ef738dbdaeb1e17b45e97",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"3-inputs\">3. Inputs.</h1>\n<span class=\"paragraph\">Every input in one cell.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "gqNk",
+      "code_hash": "02d5fba8d3922f43ac203841c6b685da",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"4-the-work\">4. The Work.</h1>\n<span class=\"paragraph\">Your functions, and the code that uses them.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nzyK",
+      "code_hash": "7170c7207586648cbebcd62d39336366",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"5-the-answer\">5. The Answer.</h1>\n<span class=\"paragraph\">Your result table, printed with print and f-strings with the columns lined up, and one sentence that answers the question in section 1 with the numbers in it. Print the sentence from code with an f-string, so that it changes when the data does.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MARQ",
+      "code_hash": "d9be13febcf2fdf16999b36da1ad8259",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"6-how-i-know-these-numbers-are-right\">6. How I Know These Numbers Are Right.</h1>\n<span class=\"paragraph\">Reach at least one result a second way, in this notebook, and show that the two agree. Write a cell that gets the same number from other fields, or open the raw reply in your browser and find each number of one row of your table there. For instance: an average bill is close to the average value times the tax rate divided by 1,000; an order's total equals the sum of its lines; the number of records you collected equals the total the API reports.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "qaoC",
+      "code_hash": "12f598550701f8f02326f570917ed7b2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"7-working-with-the-agent\">7. Working With the Agent.</h1>\n<span class=\"paragraph\">Pick one piece of AI output you did not accept as-is. What did it give you, what did you change, and how did you know? Point to the commit or the cell. If the agent got it right the first time: What did you do to verify that? Pointing to your check in section 6 is enough.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "yzHN",
+      "code_hash": "cf6fa239e874ac898c576e1a79546e61",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"8-reading-it-back\">8. Reading It Back.</h1>\n<span class=\"paragraph\">Pick two functions in your notebook that your agent wrote or helped write. For each, write in your own words what goes in, what comes out, and one line you had to ask about. Then choose one change to what the tool does, such as another county, another week or another rule. Changing one value in your Inputs cell is enough. Write what you expect to change in the answer. Commit with the message mp2: prediction, make the change, run it, and write what happened and whether it matched.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZmrE",
+      "code_hash": "8bf68358d8f0a7c6d2a78a38faad95b8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"9-going-further\">9. Going Further.</h1>\n<span class=\"paragraph\">What you tried past the main task, what you found, and where it is in the notebook.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "UZSb",
+      "code_hash": "e36bffab1731727ed6813c0edf818fa5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"10-time-spent\">10. Time Spent.</h1>\n<span class=\"paragraph\">About how many hours this project took you outside class, as one number. It is not graded.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "DvdG",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
     }
   ]
 }
