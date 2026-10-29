@@ -7,8 +7,67 @@
   "cells": [
     {
       "id": "Hbol",
-      "code_hash": null,
-      "outputs": [],
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "GlmJ",
+      "code_hash": "776e2a29a5538aeedf0ae9a7c83a3985",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"1-the-question\">1. The Question.</h1>\n<span class=\"paragraph\">Who would use this, and what decision does it help them make? Two or three sentences, in words somebody outside this course would understand.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "uDQg",
+      "code_hash": "ec85f50f433d1e1fe40111d92a8c879b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">The operations manager at Northwind Traders needs a weekly report covering the seven days ending today, including today. The report will show the number of orders, total revenue, revenue by shipping country, the top five products by units sold, and orders that have not shipped yet. It will help the manager understand the week's performance and identify any shipping delays. The report will change depending on the day it is run.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "OLne",
+      "code_hash": "26063e5fde46705c515cb59dcbcebe21",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"2-my-plan-before-ai\">2. My Plan Before AI.</h1>\n<span class=\"paragraph\">Before you ask your agent anything, open the API's address in your browser and read what comes back. Then write how you would solve it: the steps, in order, in plain words, in five lines or more. Then answer these:</span>\n<ul>\n<li>Which functions will your tool need? For each, what goes in and what comes out?</li>\n<li>Which addresses will they request?</li>\n<li>How will you know you have every record?</li>\n<li>Which check will you use in section 6, and which two numbers should agree?.</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PAeq",
+      "code_hash": "81411921fba67b3473b7f31aa29f915e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>What the API returns</strong></span>\n<span class=\"paragraph\">From the API results, I found that /shop/orders returns the orders under items. The response also includes a pagination section with page, per_page, total, pages, and has_next, which tells me how many orders there are and whether more pages need to be collected.</span>\n<span class=\"paragraph\"><strong>I would approach the task in the following steps:</strong></span>\n<ol>\n<li>From the API results, I found that /shop/orders returns the orders under items. The response also includes a pagination section with page, per_page, total, pages, and has_next, which tells me how many orders there are and whether more pages need to be collected.</li>\n<li>Use date.today() to get today's date. The start date will be today minus six days, and the end date will be today. For example, if I run the report on 28 October 2026, the date range will be 22\u201328 October 2026.</li>\n<li>Request /shop/orders using the start and end dates to retrieve orders placed during that period.</li>\n<li>Collect every page of orders by requesting the next page while has_next is true. The current response has total: 37, per_page: 50, and pages: 1, so all 37 orders fit on one page. If the API allows a smaller per_page value, I would also test with a smaller page size to check that the loop correctly collects multiple pages.</li>\n<li>Use /shop/orders/{order_id} to retrieve the product lines for each order. The order list already contains order_total_dollars, ship_country, and shipped_date, so I mainly need the second endpoint to get each product's name and quantity.</li>\n<li>Calculate the report's results:</li>\n</ol>\n<ul>\n<li>Order count: Count the orders collected.</li>\n<li>Total revenue: Add the order_total_dollars values. This excludes freight_dollars.</li>\n<li>Revenue by country: Use a dictionary to add each order's order_total_dollars to the total for its ship_country.</li>\n<li>Top five products: Use a dictionary to add up quantity for each product_name across all order lines, then select the five products with the highest totals.</li>\n<li>Unshipped orders: Identify orders where shipped_date is null. For example, order 15630 has a shipped date, while several orders in the list show null.</li>\n</ul>\n<ol start=\"7\">\n<li>Put the results into a report and write one sentence summarizing the week's performance for the operations manager.</li>\n</ol>\n<span class=\"paragraph\"><strong>Which functions will my tool need?</strong></span>\n<ul>\n<li>get_orders(from_date, to_date, page) \u2014 takes the date range and page number as inputs and returns one page of orders.</li>\n<li>get_all_orders(from_date, to_date) \u2014 calls get_orders repeatedly until has_next is false, then returns all orders for the date range.</li>\n<li>get_order_details(order_id) \u2014 takes an order ID as input and returns the order's details and product lines.</li>\n<li>build_report(orders, lines) \u2014 takes the collected orders and their product lines from get_order_details, and returns the report\u2019s results.</li>\n</ul>\n<span class=\"paragraph\"><strong>Which endpoints will they request?</strong></span>\n<ul>\n<li>/shop/orders \u2014 retrieves orders for the date range and provides pagination information.</li>\n<li>/shop/orders/{order_id} \u2014 retrieves an individual order's product lines, including product names and quantities.</li>\n</ul>\n<span class=\"paragraph\"><strong>How will I know I have every record?</strong></span>\n<span class=\"paragraph\">I will compare the number of orders collected across all pages with the API's pagination.total. The numbers should agree. When I ran it on 28 October 2026, both numbers were 37.</span>\n<span class=\"paragraph\"><strong>Which checks will I use in Section 6?</strong></span>\n<span class=\"paragraph\">I will use two checks:</span>\n<ol>\n<li>Order count check: The number of orders collected should equal pagination.total (both were 37 when I ran it on 28 October 2026).</li>\n<li>Revenue check: The sum of revenue across all shipping countries should equal the total revenue for the week.</li>\n</ol>\n<span class=\"paragraph\">The first check helps confirm that I collected all the orders, while the second helps confirm that my revenue calculations are consistent.</span></span>"
+          }
+        }
+      ],
       "console": []
     }
   ]
