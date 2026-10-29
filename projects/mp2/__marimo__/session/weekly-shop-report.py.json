@@ -129,7 +129,7 @@
         {
           "type": "data",
           "data": {
-            "application/json": "[\"text/plain:2026-10-22\", \"text/plain:2026-10-28\"]"
+            "application/json": "[\"text/plain:2026-10-23\", \"text/plain:2026-10-29\"]"
           }
         }
       ],
@@ -319,7 +319,7 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "Northwind Traders, 2026-10-22 to 2026-10-28\nOrders: 37    Revenue: $919,557.03\n\nCountry            Revenue ($)\nBrazil              187,099.01\nFrance              173,294.12\nVenezuela           132,697.50\nGermany             110,337.17\nUSA                  83,473.77\nMexico               74,595.43\nBelgium              45,714.84\nCanada               38,775.20\nFinland              31,448.86\nAustria              23,536.94\nSpain                12,859.50\nPoland                5,130.45\nSwitzerland             414.24\nPortugal                180.00\n\nProduct                                Units\nTh\u00fcringer Rostbratwurst                  575\nGravad lax                               566\nTarte au sucre                           552\nQueso Manchego La Pastora                540\nLakkalik\u00f6\u00f6ri                             538\n\nOrder   Customer                            Country          Required by\n20909   LINO-Delicateses                    USA               2026-10-24\n22521   La corne d'abondance                Germany           2026-10-30\n24521   Reggiani Caseifici                  Brazil            2026-10-30\n14298   Frankenversand                      Germany           2026-10-30\n12487   Rancho grande                       Portugal          2026-10-31\n20570   Wellington Importadora              Brazil            2026-10-31\n12223   Piccolo und mehr                    USA               2026-11-03\n20700   Com\u00e9rcio Mineiro                    Belgium           2026-11-04\n15770   Great Lakes Food Market             France            2026-11-06\n21688   Queen Cozinha                       France            2026-11-07\n25203   Cactus Comidas para llevar          Mexico            2026-11-07\n15415   Antonio Moreno Taquer\u00eda             Venezuela         2026-11-08\n17181   Ricardo Adocicados                  Brazil            2026-11-09\n17049   Lazy K Kountry Store                Brazil            2026-11-09\n18868   Simons bistro                       Germany           2026-11-17\n17257   Com\u00e9rcio Mineiro                    Brazil            2026-11-17\n23276   K\u00f6niglich Essen                     Mexico            2026-11-19\n17538   Godos Cocina T\u00edpica                 France            2026-11-20\n22275   M\u00e8re Paillarde                      Canada            2026-11-22\n21646   IT                                  USA               2026-11-27\n22333   Consolidated Holdings               Finland           2026-12-01\n26403   Wellington Importadora              France            2026-12-01\n25730   Old World Delicatessen              Venezuela         2026-12-10\n13034   FISSA Fabrica Inter. Salchichas S.A.France            2026-12-18\n\nIn the 7 days from 2026-10-22 to 2026-10-28, Northwind received 37 orders worth $919,557.03, led by Brazil ($187,099.01); the top seller was Th\u00fcringer Rostbratwurst (575 units), and 24 orders have not shipped yet.\n",
+          "text": "Northwind Traders, 2026-10-23 to 2026-10-29\nOrders: 36    Revenue: $916,813.38\n\nCountry            Revenue ($)\nBrazil              187,099.01\nFrance              173,294.12\nVenezuela           132,697.50\nGermany             110,337.17\nUSA                  80,730.12\nMexico               74,595.43\nBelgium              45,714.84\nCanada               38,775.20\nFinland              31,448.86\nAustria              23,536.94\nSpain                12,859.50\nPoland                5,130.45\nSwitzerland             414.24\nPortugal                180.00\n\nProduct                                Units\nTh\u00fcringer Rostbratwurst                  575\nGravad lax                               566\nTarte au sucre                           552\nQueso Manchego La Pastora                540\nFilo Mix                                 533\n\nOrder   Customer                            Country          Required by\n20909   LINO-Delicateses                    USA               2026-10-24\n22521   La corne d'abondance                Germany           2026-10-30\n24521   Reggiani Caseifici                  Brazil            2026-10-30\n14298   Frankenversand                      Germany           2026-10-30\n12487   Rancho grande                       Portugal          2026-10-31\n20570   Wellington Importadora              Brazil            2026-10-31\n12223   Piccolo und mehr                    USA               2026-11-03\n20700   Com\u00e9rcio Mineiro                    Belgium           2026-11-04\n15770   Great Lakes Food Market             France            2026-11-06\n21688   Queen Cozinha                       France            2026-11-07\n25203   Cactus Comidas para llevar          Mexico            2026-11-07\n15415   Antonio Moreno Taquer\u00eda             Venezuela         2026-11-08\n17181   Ricardo Adocicados                  Brazil            2026-11-09\n17049   Lazy K Kountry Store                Brazil            2026-11-09\n18868   Simons bistro                       Germany           2026-11-17\n17257   Com\u00e9rcio Mineiro                    Brazil            2026-11-17\n23276   K\u00f6niglich Essen                     Mexico            2026-11-19\n17538   Godos Cocina T\u00edpica                 France            2026-11-20\n22275   M\u00e8re Paillarde                      Canada            2026-11-22\n22333   Consolidated Holdings               Finland           2026-12-01\n26403   Wellington Importadora              France            2026-12-01\n25730   Old World Delicatessen              Venezuela         2026-12-10\n13034   FISSA Fabrica Inter. Salchichas S.A.France            2026-12-18\n\nIn the 7 days from 2026-10-23 to 2026-10-29, Northwind received 36 orders worth $916,813.38, led by Brazil ($187,099.01); the top seller was Th\u00fcringer Rostbratwurst (575 units), and 23 orders have not shipped yet.\n",
           "mimetype": "text/plain"
         }
       ]
@@ -365,7 +365,7 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "Orders collected: 37   API total: 37   Agree: True\nSum of countries: $919,557.03   Total revenue: $919,557.03   Agree: True\nOrder 20700: total $45,714.84   sum of lines $45,714.84   Agree: True\n",
+          "text": "Orders collected: 36   API total: 36   Agree: True\nSum of countries: $916,813.38   Total revenue: $916,813.38   Agree: True\nOrder 20700: total $45,714.84   sum of lines $45,714.84   Agree: True\n",
           "mimetype": "text/plain"
         }
       ]
@@ -469,6 +469,39 @@
           "type": "data",
           "data": {
             "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"9-going-further\">9. Going Further.</h1>\n<span class=\"paragraph\">What you tried past the main task, what you found, and where it is in the notebook.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "LHpK",
+      "code_hash": "b363305f5c80032db839812099215f18",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Order   Customer                                Country          Required by  Days late\n20909   LINO-Delicateses                        USA               2026-10-24          5\n\n1 of the 23 unshipped orders are past their required date, worth $3,779.20; the most overdue is order 20909 (LINO-Delicateses), 5 days late.\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "ptJO",
+      "code_hash": "77f4e672460bd063688344e771379c2d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">I added an overdue-orders check to identify unshipped orders that had passed their required dates and calculate how many days late they were. In the 7-day report, 1 of 24 unshipped orders was overdue, worth $3,779.20. This was order 20909 (LINO-Delicateses), which was 4 days late. In the 14-day report, 6 of 35 unshipped orders were overdue, worth $181,335.73. The most overdue was order 12259 (Supr\u00eames d\u00e9lices), which was 7 days late.</span>\n<span class=\"paragraph\">I verified order 12259 by opening its details in the browser and confirming that <strong>shipped_date</strong> was <strong>null</strong> and its required date was October 21, 2026.</span>\n<span class=\"paragraph\">One limitation is that the check only looks at orders placed within the report date range. It could miss older orders that are still unshipped and overdue, even though a manager would want to know about them. The code is in the cell directly below the main heading in Section 9 of the notebook.</span></span>"
           }
         }
       ],

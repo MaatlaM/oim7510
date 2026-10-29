@@ -506,6 +506,46 @@ def _(mo):
     return
 
 
+@app.cell
+def _(date, end_date, report):
+    _overdue = sorted(
+        [o for o in report["unshipped"] if o["required_date"][:10] < str(end_date)],
+        key=lambda o: o["required_date"],
+    )
+
+    print(f"{'Order':<8}{'Customer':<40}{'Country':<16}{'Required by':>12}{'Days late':>11}")
+    for _o in _overdue:
+        _due = date.fromisoformat(_o["required_date"][:10])
+        print(f"{_o['order_id']:<8}{_o['customer_name']:<40}{_o['ship_country']:<16}"
+              f"{_o['required_date'][:10]:>12}{(end_date - _due).days:>11}")
+    print()
+
+    if _overdue:
+        _value = sum(o["order_total_dollars"] for o in _overdue)
+        _worst = _overdue[0]
+        _worst_days = (end_date - date.fromisoformat(_worst["required_date"][:10])).days
+        print(
+            f"{len(_overdue)} of the {len(report['unshipped'])} unshipped orders are past their "
+            f"required date, worth ${_value:,.2f}; the most overdue is order "
+            f"{_worst['order_id']} ({_worst['customer_name']}), {_worst_days} days late."
+        )
+    else:
+        print("No unshipped orders are past their required date.")
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    I added an overdue-orders check to identify unshipped orders that had passed their required dates and calculate how many days late they were. In the 7-day report, 1 of 24 unshipped orders was overdue, worth $3,779.20. This was order 20909 (LINO-Delicateses), which was 4 days late. In the 14-day report, 6 of 35 unshipped orders were overdue, worth $181,335.73. The most overdue was order 12259 (Suprêmes délices), which was 7 days late.
+
+    I verified order 12259 by opening its details in the browser and confirming that **shipped_date** was **null** and its required date was October 21, 2026.
+
+    One limitation is that the check only looks at orders placed within the report date range. It could miss older orders that are still unshipped and overdue, even though a manager would want to know about them. The code is in the cell directly below the main heading in Section 9 of the notebook.
+    """)
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
