@@ -305,6 +305,39 @@
       "console": []
     },
     {
+      "id": "Sgxq",
+      "code_hash": "830ed648d774a34a41835aab162b7a8e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Northwind Traders, 2026-10-22 to 2026-10-28\nOrders: 37    Revenue: $919,557.03\n\nCountry            Revenue ($)\nBrazil              187,099.01\nFrance              173,294.12\nVenezuela           132,697.50\nGermany             110,337.17\nUSA                  83,473.77\nMexico               74,595.43\nBelgium              45,714.84\nCanada               38,775.20\nFinland              31,448.86\nAustria              23,536.94\nSpain                12,859.50\nPoland                5,130.45\nSwitzerland             414.24\nPortugal                180.00\n\nProduct                                Units\nTh\u00fcringer Rostbratwurst                  575\nGravad lax                               566\nTarte au sucre                           552\nQueso Manchego La Pastora                540\nLakkalik\u00f6\u00f6ri                             538\n\nOrder   Customer                            Country          Required by\n20909   LINO-Delicateses                    USA               2026-10-24\n22521   La corne d'abondance                Germany           2026-10-30\n24521   Reggiani Caseifici                  Brazil            2026-10-30\n14298   Frankenversand                      Germany           2026-10-30\n12487   Rancho grande                       Portugal          2026-10-31\n20570   Wellington Importadora              Brazil            2026-10-31\n12223   Piccolo und mehr                    USA               2026-11-03\n20700   Com\u00e9rcio Mineiro                    Belgium           2026-11-04\n15770   Great Lakes Food Market             France            2026-11-06\n21688   Queen Cozinha                       France            2026-11-07\n25203   Cactus Comidas para llevar          Mexico            2026-11-07\n15415   Antonio Moreno Taquer\u00eda             Venezuela         2026-11-08\n17181   Ricardo Adocicados                  Brazil            2026-11-09\n17049   Lazy K Kountry Store                Brazil            2026-11-09\n18868   Simons bistro                       Germany           2026-11-17\n17257   Com\u00e9rcio Mineiro                    Brazil            2026-11-17\n23276   K\u00f6niglich Essen                     Mexico            2026-11-19\n17538   Godos Cocina T\u00edpica                 France            2026-11-20\n22275   M\u00e8re Paillarde                      Canada            2026-11-22\n21646   IT                                  USA               2026-11-27\n22333   Consolidated Holdings               Finland           2026-12-01\n26403   Wellington Importadora              France            2026-12-01\n25730   Old World Delicatessen              Venezuela         2026-12-10\n13034   FISSA Fabrica Inter. Salchichas S.A.France            2026-12-18\n\nIn the 7 days from 2026-10-22 to 2026-10-28, Northwind received 37 orders worth $919,557.03, led by Brazil ($187,099.01); the top seller was Th\u00fcringer Rostbratwurst (575 units), and 24 orders have not shipped yet.\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "pUkS",
+      "code_hash": "3c4005c4089ef603a6398baa81b36377",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Brief Notes</strong></span>\n<span class=\"paragraph\">This code organizes and prints the weekly report. First, it sorts countries by revenue, from highest to lowest. It then prints the date range, total number of orders, total revenue, revenue by country, and the top five products by units sold. Next, it lists unshipped orders, sorting them by required date so that orders due soonest appear first. Finally, it prints a one-sentence summary of the week's results, including the order count, total revenue, leading country, best-selling product, and number of orders that have not shipped yet.</span>\n<span class=\"paragraph\">Why sort the unshipped orders? </span>\n<span class=\"paragraph\">The API returns orders newest first, but the newest orders are not necessarily the most urgent. Sorting by <strong>required_date</strong> puts the orders due soonest at the top, helping the manager see which shipments need attention first.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "MARQ",
       "code_hash": "d9be13febcf2fdf16999b36da1ad8259",
       "outputs": [

@@ -288,7 +288,7 @@ def _(end_date, get_all_orders, get_order_details, start_date):
         lines.extend(_details["lines"])
 
     report = build_report(orders, lines)
-    return
+    return (report,)
 
 
 @app.cell(hide_code=True)
@@ -308,6 +308,54 @@ def _(mo):
     mo.md(r"""
     #5. The Answer.
     Your result table, printed with print and f-strings with the columns lined up, and one sentence that answers the question in section 1 with the numbers in it. Print the sentence from code with an f-string, so that it changes when the data does.
+    """)
+    return
+
+
+@app.cell
+def _(days, end_date, report, start_date):
+    _countries = sorted(report["revenue_by_country"].items(), key=lambda pair: pair[1], reverse=True)
+
+    print(f"Northwind Traders, {start_date} to {end_date}")
+    print(f"Orders: {report['order_count']}    Revenue: ${report['revenue']:,.2f}")
+    print()
+
+    print(f"{'Country':<16}{'Revenue ($)':>14}")
+    for _country, _rev in _countries:
+        print(f"{_country:<16}{_rev:>14,.2f}")
+    print()
+
+    print(f"{'Product':<36}{'Units':>8}")
+    for _name, _units in report["top_products"]:
+        print(f"{_name:<36}{_units:>8}")
+    print()
+
+    print(f"{'Order':<8}{'Customer':<36}{'Country':<16}{'Required by':>12}")
+    for _o in sorted(report["unshipped"], key=lambda o: o["required_date"]):
+        print(f"{_o['order_id']:<8}{_o['customer_name']:<36}{_o['ship_country']:<16}{_o['required_date'][:10]:>12}")
+    print()
+
+    _top_name, _top_units = report["top_products"][0]
+    _lead_country, _lead_rev = _countries[0]
+    print(
+        f"In the {days} days from {start_date} to {end_date}, Northwind received "
+        f"{report['order_count']} orders worth ${report['revenue']:,.2f}, led by "
+        f"{_lead_country} (${_lead_rev:,.2f}); the top seller was {_top_name} "
+        f"({_top_units} units), and {len(report['unshipped'])} orders have not shipped yet."
+    )
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **Brief Notes**
+
+    This code organizes and prints the weekly report. First, it sorts countries by revenue, from highest to lowest. It then prints the date range, total number of orders, total revenue, revenue by country, and the top five products by units sold. Next, it lists unshipped orders, sorting them by required date so that orders due soonest appear first. Finally, it prints a one-sentence summary of the week's results, including the order count, total revenue, leading country, best-selling product, and number of orders that have not shipped yet.
+
+    Why sort the unshipped orders?
+
+    The API returns orders newest first, but the newest orders are not necessarily the most urgent. Sorting by **required_date** puts the orders due soonest at the top, helping the manager see which shipments need attention first.
     """)
     return
 
