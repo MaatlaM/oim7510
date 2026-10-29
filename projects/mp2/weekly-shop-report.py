@@ -482,7 +482,7 @@ def _(mo):
     mo.md(r"""
     ## Section 8: Comparing My Predictions with the Results
 
-    The date range matched my prediction: October 15–28, 2026. I predicted around 74 orders, but the report showed 57, so my order-count prediction did not match. The first week had 20 orders and the second had 37.
+    The date range matched my prediction: 15–28 October, 2026. I predicted around 74 orders, but the report showed 57, so my order-count prediction did not match. The first week had 20 orders and the second had 37.
 
     Revenue was $1,427,416.44. This matched my prediction that revenue would increase, but not necessarily double. The average order value also stayed similar, at $24,853 over seven days and $25,042 over 14 days.
 
@@ -557,6 +557,7 @@ def _(mo):
 
 @app.cell
 def _():
+    28
     return
 
 

@@ -19,8 +19,8 @@
       "console": []
     },
     {
-      "id": "GlmJ",
-      "code_hash": "776e2a29a5538aeedf0ae9a7c83a3985",
+      "id": "MJUe",
+      "code_hash": "5dbda81620442edde0bf96980da7c924",
       "outputs": [
         {
           "type": "data",
@@ -32,7 +32,7 @@
       "console": []
     },
     {
-      "id": "uDQg",
+      "id": "vblA",
       "code_hash": "ec85f50f433d1e1fe40111d92a8c879b",
       "outputs": [
         {
@@ -45,8 +45,8 @@
       "console": []
     },
     {
-      "id": "OLne",
-      "code_hash": "26063e5fde46705c515cb59dcbcebe21",
+      "id": "bkHC",
+      "code_hash": "e7f6ef597e1b35afaa8354588585fb07",
       "outputs": [
         {
           "type": "data",
@@ -58,8 +58,8 @@
       "console": []
     },
     {
-      "id": "PAeq",
-      "code_hash": "81411921fba67b3473b7f31aa29f915e",
+      "id": "lEQa",
+      "code_hash": "439f880ad70031b65cd5682cb8cdb69d",
       "outputs": [
         {
           "type": "data",
@@ -71,8 +71,8 @@
       "console": []
     },
     {
-      "id": "kSUw",
-      "code_hash": "fce44226863ef738dbdaeb1e17b45e97",
+      "id": "PKri",
+      "code_hash": "5046473c472ca308f6b8d6bb1c44cb40",
       "outputs": [
         {
           "type": "data",
@@ -84,7 +84,7 @@
       "console": []
     },
     {
-      "id": "BeTM",
+      "id": "Xref",
       "code_hash": "544aee7c292fd05c327b3a0e2a6d9983",
       "outputs": [
         {
@@ -97,8 +97,8 @@
       "console": []
     },
     {
-      "id": "gqNk",
-      "code_hash": "02d5fba8d3922f43ac203841c6b685da",
+      "id": "SFPL",
+      "code_hash": "3e6cb7c7213075ad67691cd37221e0cc",
       "outputs": [
         {
           "type": "data",
@@ -110,7 +110,7 @@
       "console": []
     },
     {
-      "id": "AeLn",
+      "id": "BYtC",
       "code_hash": "afaab5f057a228451c1659bc6adfd8dc",
       "outputs": [
         {
@@ -123,7 +123,7 @@
       "console": []
     },
     {
-      "id": "tBNY",
+      "id": "RGSE",
       "code_hash": "08e9458c245f7d6448539ff021546488",
       "outputs": [
         {
@@ -136,7 +136,7 @@
       "console": []
     },
     {
-      "id": "mSSw",
+      "id": "Kclp",
       "code_hash": "061406adeaefa653baa0b1d53c8f1505",
       "outputs": [
         {
@@ -149,7 +149,7 @@
       "console": []
     },
     {
-      "id": "FtGE",
+      "id": "emfo",
       "code_hash": "4278e13cf644b8a09967aa770d869cf0",
       "outputs": [
         {
@@ -162,7 +162,7 @@
       "console": []
     },
     {
-      "id": "gopM",
+      "id": "Hstk",
       "code_hash": "7f44f7cf5236ee39b117cc82e2a932ff",
       "outputs": [
         {
@@ -175,7 +175,7 @@
       "console": []
     },
     {
-      "id": "dBqa",
+      "id": "nWHF",
       "code_hash": "af6ad657db6bef18dde26683a7777f1d",
       "outputs": [
         {
@@ -188,7 +188,7 @@
       "console": []
     },
     {
-      "id": "AUXG",
+      "id": "iLit",
       "code_hash": "0248420736530dc3b0e7f1c523aab82c",
       "outputs": [
         {
@@ -201,7 +201,7 @@
       "console": []
     },
     {
-      "id": "WMpy",
+      "id": "ZHCJ",
       "code_hash": "b247d9849782fc1c0e4e6b398e87f03a",
       "outputs": [
         {
@@ -214,7 +214,7 @@
       "console": []
     },
     {
-      "id": "vWgM",
+      "id": "ROlb",
       "code_hash": "b38362455b9792d4b53635616dc23140",
       "outputs": [
         {
@@ -227,7 +227,7 @@
       "console": []
     },
     {
-      "id": "ipNK",
+      "id": "qnkX",
       "code_hash": "6147b05d34b6dc789d87d40114e8c562",
       "outputs": [
         {
@@ -240,7 +240,7 @@
       "console": []
     },
     {
-      "id": "dMDi",
+      "id": "TqIu",
       "code_hash": "20ed4ac1cdf0b9812efc79af33994937",
       "outputs": [
         {
@@ -253,7 +253,7 @@
       "console": []
     },
     {
-      "id": "JyTN",
+      "id": "Vxnm",
       "code_hash": "bef4946bc3e3d15c80a755036fc120df",
       "outputs": [
         {
@@ -266,7 +266,7 @@
       "console": []
     },
     {
-      "id": "TFfb",
+      "id": "DnEU",
       "code_hash": "1be470679bfbd524e7f9c0f4493129e6",
       "outputs": [
         {
@@ -279,21 +279,21 @@
       "console": []
     },
     {
-      "id": "jMeV",
-      "code_hash": "ce3ef08c0bcf15ca3b677b421f1e3330",
+      "id": "ulZA",
+      "code_hash": "391143510d230c9cbb868e873d277be2",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">First, collect all orders for the date range and get the reported total number of orders. </span>\n<span class=\"paragraph\">Then, go through each order, retrieve its details, and collect its product lines into one list. </span>\n<span class=\"paragraph\">Finally, pass the orders and product lines to <strong>build_report()</strong> to calculate the report results.</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">First, collect all orders for the date range and get the reported total number of orders.</span>\n<span class=\"paragraph\">Then, go through each order, retrieve its details, and collect its product lines into one list.</span>\n<span class=\"paragraph\">Finally, pass the orders and product lines to <strong>build_report()</strong> to calculate the report results.</span></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "nzyK",
-      "code_hash": "7170c7207586648cbebcd62d39336366",
+      "id": "ecfG",
+      "code_hash": "e2ace648bbc0a72abbb3cb2f51f91231",
       "outputs": [
         {
           "type": "data",
@@ -305,7 +305,7 @@
       "console": []
     },
     {
-      "id": "Sgxq",
+      "id": "Pvdt",
       "code_hash": "830ed648d774a34a41835aab162b7a8e",
       "outputs": [
         {
@@ -325,21 +325,21 @@
       ]
     },
     {
-      "id": "pUkS",
-      "code_hash": "3c4005c4089ef603a6398baa81b36377",
+      "id": "ZBYS",
+      "code_hash": "32b4c69e494b00aebd89e54db81f0149",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Brief Notes</strong></span>\n<span class=\"paragraph\">This code organizes and prints the weekly report. First, it sorts countries by revenue, from highest to lowest. It then prints the date range, total number of orders, total revenue, revenue by country, and the top five products by units sold. Next, it lists unshipped orders, sorting them by required date so that orders due soonest appear first. Finally, it prints a one-sentence summary of the week's results, including the order count, total revenue, leading country, best-selling product, and number of orders that have not shipped yet.</span>\n<span class=\"paragraph\">Why sort the unshipped orders? </span>\n<span class=\"paragraph\">The API returns orders newest first, but the newest orders are not necessarily the most urgent. Sorting by <strong>required_date</strong> puts the orders due soonest at the top, helping the manager see which shipments need attention first.</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Brief Notes</strong></span>\n<span class=\"paragraph\">This code organizes and prints the weekly report. First, it sorts countries by revenue, from highest to lowest. It then prints the date range, total number of orders, total revenue, revenue by country, and the top five products by units sold. Next, it lists unshipped orders, sorting them by required date so that orders due soonest appear first. Finally, it prints a one-sentence summary of the week's results, including the order count, total revenue, leading country, best-selling product, and number of orders that have not shipped yet.</span>\n<span class=\"paragraph\">Why sort the unshipped orders?</span>\n<span class=\"paragraph\">The API returns orders newest first, but the newest orders are not necessarily the most urgent. Sorting by <strong>required_date</strong> puts the orders due soonest at the top, helping the manager see which shipments need attention first.</span></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "MARQ",
-      "code_hash": "d9be13febcf2fdf16999b36da1ad8259",
+      "id": "aLJB",
+      "code_hash": "8c8b48b251fc9b891b444f01c76b22a8",
       "outputs": [
         {
           "type": "data",
@@ -351,7 +351,7 @@
       "console": []
     },
     {
-      "id": "gMaA",
+      "id": "nHfw",
       "code_hash": "48f2edd43bcf547bc677cf08dd6cbbaf",
       "outputs": [
         {
@@ -371,8 +371,8 @@
       ]
     },
     {
-      "id": "GtPK",
-      "code_hash": "f560246f71b0a5f9e33b8b8ddc0904c3",
+      "id": "xXTn",
+      "code_hash": "084936f1e976459c6ae5f7b684a66488",
       "outputs": [
         {
           "type": "data",
@@ -384,8 +384,8 @@
       "console": []
     },
     {
-      "id": "qaoC",
-      "code_hash": "12f598550701f8f02326f570917ed7b2",
+      "id": "AjVT",
+      "code_hash": "c6cedf29ce55055ff95356243368dd93",
       "outputs": [
         {
           "type": "data",
@@ -397,7 +397,7 @@
       "console": []
     },
     {
-      "id": "ruOz",
+      "id": "pHFh",
       "code_hash": "7049ecd2788f2593d23b0df358662b3f",
       "outputs": [
         {
@@ -410,8 +410,8 @@
       "console": []
     },
     {
-      "id": "yzHN",
-      "code_hash": "cf6fa239e874ac898c576e1a79546e61",
+      "id": "NCOB",
+      "code_hash": "b3adb935a2d2bbb2861117d067d0a926",
       "outputs": [
         {
           "type": "data",
@@ -423,7 +423,7 @@
       "console": []
     },
     {
-      "id": "xrPP",
+      "id": "aqbW",
       "code_hash": "7af914cfb07c312d488ee565467ce6da",
       "outputs": [
         {
@@ -436,7 +436,7 @@
       "console": []
     },
     {
-      "id": "onXJ",
+      "id": "TRpd",
       "code_hash": "9b1482b9b7fc03c6203f0b1dfc9b2594",
       "outputs": [
         {
@@ -449,21 +449,21 @@
       "console": []
     },
     {
-      "id": "IIaG",
-      "code_hash": "00afa88b381d3b98cfa798ee78b83d20",
+      "id": "TXez",
+      "code_hash": "37c906a6e57a0c15b6a7b0698c4f8e54",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"section-8-comparing-my-predictions-with-the-results\">Section 8: Comparing My Predictions with the Results</h2>\n<span class=\"paragraph\">The date range matched my prediction: October 15\u201328, 2026. I predicted around 74 orders, but the report showed 57, so my order-count prediction did not match. The first week had 20 orders and the second had 37.</span>\n<span class=\"paragraph\">Revenue was $1,427,416.44. This matched my prediction that revenue would increase, but not necessarily double. The average order value also stayed similar, at $24,853 over seven days and $25,042 over 14 days.</span>\n<span class=\"paragraph\">There were 35 unshipped orders, compared with 24 over seven days. This matched my prediction that unshipped orders would increase, but by less than double. Of the 20 orders from the earlier week, 11 remained unshipped (55%), compared with 24 of 37 (65%) in the latest week. This suggests older orders were only slightly more likely to have shipped. Some orders were already overdue, including order 12259, which was required by October 21.</span>\n<span class=\"paragraph\">The 57 orders were collected across two pages, matching my prediction. The pagination loop worked as expected.</span>\n<span class=\"paragraph\">The top five products changed, which matched my prediction that they might change. Th\u00fcringer Rostbratwurst remained in the top five, while Queso Cabrales, Genen Shouyu, Northwoods Cranberry Sauce, and Sir Rodney's Marmalade entered the list. The other four products from the 7-day top five dropped out.</span>\n<span class=\"paragraph\">All three Section 6 validation checks matched expectations: the collected order count matched the API total, country revenues added up to total revenue, and order 20700's total matched the sum of its product lines. All returned <code>Agree: True</code>, giving me confidence in the report's calculations.</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"section-8-comparing-my-predictions-with-the-results\">Section 8: Comparing My Predictions with the Results</h2>\n<span class=\"paragraph\">The date range matched my prediction: 15\u201328 October, 2026. I predicted around 74 orders, but the report showed 57, so my order-count prediction did not match. The first week had 20 orders and the second had 37.</span>\n<span class=\"paragraph\">Revenue was $1,427,416.44. This matched my prediction that revenue would increase, but not necessarily double. The average order value also stayed similar, at $24,853 over seven days and $25,042 over 14 days.</span>\n<span class=\"paragraph\">There were 35 unshipped orders, compared with 24 over seven days. This matched my prediction that unshipped orders would increase, but by less than double. Of the 20 orders from the earlier week, 11 remained unshipped (55%), compared with 24 of 37 (65%) in the latest week. This suggests older orders were only slightly more likely to have shipped. Some orders were already overdue, including order 12259, which was required by October 21.</span>\n<span class=\"paragraph\">The 57 orders were collected across two pages, matching my prediction. The pagination loop worked as expected.</span>\n<span class=\"paragraph\">The top five products changed, which matched my prediction that they might change. Th\u00fcringer Rostbratwurst remained in the top five, while Queso Cabrales, Genen Shouyu, Northwoods Cranberry Sauce, and Sir Rodney's Marmalade entered the list. The other four products from the 7-day top five dropped out.</span>\n<span class=\"paragraph\">All three Section 6 validation checks matched expectations: the collected order count matched the API total, country revenues added up to total revenue, and order 20700's total matched the sum of its product lines. All returned <code>Agree: True</code>, giving me confidence in the report's calculations.</span></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "ZmrE",
-      "code_hash": "8bf68358d8f0a7c6d2a78a38faad95b8",
+      "id": "dNNg",
+      "code_hash": "e6a4d0193913b6c266b0a9cb74b6feb9",
       "outputs": [
         {
           "type": "data",
@@ -475,7 +475,7 @@
       "console": []
     },
     {
-      "id": "LHpK",
+      "id": "yCnT",
       "code_hash": "b363305f5c80032db839812099215f18",
       "outputs": [
         {
@@ -495,7 +495,7 @@
       ]
     },
     {
-      "id": "ptJO",
+      "id": "wlCL",
       "code_hash": "77f4e672460bd063688344e771379c2d",
       "outputs": [
         {
@@ -508,8 +508,8 @@
       "console": []
     },
     {
-      "id": "UZSb",
-      "code_hash": "e36bffab1731727ed6813c0edf818fa5",
+      "id": "kqZH",
+      "code_hash": "120e167ad016b23a23200292bbba9e11",
       "outputs": [
         {
           "type": "data",
@@ -521,13 +521,13 @@
       "console": []
     },
     {
-      "id": "DvdG",
-      "code_hash": null,
+      "id": "wAgl",
+      "code_hash": "33e75ff09dd601bbe69f351039152189",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/plain": ""
+            "text/html": "<pre class='text-xs'>28</pre>"
           }
         }
       ],
