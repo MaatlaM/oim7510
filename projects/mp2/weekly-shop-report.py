@@ -422,6 +422,16 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    The piece of AI output I did not accept as-is was the display cell for section 4. It showed the report using mo.ui.table, marimo’s interactive tables. The tables looked clear, but when I shared the section 5 requirements and we checked the code against them, it did not meet the brief: section 5 asks for the results printed with print and f-strings, with the columns lined up, and a summary sentence printed from code. I deleted the display cell from section 4 and replaced it with the section 5 cell, which prints aligned tables with f-strings and builds the summary sentence from the data so it updates when the data changes. You can see this in the commits **mp2: section 4 - the work**, where section 4 ends with report = build_report(orders, lines), and **mp2: section 5 - the answer**.
+
+    I also changed how the unshipped orders are listed. The first version printed them in the order the API returns them, newest first, but the newest orders are not the most urgent. I sorted them by **required_date** so the orders due soonest appear at the top, which is more useful for an operations manager.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     #8. Reading It Back.
 
     Pick two functions in your notebook that your agent wrote or helped write. For each, write in your own words what goes in, what comes out, and one line you had to ask about. Then choose one change to what the tool does, such as another county, another week or another rule. Changing one value in your Inputs cell is enough. Write what you expect to change in the answer. Commit with the message mp2: prediction, make the change, run it, and write what happened and whether it matched.
