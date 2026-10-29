@@ -442,6 +442,44 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    ### 1. `get_all_orders(from_date, to_date)`
+
+    **What goes in:** The function takes a start date and end date from the earlier notebook cell where I calculate the date range. It uses `get_orders()` to get the orders from the API, one page at a time.
+
+    **What comes out:** It returns the full list of orders collected and the total number of orders reported by the API. The next cell uses the orders to get their details and build the report. The total is also used later to check that I collected all the orders.
+
+    **One line I had to ask about:**
+
+    `orders.extend(data["items"])`
+
+    I initially thought `extend()` added the whole page as one item to the list. Instead, it adds each order from `data["items"]` to the list, so orders from different pages can all be collected together.
+
+    ### 2. `build_report(orders, lines)`
+
+    **What goes in:** The function takes two inputs: `orders`, which is the list of orders collected from the API, and `lines`, which contains the product lines from the order details. These are passed in from the earlier cell after the orders and their details have been collected.
+
+    **What comes out:** It returns a dictionary with the order count, total revenue, revenue by country, top five products by units sold, and unshipped orders. The next cells use these results to print the report and run the checks.
+
+    **One line I had to ask about:**
+
+    `revenue_by_country[country] = revenue_by_country.get(country, 0) + total`
+
+    I initially thought this just assigned the current order's revenue to the country. Actually, `.get(country, 0)` gets the total already recorded for that country, or starts at zero if it is the first order from that country. Then it adds the current order's revenue to the total.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    If I change days = 7 to days = 14, I expect the date range to cover the 14 days ending today, 28 October 2026, from 15 October to 28 October. Based on the 37 orders from the past seven days, I estimate there could be around 74 orders over 14 days. Revenue will probably increase too, but not necessarily double because order sizes can vary. I expect fewer unshipped orders than a simple doubling would suggest, since older orders are more likely to have shipped. With around 74 orders and 50 orders per page, I expect 2 pages, so the pagination loop should collect the remaining orders from the second page. I also expect the top five products might change because the report will include more orders.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     #9. Going Further.
     What you tried past the main task, what you found, and where it is in the notebook.
     """)

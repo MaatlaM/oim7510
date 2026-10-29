@@ -423,6 +423,32 @@
       "console": []
     },
     {
+      "id": "xrPP",
+      "code_hash": "7af914cfb07c312d488ee565467ce6da",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"1-get_all_ordersfrom_date-to_date\">1. <code>get_all_orders(from_date, to_date)</code></h3>\n<span class=\"paragraph\"><strong>What goes in:</strong> The function takes a start date and end date from the earlier notebook cell where I calculate the date range. It uses <code>get_orders()</code> to get the orders from the API, one page at a time.</span>\n<span class=\"paragraph\"><strong>What comes out:</strong> It returns the full list of orders collected and the total number of orders reported by the API. The next cell uses the orders to get their details and build the report. The total is also used later to check that I collected all the orders.</span>\n<span class=\"paragraph\"><strong>One line I had to ask about:</strong></span>\n<span class=\"paragraph\"><code>orders.extend(data[\"items\"])</code></span>\n<span class=\"paragraph\">I initially thought <code>extend()</code> added the whole page as one item to the list. Instead, it adds each order from <code>data[\"items\"]</code> to the list, so orders from different pages can all be collected together.</span>\n<h3 id=\"2-build_reportorders-lines\">2. <code>build_report(orders, lines)</code></h3>\n<span class=\"paragraph\"><strong>What goes in:</strong> The function takes two inputs: <code>orders</code>, which is the list of orders collected from the API, and <code>lines</code>, which contains the product lines from the order details. These are passed in from the earlier cell after the orders and their details have been collected.</span>\n<span class=\"paragraph\"><strong>What comes out:</strong> It returns a dictionary with the order count, total revenue, revenue by country, top five products by units sold, and unshipped orders. The next cells use these results to print the report and run the checks.</span>\n<span class=\"paragraph\"><strong>One line I had to ask about:</strong></span>\n<span class=\"paragraph\"><code>revenue_by_country[country] = revenue_by_country.get(country, 0) + total</code></span>\n<span class=\"paragraph\">I initially thought this just assigned the current order's revenue to the country. Actually, <code>.get(country, 0)</code> gets the total already recorded for that country, or starts at zero if it is the first order from that country. Then it adds the current order's revenue to the total.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "onXJ",
+      "code_hash": "9b1482b9b7fc03c6203f0b1dfc9b2594",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">If I change days = 7 to days = 14, I expect the date range to cover the 14 days ending today, 28 October 2026, from 15 October to 28 October. Based on the 37 orders from the past seven days, I estimate there could be around 74 orders over 14 days. Revenue will probably increase too, but not necessarily double because order sizes can vary. I expect fewer unshipped orders than a simple doubling would suggest, since older orders are more likely to have shipped. With around 74 orders and 50 orders per page, I expect 2 pages, so the pagination loop should collect the remaining orders from the second page. I also expect the top five products might change because the report will include more orders.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "ZmrE",
       "code_hash": "8bf68358d8f0a7c6d2a78a38faad95b8",
       "outputs": [
