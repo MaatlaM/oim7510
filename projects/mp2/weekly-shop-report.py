@@ -111,6 +111,14 @@ def _(mo):
     return
 
 
+@app.cell
+def _():
+    days = 7
+    per_page = 50
+    base_url = "https://oim.zhili.dev"
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
