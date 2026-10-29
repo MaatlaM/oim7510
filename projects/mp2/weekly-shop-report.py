@@ -480,6 +480,26 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    ## Section 8: Comparing My Predictions with the Results
+
+    The date range matched my prediction: October 15–28, 2026. I predicted around 74 orders, but the report showed 57, so my order-count prediction did not match. The first week had 20 orders and the second had 37.
+
+    Revenue was $1,427,416.44. This matched my prediction that revenue would increase, but not necessarily double. The average order value also stayed similar, at $24,853 over seven days and $25,042 over 14 days.
+
+    There were 35 unshipped orders, compared with 24 over seven days. This matched my prediction that unshipped orders would increase, but by less than double. Of the 20 orders from the earlier week, 11 remained unshipped (55%), compared with 24 of 37 (65%) in the latest week. This suggests older orders were only slightly more likely to have shipped. Some orders were already overdue, including order 12259, which was required by October 21.
+
+    The 57 orders were collected across two pages, matching my prediction. The pagination loop worked as expected.
+
+    The top five products changed, which matched my prediction that they might change. Thüringer Rostbratwurst remained in the top five, while Queso Cabrales, Genen Shouyu, Northwoods Cranberry Sauce, and Sir Rodney's Marmalade entered the list. The other four products from the 7-day top five dropped out.
+
+    All three Section 6 validation checks matched expectations: the collected order count matched the API total, country revenues added up to total revenue, and order 20700's total matched the sum of its product lines. All returned `Agree: True`, giving me confidence in the report's calculations.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     #9. Going Further.
     What you tried past the main task, what you found, and where it is in the notebook.
     """)
