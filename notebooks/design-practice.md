@@ -1,4 +1,4 @@
-# ERD Demo
+# ERD - Design Practice
 
 ```mermaid
 erDiagram
