@@ -1,0 +1,74 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.24.2",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "3e751478c4d061bb05e749ad4cdd3aca",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vTAA",
+      "code_hash": "29f4181d2c60d9a0f9185b72372cd07c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"the-tables\">The Tables</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "XKSw",
+      "code_hash": "41f662c7e86836f3c99b3d60f3ced71b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "kwaW",
+      "code_hash": "b66bd17a6f5d97a1c99138e1275c115a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Notes</strong></span>\n<span class=\"paragraph\">Five tables, one for each kind of thing BabsonAI Labs keeps track of. Each table has a <strong>primary key</strong>, the column that identifies one row, and <strong>foreign keys</strong> that link rows to other tables. The database also refuses any row that breaks a rule about a single column.</span>\n<ul>\n<li><strong>people</strong> is keyed by an invented <code>person_id</code> (it gives each person an ID number), because work emails change with title so an email can't identify a person; <code>work_email</code> is still <code>UNIQUE</code> because no two people can share one. <code>manager_id</code> points back at <code>people</code> as each person may have a manager and may be empty, because the two founders report to nobody.</li>\n<li><strong>projects</strong> only accepts one of the three listed categories and one of the four statuses (so it limits <code>category</code> and <code>status</code> to their fixed lists with <code>CHECK</code>), and requires <code>budget &gt; 0</code>. <code>client_name</code> may be empty for internal projects.</li>\n<li><strong>assignments</strong> records who works on which project. A person can work on several projects, and a project can have several people, so a row is identified by the person and the project together, and the same pairing can't appear twice (many to many). The two-column key <code>(person_id, project_id)</code> is what allows one row per pairing, and <code>hours_per_week</code> must be between 1 and 40.</li>\n<li><strong>tasks</strong> each task belongs to exactly one project and at most one person, or to nobody yet, since <code>assignee_id</code> may be empty. A task cannot be completed before it was created.</li>\n<li><strong>expenses</strong> each belong to one project, with an amount above zero and one of the four listed categories.</li>\n</ul>\n<span class=\"paragraph\">Two rules need information from more than one table, so the database can't enforce them on its own: a task can only be assigned to someone who works on that project, and never before that person started. Both are checked with queries under The Data.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "cyRR",
+      "code_hash": "25b4a4b96023e854eaecbd24c94c3aa1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='cyRR-0' random-id='04c171e8-f7f1-1dd2-ca1e-be9102a5c113'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;assignments&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;expenses&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;people&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;projects&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;tasks&#92;&quot;}]&quot;' data-total-rows='5' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
