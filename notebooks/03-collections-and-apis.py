@@ -155,17 +155,30 @@ def _(mo):
 
     Several questions below ask for a sentence. This cell is where they go. Click into it, write under the letter, and press `Ctrl+Enter` (Windows) or `Cmd+Enter` (macOS).
 
+    **A ·**
+    1. The closing price for AAPL is $260.81.
+
+    2. There is no TSLA ticker, so a retrieval of the closing price gives us 0.
+
+    3. AAPL, MSFT, and GOOG are the tickers above $200.
+
+    4. MSFT has the highest price.
+
     **B ·**
-    The closing price for AAPL is $280.81.
+
+    France, Germany, Brazil and USA had the most orders at 4 each.
 
     **C ·**
-    There is no TSLA ticker, so a retrieval of the closing price gives us 0.
+
+    1. List: the order lines are many of the same thing, their order matters, and they change.
+    2. Set: each customer only needs to appear once, and I only need to know if they're in it.
+    3. Dictionary: I look up units by product name, and the counts update.
+    4. Tuple: one shipment with fixed parts that must never change.
 
     **D ·**
-    AAPL, MSFT, and GOOG are the tickers above $200.
+
 
     **G ·**
-    MSFT has the highest price.
     """)
     return
 
@@ -205,6 +218,18 @@ def _(closing_prices):
 @app.cell
 def _(closing_prices):
     closing_prices.get("TSLA",0)
+    return
+
+
+@app.cell
+def _(closing_prices):
+    closing_prices.get("TSLA")
+    return
+
+
+@app.cell
+def _(closing_prices):
+    closing_prices.get("TSLA") is None
     return
 
 
