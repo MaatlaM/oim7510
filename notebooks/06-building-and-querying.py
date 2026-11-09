@@ -229,6 +229,54 @@ def _(mo):
     return
 
 
+@app.cell
+def _(database, duckdb):
+    with duckdb.connect(database) as _con:
+        _con.execute("""
+            CREATE TABLE town_bills (
+                town VARCHAR REFERENCES towns(name),
+                fiscal_year INTEGER,
+                average_single_family_bill_dollars INTEGER NOT NULL
+                    CHECK (average_single_family_bill_dollars >= 0),
+                PRIMARY KEY (town, fiscal_year)
+            )
+        """)
+
+        _con.execute("""
+            INSERT INTO town_bills (town, fiscal_year, average_single_family_bill_dollars)
+            VALUES
+                ('Wellesley', 2025, 19792),
+                ('Wellesley', 2026, 20551)
+        """)
+    return
+
+
+@app.cell
+def _(ask):
+    ask("SELECT * FROM town_bills")
+    return
+
+
+@app.cell
+def _(try_insert):
+    [
+        try_insert("INSERT INTO town_bills VALUES ('Wellesley', 2025, 19792)"),
+        try_insert("INSERT INTO town_bills VALUES ('Atlantis', 2025, 100)"),
+    ]
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **Notes**
+
+    1. One row is one town in one fiscal year, so neither column alone identifies a row: a town has many years, and a year has many towns. The primary key is therefore the pair `(town, fiscal_year)`.
+    2. `town` references `towns(name)`, so a bill can only be recorded for a town that exists.
+    """)
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -261,6 +309,43 @@ def _(mo):
     *Check yourself: the three messages contain `Duplicate key`, `CHECK constraint failed` and `foreign key`.*
 
     **Going further.** Find a rule the scenario of your database project states that a constraint cannot hold, and write the query that checks it instead.
+    """)
+    return
+
+
+@app.cell
+def _(database, duckdb, pl):
+    def try_insert(sql):
+        try:
+            with duckdb.connect(database) as _con:
+                _con.execute(sql)
+            return "accepted"
+        except duckdb.ConstraintException as _error:
+            return str(_error).splitlines()[0]
+
+    pl.DataFrame({
+        "rule broken": ["duplicate name", "population of zero", "county does not exist"],
+        "message": [
+            try_insert("INSERT INTO towns VALUES ('Wellesley', 'Norfolk', 30000, 0, 0)"),
+            try_insert("INSERT INTO towns VALUES ('Testville', 'Norfolk', 0, 0, 0)"),
+            try_insert("INSERT INTO towns VALUES ('Testville', 'Atlantis', 10, 0, 0)"),
+        ],
+    })
+    return (try_insert,)
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **Notes**
+
+    Each insert breaks exactly one rule, so each refusal can only come from the constraint being tested:
+
+    - **Duplicate name** (`'Wellesley'`): refused with *Duplicate key*. `name` is the primary key of `towns`, so no two rows can share it.
+    - **Population of zero**: refused with *CHECK constraint failed*. `CHECK (population > 0)` rejects any row whose population is not positive.
+    - **County that does not exist** (`'Atlantis'`): refused with a *foreign key* error. `county` references `counties(name)`, so a town must belong to a county already in `counties` (referential integrity).
+
+    The rules sit in the table definition, so the database checks every row that arrives without anyone having to remember to. `try_insert` catches each refusal and returns the error message, so the rest of the notebook keeps running.
     """)
     return
 
