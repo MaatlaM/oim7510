@@ -227,6 +227,58 @@
       "console": []
     },
     {
+      "id": "sPhW",
+      "code_hash": "a90c229de86d55cd5d530b80cd87694e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Going Further</strong></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "aWOl",
+      "code_hash": "da9e644515e120d06a3c6946a951a22e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[1051, 3]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "JdMx",
+      "code_hash": "b3d28bb02b42db8bfab2121de596fb5a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='JdMx-0' random-id='7d478094-6208-108d-4ef9-d3cae42102b1'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;town&#92;&quot;:&#92;&quot;Needham&#92;&quot;,&#92;&quot;bill_2016&#92;&quot;:9587,&#92;&quot;bill_2026&#92;&quot;:16690,&#92;&quot;growth_dollars&#92;&quot;:7103,&#92;&quot;growth_pct&#92;&quot;:74.1},{&#92;&quot;town&#92;&quot;:&#92;&quot;Wellesley&#92;&quot;,&#92;&quot;bill_2016&#92;&quot;:13971,&#92;&quot;bill_2026&#92;&quot;:20551,&#92;&quot;growth_dollars&#92;&quot;:6580,&#92;&quot;growth_pct&#92;&quot;:47.1},{&#92;&quot;town&#92;&quot;:&#92;&quot;Westwood&#92;&quot;,&#92;&quot;bill_2016&#92;&quot;:10312,&#92;&quot;bill_2026&#92;&quot;:16097,&#92;&quot;growth_dollars&#92;&quot;:5785,&#92;&quot;growth_pct&#92;&quot;:56.1},{&#92;&quot;town&#92;&quot;:&#92;&quot;Cohasset&#92;&quot;,&#92;&quot;bill_2016&#92;&quot;:11483,&#92;&quot;bill_2026&#92;&quot;:16814,&#92;&quot;growth_dollars&#92;&quot;:5331,&#92;&quot;growth_pct&#92;&quot;:46.4},{&#92;&quot;town&#92;&quot;:&#92;&quot;Dover&#92;&quot;,&#92;&quot;bill_2016&#92;&quot;:14149,&#92;&quot;bill_2026&#92;&quot;:19088,&#92;&quot;growth_dollars&#92;&quot;:4939,&#92;&quot;growth_pct&#92;&quot;:34.9},{&#92;&quot;town&#92;&quot;:&#92;&quot;Milton&#92;&quot;,&#92;&quot;bill_2016&#92;&quot;:8155,&#92;&quot;bill_2026&#92;&quot;:12769,&#92;&quot;growth_dollars&#92;&quot;:4614,&#92;&quot;growth_pct&#92;&quot;:56.6},{&#92;&quot;town&#92;&quot;:&#92;&quot;Sharon&#92;&quot;,&#92;&quot;bill_2016&#92;&quot;:10148,&#92;&quot;bill_2026&#92;&quot;:14353,&#92;&quot;growth_dollars&#92;&quot;:4205,&#92;&quot;growth_pct&#92;&quot;:41.4},{&#92;&quot;town&#92;&quot;:&#92;&quot;Millis&#92;&quot;,&#92;&quot;bill_2016&#92;&quot;:6228,&#92;&quot;bill_2026&#92;&quot;:10230,&#92;&quot;growth_dollars&#92;&quot;:4002,&#92;&quot;growth_pct&#92;&quot;:64.3},{&#92;&quot;town&#92;&quot;:&#92;&quot;Norfolk&#92;&quot;,&#92;&quot;bill_2016&#92;&quot;:7946,&#92;&quot;bill_2026&#92;&quot;:11718,&#92;&quot;growth_dollars&#92;&quot;:3772,&#92;&quot;growth_pct&#92;&quot;:47.5},{&#92;&quot;town&#92;&quot;:&#92;&quot;Medfield&#92;&quot;,&#92;&quot;bill_2016&#92;&quot;:10309,&#92;&quot;bill_2026&#92;&quot;:13904,&#92;&quot;growth_dollars&#92;&quot;:3595,&#92;&quot;growth_pct&#92;&quot;:34.9}]&quot;' data-total-rows='27' data-total-columns='5' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;town&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;bill_2016&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;bill_2026&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;growth_dollars&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;growth_pct&quot;,[&quot;number&quot;,&quot;f64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "FMKU",
+      "code_hash": "ebf4d327b07bc95b8d6bd57b228f4d9f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Which Norfolk town's bill grew most over 10 years?</strong> </span>\n<span class=\"paragraph\">The first cell fetches every Norfolk town's yearly history from the API (one request per town, using its <code>dor_code</code>) and loads it into <code>town_bill_history</code>, which has the same structure as <code>town_bills</code>: one row per town per fiscal year, keyed on <code>(town, fiscal_year)</code>. The second cell joins the table to itself, pairing each town's FY2026 row with its FY2016 row, and ranks towns by the dollar increase. Needham grew the most, from $9,587 to $16,690 (+74.1%). Ranked by percentage growth instead, the order [does / does not] change, because a town with a low starting bill can grow fast in percentage terms without leading in dollars.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "nWHF",
       "code_hash": "b0f36f16b7d5623c0deaf313ce8cb8e7",
       "outputs": [
@@ -338,6 +390,45 @@
           "type": "data",
           "data": {
             "text/html": "<marimo-ui-element object-id='HFEc-0' random-id='038edaab-70b8-e8d3-a800-0015bd80af90'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;Brookline&#92;&quot;,&#92;&quot;population&#92;&quot;:63925,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:26237},{&#92;&quot;name&#92;&quot;:&#92;&quot;Newton&#92;&quot;,&#92;&quot;population&#92;&quot;:90700,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:17077},{&#92;&quot;name&#92;&quot;:&#92;&quot;Cambridge&#92;&quot;,&#92;&quot;population&#92;&quot;:121186,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:14678},{&#92;&quot;name&#92;&quot;:&#92;&quot;Somerville&#92;&quot;,&#92;&quot;population&#92;&quot;:82149,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:9376},{&#92;&quot;name&#92;&quot;:&#92;&quot;Quincy&#92;&quot;,&#92;&quot;population&#92;&quot;:103434,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:8250}]&quot;' data-total-rows='5' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;population&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;average_single_family_bill_dollars&quot;,[&quot;integer&quot;,&quot;i32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bolY",
+      "code_hash": "a90c229de86d55cd5d530b80cd87694e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Going Further</strong></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "saUw",
+      "code_hash": "3e55a33fd809f27fd357d70c1c55fc19",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='saUw-0' random-id='bec646ac-6482-f5a4-3566-c7d46c3cf81e'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;Brookline&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Norfolk&#92;&quot;,&#92;&quot;population&#92;&quot;:63925,&#92;&quot;county_population&#92;&quot;:740754,&#92;&quot;share_of_county_pct&#92;&quot;:8.6},{&#92;&quot;name&#92;&quot;:&#92;&quot;Newton&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;population&#92;&quot;:90700,&#92;&quot;county_population&#92;&quot;:1668956,&#92;&quot;share_of_county_pct&#92;&quot;:5.4},{&#92;&quot;name&#92;&quot;:&#92;&quot;Cambridge&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;population&#92;&quot;:121186,&#92;&quot;county_population&#92;&quot;:1668956,&#92;&quot;share_of_county_pct&#92;&quot;:7.3},{&#92;&quot;name&#92;&quot;:&#92;&quot;Somerville&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;population&#92;&quot;:82149,&#92;&quot;county_population&#92;&quot;:1668956,&#92;&quot;share_of_county_pct&#92;&quot;:4.9},{&#92;&quot;name&#92;&quot;:&#92;&quot;Quincy&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Norfolk&#92;&quot;,&#92;&quot;population&#92;&quot;:103434,&#92;&quot;county_population&#92;&quot;:740754,&#92;&quot;share_of_county_pct&#92;&quot;:14.0}]&quot;' data-total-rows='5' data-total-columns='5' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;county&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;population&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;county_population&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;share_of_county_pct&quot;,[&quot;number&quot;,&quot;f64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "fxZS",
+      "code_hash": "8494f364866ba7017f253c673614e52f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Joining towns to counties.</strong> </span>\n<span class=\"paragraph\">The query joins each town to its county row through the foreign key (<code>t.county = c.name</code>), so one result row carries columns from both tables. The table aliases <code>t</code> and <code>c</code> tell apart the two <code>name</code> and <code>population</code> columns. <code>share_of_county_pct</code> divides the town's population by its county's, and multiplies by <code>100.0</code> so the division keeps its decimals. The five towns are the same as in exercise C, now with their county and their share of its residents.</span></span>"
           }
         }
       ],

@@ -280,6 +280,85 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    **Going Further**
+    """)
+    return
+
+
+@app.cell
+def _(database, duckdb, pl, requests):
+    _towns = requests.get(
+        "https://oim.zhili.dev/ma/towns",
+        params={"county": "Norfolk", "per_page": 100},
+        timeout=10,
+    ).json()["items"]
+
+    _rows = []
+    for _town in _towns:
+        _history = requests.get(
+            f"https://oim.zhili.dev/ma/towns/{_town['dor_code']}/history",
+            timeout=10,
+        ).json()
+        for _year in _history["years"]:
+            if _year["average_single_family_bill_dollars"] is not None:
+                _rows.append({
+                    "town": _history["name"],
+                    "fiscal_year": _year["fiscal_year"],
+                    "average_single_family_bill_dollars": _year["average_single_family_bill_dollars"],
+                })
+    history_rows = pl.DataFrame(_rows)
+
+    with duckdb.connect(database) as _con:
+        _con.register("history_rows", history_rows)
+        _con.execute("""
+            CREATE OR REPLACE TABLE town_bill_history (
+                town                               VARCHAR REFERENCES towns(name),
+                fiscal_year                        INTEGER,
+                average_single_family_bill_dollars INTEGER NOT NULL
+                    CHECK (average_single_family_bill_dollars >= 0),
+                PRIMARY KEY (town, fiscal_year)
+            )
+        """)
+        _con.execute("INSERT INTO town_bill_history SELECT * FROM history_rows")
+
+    bill_history_table = "town_bill_history"
+    history_rows.shape
+    return (bill_history_table,)
+
+
+@app.cell
+def _(ask, bill_history_table):
+    ask(f"""
+        SELECT new.town,
+               old.average_single_family_bill_dollars AS bill_2016,
+               new.average_single_family_bill_dollars AS bill_2026,
+               new.average_single_family_bill_dollars
+                 - old.average_single_family_bill_dollars AS growth_dollars,
+               round(100.0 * (new.average_single_family_bill_dollars
+                 - old.average_single_family_bill_dollars)
+                 / old.average_single_family_bill_dollars, 1) AS growth_pct
+        FROM {bill_history_table} AS new
+        JOIN {bill_history_table} AS old
+          ON old.town = new.town AND old.fiscal_year = 2016
+        WHERE new.fiscal_year = 2026
+        ORDER BY growth_dollars DESC
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **Which Norfolk town's bill grew most over 10 years?**
+
+    The first cell fetches every Norfolk town's yearly history from the API (one request per town, using its `dor_code`) and loads it into `town_bill_history`, which has the same structure as `town_bills`: one row per town per fiscal year, keyed on `(town, fiscal_year)`. The second cell joins the table to itself, pairing each town's FY2026 row with its FY2016 row, and ranks towns by the dollar increase. Needham grew the most, from $9,587 to $16,690 (+74.1%). Ranked by percentage growth instead, the order [does / does not] change, because a town with a low starting bill can grow fast in percentage terms without leading in dollars.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     # 2. What the Database Refuses
 
     A constraint checks every row that arrives, without anybody remembering to. Here is a town in a county that does not exist. `try` and `except` catch the refusal, so the rest of the notebook keeps running, and the cell shows the message.
@@ -394,6 +473,41 @@ def _(ask):
         WHERE population > 50000
         ORDER BY average_single_family_bill_dollars DESC
         LIMIT 5
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **Going Further**
+    """)
+    return
+
+
+@app.cell
+def _(ask):
+    ask("""
+        SELECT t.name,
+               t.county,
+               t.population,
+               c.population AS county_population,
+               round(100.0 * t.population / c.population, 1) AS share_of_county_pct
+        FROM towns AS t
+        JOIN counties AS c ON t.county = c.name
+        WHERE t.population > 50000
+        ORDER BY t.average_single_family_bill_dollars DESC
+        LIMIT 5
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **Joining towns to counties.**
+
+    The query joins each town to its county row through the foreign key (`t.county = c.name`), so one result row carries columns from both tables. The table aliases `t` and `c` tell apart the two `name` and `population` columns. `share_of_county_pct` divides the town's population by its county's, and multiplies by `100.0` so the division keeps its decimals. The five towns are the same as in exercise C, now with their county and their share of its residents.
     """)
     return
 
