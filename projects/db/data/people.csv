@@ -1,0 +1,26 @@
+person_id,first_name,last_name,work_email,title,start_date,manager_id
+1,Maya,Patel,maya.patel@babsonai.com,Chief Executive Officer,2023-01-09,
+2,Ethan,Brooks,ethan.brooks@babsonai.com,Chief Technology Officer,2023-02-01,
+3,Sofia,Chen,sofia.chen@babsonai.com,VP of Product,2023-04-03,1
+4,Noah,Williams,noah.williams@babsonai.com,Director of Engineering,2023-06-05,1
+5,Isabella,Garcia,isabella.garcia@babsonai.com,Machine Learning Engineer,2023-08-14,2
+6,Liam,Thompson,liam.thompson@babsonai.com,Data Engineer,2023-10-02,3
+7,Olivia,Reed,olivia.reed@babsonai.com,Product Manager,2023-12-04,4
+8,Lucas,Martin,lucas.martin@babsonai.com,Full-Stack Engineer,2024-02-12,4
+9,Amara,Johnson,amara.johnson@babsonai.com,UX Designer,2024-04-01,5
+10,Benjamin,Davis,benjamin.davis@babsonai.com,Machine Learning Engineer,2024-06-10,5
+11,Chloe,Wilson,chloe.wilson@babsonai.com,Data Analyst,2024-08-05,6
+12,Alexander,Moore,alexander.moore@babsonai.com,Software Engineer,2024-10-07,7
+13,Priya,Singh,priya.singh@babsonai.com,Data Engineer,2024-12-02,8
+14,Daniel,Clark,daniel.clark@babsonai.com,Customer Success Lead,2025-02-03,8
+15,Ava,Lewis,ava.lewis@babsonai.com,Product Designer,2025-04-07,9
+16,James,Walker,james.walker@babsonai.com,Software Engineer,2025-06-02,10
+17,Zoe,Hall,zoe.hall@babsonai.com,Solutions Engineer,2025-08-04,11
+18,Henry,Young,henry.young@babsonai.com,Data Analyst,2025-10-06,12
+19,Layla,Allen,layla.allen@babsonai.com,Machine Learning Engineer,2025-11-17,13
+20,Elijah,Scott,elijah.scott@babsonai.com,Software Engineer,2025-12-08,14
+21,Grace,Adams,grace.adams@babsonai.com,Product Manager,2026-01-12,15
+22,Mateo,Baker,mateo.baker@babsonai.com,Customer Success Specialist,2026-03-02,16
+23,Nora,Nelson,nora.nelson@babsonai.com,Data Engineer,2026-05-04,18
+24,Owen,Carter,owen.carter@babsonai.com,UX Designer,2026-07-06,19
+25,Aisha,Mitchell,aisha.mitchell@babsonai.com,Software Engineer,2026-09-08,20

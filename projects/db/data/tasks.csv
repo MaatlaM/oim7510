@@ -1,0 +1,286 @@
+task_id,project_id,description,created_date,assignee_id,due_date,completed_date
+1,1,Fix an issue found during user acceptance testing for smart intake copilot,2026-06-30,22,2026-07-14,
+2,1,Test the latest workflow with a customer for smart intake copilot,2026-07-27,5,2026-08-20,
+3,1,Build validation checks for incoming data for smart intake copilot,2026-08-26,5,2026-09-03,
+4,1,Share a progress update with the project team for smart intake copilot,2026-02-02,3,2026-03-13,
+5,1,Share a progress update with the project team for smart intake copilot,2026-07-23,,2026-08-07,2026-08-14
+6,1,Measure processing time on a representative dataset for smart intake copilot,2026-10-05,6,2026-10-14,
+7,1,Fix an issue found during user acceptance testing for smart intake copilot,2026-09-22,,2026-10-22,
+8,1,Fix an issue found during user acceptance testing for smart intake copilot,2026-07-30,4,2026-09-05,
+9,1,Prepare a short product feedback summary for smart intake copilot,2026-10-09,5,2026-10-16,2026-10-09
+10,1,Measure processing time on a representative dataset for smart intake copilot,2025-12-18,3,2026-01-14,2026-03-02
+11,1,Fix an issue found during user acceptance testing for smart intake copilot,2026-10-29,6,2026-12-04,2026-10-30
+12,1,Build validation checks for incoming data for smart intake copilot,2026-01-20,4,2026-02-05,2026-08-07
+13,1,Share a progress update with the project team for smart intake copilot,2026-07-03,6,2026-08-08,
+14,1,Refine the prompt and compare response quality for smart intake copilot,2026-10-27,6,2026-11-16,2026-10-27
+15,1,Build validation checks for incoming data for smart intake copilot,2026-03-02,5,2026-04-08,
+16,1,Build validation checks for incoming data for smart intake copilot,2026-03-18,3,2026-04-08,2026-04-17
+17,1,Update the onboarding guide and example files for smart intake copilot,2026-03-19,4,2026-03-23,2026-09-01
+18,1,Share a progress update with the project team for smart intake copilot,2025-11-28,3,2025-12-01,2026-05-08
+19,1,Refine the prompt and compare response quality for smart intake copilot,2025-12-01,6,2025-12-26,2025-12-09
+20,1,Build validation checks for incoming data for smart intake copilot,2026-06-08,3,2026-06-29,2026-10-26
+21,1,Fix an issue found during user acceptance testing for smart intake copilot,2025-12-04,6,2026-01-12,
+22,1,Test the latest workflow with a customer for smart intake copilot,2026-07-10,6,2026-07-29,2026-08-31
+23,1,Fix an issue found during user acceptance testing for smart intake copilot,2026-01-30,4,2026-02-14,2026-07-31
+24,1,Review access permissions and audit events for smart intake copilot,2026-08-27,5,2026-09-22,
+25,1,Update the onboarding guide and example files for smart intake copilot,2026-01-05,3,2026-02-19,2026-06-01
+26,1,Review access permissions and audit events for smart intake copilot,2025-12-17,5,2025-12-25,
+27,1,Fix an issue found during user acceptance testing for smart intake copilot,2026-02-04,5,2026-03-16,2026-06-15
+28,1,Measure processing time on a representative dataset for smart intake copilot,2026-04-07,5,2026-05-10,
+29,1,Fix an issue found during user acceptance testing for smart intake copilot,2026-10-21,6,2026-11-07,
+30,1,Build validation checks for incoming data for smart intake copilot,2025-11-27,3,2025-12-07,2026-06-24
+31,1,Refine the prompt and compare response quality for smart intake copilot,2026-03-05,6,2026-03-28,2026-06-17
+32,1,Test the latest workflow with a customer for smart intake copilot,2025-12-17,,2025-12-29,2026-04-14
+33,1,Fix an issue found during user acceptance testing for smart intake copilot,2025-12-29,3,2026-01-08,2026-10-06
+34,1,Refine the prompt and compare response quality for smart intake copilot,2026-06-10,4,2026-06-30,
+35,1,Review sample records and document edge cases for smart intake copilot,2026-04-13,6,2026-05-24,
+36,1,Fix an issue found during user acceptance testing for smart intake copilot,2026-02-10,6,2026-02-22,2026-09-07
+37,1,Fix an issue found during user acceptance testing for smart intake copilot,2026-08-11,3,2026-09-20,2026-10-23
+38,1,Fix an issue found during user acceptance testing for smart intake copilot,2026-01-15,5,2026-02-10,
+39,2,Update the onboarding guide and example files for inventory forecast studio,2026-09-22,21,2026-10-12,
+40,2,Review access permissions and audit events for inventory forecast studio,2026-10-21,4,2026-11-17,2026-10-28
+41,2,Refine the prompt and compare response quality for inventory forecast studio,2026-03-16,3,2026-04-15,2026-09-11
+42,2,Share a progress update with the project team for inventory forecast studio,2026-01-26,,2026-02-13,2026-07-27
+43,2,Measure processing time on a representative dataset for inventory forecast studio,2025-12-08,,2026-01-04,2026-10-26
+44,2,Review access permissions and audit events for inventory forecast studio,2026-06-26,3,2026-06-30,2026-07-27
+45,2,Share a progress update with the project team for inventory forecast studio,2026-01-16,4,2026-02-25,2026-02-09
+46,2,Review access permissions and audit events for inventory forecast studio,2026-06-04,4,2026-07-10,2026-06-09
+47,2,Test the latest workflow with a customer for inventory forecast studio,2026-10-08,3,2026-10-22,2026-10-16
+48,2,Prepare a short product feedback summary for inventory forecast studio,2026-08-17,4,2026-08-28,2026-10-21
+49,2,Review access permissions and audit events for inventory forecast studio,2026-03-02,8,2026-04-07,
+50,2,Fix an issue found during user acceptance testing for inventory forecast studio,2026-10-06,3,2026-11-02,2026-10-27
+51,2,Build validation checks for incoming data for inventory forecast studio,2026-06-03,,2026-06-22,2026-09-01
+52,2,Build validation checks for incoming data for inventory forecast studio,2025-12-29,,2026-01-19,2026-09-02
+53,2,Fix an issue found during user acceptance testing for inventory forecast studio,2026-04-08,8,2026-05-07,
+54,2,Review sample records and document edge cases for inventory forecast studio,2026-05-13,8,2026-06-08,2026-10-27
+55,2,Review sample records and document edge cases for inventory forecast studio,2026-07-02,3,2026-07-11,2026-09-15
+56,2,Review sample records and document edge cases for inventory forecast studio,2025-12-12,4,2026-01-24,
+57,2,Test the latest workflow with a customer for inventory forecast studio,2026-03-09,3,2026-04-02,2026-03-09
+58,2,Build validation checks for incoming data for inventory forecast studio,2026-08-31,8,2026-10-13,
+59,2,Review sample records and document edge cases for inventory forecast studio,2026-10-16,3,2026-10-27,2026-10-21
+60,2,Update the onboarding guide and example files for inventory forecast studio,2026-06-22,7,2026-07-06,
+61,2,Refine the prompt and compare response quality for inventory forecast studio,2026-07-28,3,2026-09-11,
+62,2,Prepare a short product feedback summary for inventory forecast studio,2026-05-04,7,2026-05-07,
+63,2,Refine the prompt and compare response quality for inventory forecast studio,2026-06-01,,2026-06-06,2026-06-09
+64,2,Refine the prompt and compare response quality for inventory forecast studio,2026-01-09,8,2026-02-15,
+65,2,Test the latest workflow with a customer for inventory forecast studio,2026-08-19,8,2026-09-05,
+66,2,Prepare a short product feedback summary for inventory forecast studio,2026-06-09,,2026-07-08,2026-07-22
+67,2,Review access permissions and audit events for inventory forecast studio,2026-03-02,4,2026-03-25,2026-10-05
+68,2,Share a progress update with the project team for inventory forecast studio,2026-09-28,8,2026-10-04,2026-10-22
+69,2,Review access permissions and audit events for inventory forecast studio,2026-10-27,3,2026-12-10,
+70,2,Refine the prompt and compare response quality for inventory forecast studio,2026-02-20,4,2026-03-17,2026-08-27
+71,2,Test the latest workflow with a customer for inventory forecast studio,2026-10-20,8,2026-11-18,
+72,2,Measure processing time on a representative dataset for inventory forecast studio,2026-06-18,3,2026-07-27,2026-08-17
+73,2,Review sample records and document edge cases for inventory forecast studio,2026-08-17,4,2026-09-05,
+74,2,Refine the prompt and compare response quality for inventory forecast studio,2026-08-06,3,2026-09-09,
+75,3,Review sample records and document edge cases for service desk reply assistant,2026-09-14,8,2026-10-27,
+76,3,Build validation checks for incoming data for service desk reply assistant,2026-03-17,3,2026-04-22,2026-05-26
+77,3,Review access permissions and audit events for service desk reply assistant,2026-04-27,3,2026-06-05,2026-04-27
+78,3,Test the latest workflow with a customer for service desk reply assistant,2026-06-18,3,2026-07-24,
+79,3,Refine the prompt and compare response quality for service desk reply assistant,2026-03-24,8,2026-04-19,2026-04-03
+80,3,Measure processing time on a representative dataset for service desk reply assistant,2026-09-14,9,2026-10-01,2026-09-28
+81,3,Test the latest workflow with a customer for service desk reply assistant,2026-05-15,5,2026-06-18,2026-09-28
+82,3,Build validation checks for incoming data for service desk reply assistant,2026-04-15,3,2026-04-20,2026-07-28
+83,3,Review sample records and document edge cases for service desk reply assistant,2026-09-24,8,2026-11-05,2026-10-06
+84,3,Fix an issue found during user acceptance testing for service desk reply assistant,2026-03-27,9,2026-04-04,2026-10-13
+85,3,Review sample records and document edge cases for service desk reply assistant,2026-04-07,5,2026-05-09,
+86,3,Review sample records and document edge cases for service desk reply assistant,2026-02-10,5,2026-03-09,2026-08-06
+87,3,Refine the prompt and compare response quality for service desk reply assistant,2026-08-14,9,2026-09-20,2026-10-13
+88,3,Build validation checks for incoming data for service desk reply assistant,2026-07-06,9,2026-08-13,
+89,3,Review access permissions and audit events for service desk reply assistant,2026-09-22,5,2026-11-04,2026-10-30
+90,3,Test the latest workflow with a customer for service desk reply assistant,2026-04-21,5,2026-05-05,2026-06-15
+91,3,Fix an issue found during user acceptance testing for service desk reply assistant,2026-07-15,5,2026-08-26,2026-09-22
+92,3,Build validation checks for incoming data for service desk reply assistant,2026-08-24,8,2026-09-03,2026-09-07
+93,3,Test the latest workflow with a customer for service desk reply assistant,2026-04-21,9,2026-05-21,2026-08-03
+94,3,Test the latest workflow with a customer for service desk reply assistant,2026-07-23,8,2026-08-26,2026-10-02
+95,3,Review access permissions and audit events for service desk reply assistant,2026-10-07,5,2026-11-10,
+96,3,Refine the prompt and compare response quality for service desk reply assistant,2026-07-20,9,2026-08-16,
+97,3,Measure processing time on a representative dataset for service desk reply assistant,2025-12-11,3,2026-01-17,2026-06-16
+98,3,Share a progress update with the project team for service desk reply assistant,2026-10-26,5,2026-12-07,2026-10-29
+99,3,Prepare a short product feedback summary for service desk reply assistant,2026-07-14,5,2026-08-15,
+100,3,Review sample records and document edge cases for service desk reply assistant,2026-04-29,5,2026-06-13,
+101,3,Review access permissions and audit events for service desk reply assistant,2026-09-08,9,2026-10-16,2026-09-14
+102,3,Update the onboarding guide and example files for service desk reply assistant,2026-02-17,5,2026-03-11,2026-10-14
+103,3,Measure processing time on a representative dataset for service desk reply assistant,2025-12-19,3,2026-01-08,2026-09-21
+104,3,Review access permissions and audit events for service desk reply assistant,2026-06-03,3,2026-06-21,2026-07-27
+105,3,Share a progress update with the project team for service desk reply assistant,2026-05-29,3,2026-06-05,2026-06-01
+106,3,Share a progress update with the project team for service desk reply assistant,2026-09-22,9,2026-09-27,2026-10-08
+107,3,Fix an issue found during user acceptance testing for service desk reply assistant,2026-02-11,8,2026-02-16,2026-03-12
+108,3,Build validation checks for incoming data for service desk reply assistant,2026-05-29,3,2026-06-23,
+109,3,Prepare a short product feedback summary for service desk reply assistant,2026-01-07,8,2026-02-18,2026-09-07
+110,4,Update the onboarding guide and example files for invoice match pipeline,2026-08-17,4,2026-09-23,
+111,4,Refine the prompt and compare response quality for invoice match pipeline,2026-08-24,10,2026-08-29,2026-09-23
+112,4,Fix an issue found during user acceptance testing for invoice match pipeline,2026-03-03,9,2026-04-06,2026-09-14
+113,4,Build validation checks for incoming data for invoice match pipeline,2026-01-12,6,2026-01-18,2026-03-04
+114,4,Share a progress update with the project team for invoice match pipeline,2026-05-11,10,2026-06-03,2026-10-08
+115,4,Prepare a short product feedback summary for invoice match pipeline,2026-10-09,4,2026-11-08,2026-10-21
+116,4,Fix an issue found during user acceptance testing for invoice match pipeline,2026-04-15,11,2026-04-30,2026-10-21
+117,4,Review access permissions and audit events for invoice match pipeline,2026-08-20,4,2026-08-31,2026-09-07
+118,4,Update the onboarding guide and example files for invoice match pipeline,2026-06-22,10,2026-07-08,2026-08-17
+119,4,Measure processing time on a representative dataset for invoice match pipeline,2026-03-27,11,2026-04-02,2026-05-18
+120,4,Fix an issue found during user acceptance testing for invoice match pipeline,2026-06-30,10,2026-07-27,
+121,4,Measure processing time on a representative dataset for invoice match pipeline,2026-09-16,9,2026-10-31,
+122,4,Fix an issue found during user acceptance testing for invoice match pipeline,2026-08-14,6,2026-08-29,2026-08-26
+123,4,Review sample records and document edge cases for invoice match pipeline,2026-07-21,6,2026-07-31,2026-09-14
+124,4,Review access permissions and audit events for invoice match pipeline,2026-02-27,4,2026-03-21,2026-07-29
+125,4,Review access permissions and audit events for invoice match pipeline,2026-10-27,,2026-11-18,
+126,4,Review access permissions and audit events for invoice match pipeline,2026-01-07,4,2026-02-03,2026-08-25
+127,4,Update the onboarding guide and example files for invoice match pipeline,2026-03-20,,2026-04-02,
+128,4,Fix an issue found during user acceptance testing for invoice match pipeline,2026-03-06,11,2026-04-18,
+129,4,Review access permissions and audit events for invoice match pipeline,2026-01-21,11,2026-03-01,2026-07-01
+130,4,Share a progress update with the project team for invoice match pipeline,2026-09-21,10,2026-09-29,2026-10-02
+131,4,Test the latest workflow with a customer for invoice match pipeline,2026-05-04,4,2026-06-01,2026-08-17
+132,4,Measure processing time on a representative dataset for invoice match pipeline,2026-06-01,9,2026-06-27,2026-10-28
+133,4,Share a progress update with the project team for invoice match pipeline,2026-07-22,11,2026-08-10,
+134,4,Review access permissions and audit events for invoice match pipeline,2026-06-09,9,2026-06-14,2026-09-21
+135,4,Share a progress update with the project team for invoice match pipeline,2026-02-24,10,2026-03-27,
+136,4,Review access permissions and audit events for invoice match pipeline,2026-01-07,4,2026-02-15,2026-10-02
+137,4,Review sample records and document edge cases for invoice match pipeline,2026-07-24,6,2026-08-19,2026-08-11
+138,4,Review sample records and document edge cases for invoice match pipeline,2026-02-13,10,2026-03-05,2026-10-14
+139,4,Fix an issue found during user acceptance testing for invoice match pipeline,2026-06-25,,2026-07-25,2026-09-15
+140,4,Fix an issue found during user acceptance testing for invoice match pipeline,2026-04-03,,2026-04-12,2026-10-14
+141,4,Test the latest workflow with a customer for invoice match pipeline,2026-04-16,,2026-05-05,
+142,4,Review access permissions and audit events for invoice match pipeline,2026-03-31,10,2026-04-26,2026-04-21
+143,4,Review sample records and document edge cases for invoice match pipeline,2026-03-06,4,2026-04-16,
+144,5,Build validation checks for incoming data for local seo content planner,2026-08-11,5,2026-09-21,
+145,5,Refine the prompt and compare response quality for local seo content planner,2026-10-07,12,2026-11-21,
+146,5,Share a progress update with the project team for local seo content planner,2026-06-22,12,2026-07-26,2026-09-29
+147,5,Share a progress update with the project team for local seo content planner,2026-10-01,5,2026-10-28,2026-10-22
+148,5,Share a progress update with the project team for local seo content planner,2026-08-18,4,2026-09-01,2026-09-14
+149,5,Review access permissions and audit events for local seo content planner,2026-09-28,4,2026-10-15,2026-10-15
+150,5,Review access permissions and audit events for local seo content planner,2026-08-31,5,2026-09-14,
+151,5,Test the latest workflow with a customer for local seo content planner,2026-07-07,,2026-08-19,
+152,5,Measure processing time on a representative dataset for local seo content planner,2026-10-08,4,2026-10-22,2026-10-15
+153,5,Review sample records and document edge cases for local seo content planner,2026-09-29,5,2026-11-06,2026-10-27
+154,5,Refine the prompt and compare response quality for local seo content planner,2026-03-18,12,2026-04-28,2026-08-21
+155,5,Measure processing time on a representative dataset for local seo content planner,2026-08-05,5,2026-08-30,
+156,5,Fix an issue found during user acceptance testing for local seo content planner,2026-04-30,5,2026-06-04,2026-08-25
+157,5,Review sample records and document edge cases for local seo content planner,2026-04-21,12,2026-04-28,
+158,5,Test the latest workflow with a customer for local seo content planner,2026-10-30,4,2026-11-15,2026-10-30
+159,5,Fix an issue found during user acceptance testing for local seo content planner,2026-06-09,4,2026-06-24,2026-06-15
+160,5,Fix an issue found during user acceptance testing for local seo content planner,2026-07-27,4,2026-09-08,
+161,5,Update the onboarding guide and example files for local seo content planner,2026-06-22,12,2026-07-24,2026-10-20
+162,5,Test the latest workflow with a customer for local seo content planner,2026-05-25,,2026-06-06,2026-09-01
+163,5,Review access permissions and audit events for local seo content planner,2026-02-24,12,2026-03-27,2026-03-20
+164,5,Review access permissions and audit events for local seo content planner,2026-04-20,12,2026-05-26,2026-10-01
+165,5,Refine the prompt and compare response quality for local seo content planner,2026-03-24,10,2026-04-17,2026-06-08
+166,5,Share a progress update with the project team for local seo content planner,2026-02-16,4,2026-02-21,2026-07-20
+167,5,Share a progress update with the project team for local seo content planner,2026-03-06,12,2026-04-07,2026-09-01
+168,5,Measure processing time on a representative dataset for local seo content planner,2026-08-31,5,2026-09-04,2026-09-29
+169,5,Share a progress update with the project team for local seo content planner,2026-06-24,5,2026-07-11,2026-09-01
+170,5,Refine the prompt and compare response quality for local seo content planner,2026-07-01,,2026-07-09,
+171,5,Refine the prompt and compare response quality for local seo content planner,2026-09-28,5,2026-10-19,2026-10-26
+172,5,Build validation checks for incoming data for local seo content planner,2026-03-18,4,2026-04-30,2026-10-16
+173,5,Fix an issue found during user acceptance testing for local seo content planner,2026-10-29,10,2026-11-10,
+174,5,Fix an issue found during user acceptance testing for local seo content planner,2026-10-27,4,2026-11-30,2026-10-30
+175,5,Review sample records and document edge cases for local seo content planner,2026-02-11,12,2026-03-19,
+176,6,Review sample records and document edge cases for appointment no-show signals,2026-09-29,,2026-10-23,
+177,6,Update the onboarding guide and example files for appointment no-show signals,2026-04-09,,2026-04-13,
+178,6,Refine the prompt and compare response quality for appointment no-show signals,2026-04-08,14,2026-05-12,
+179,6,Review sample records and document edge cases for appointment no-show signals,2026-10-29,14,2026-12-03,
+180,6,Test the latest workflow with a customer for appointment no-show signals,2026-03-27,13,2026-04-07,2026-05-21
+181,6,Measure processing time on a representative dataset for appointment no-show signals,2026-06-16,14,2026-07-04,
+182,6,Test the latest workflow with a customer for appointment no-show signals,2026-08-10,,2026-09-21,2026-08-13
+183,6,Measure processing time on a representative dataset for appointment no-show signals,2026-06-22,13,2026-07-02,
+184,6,Measure processing time on a representative dataset for appointment no-show signals,2026-10-12,13,2026-11-25,2026-10-27
+185,6,Share a progress update with the project team for appointment no-show signals,2026-05-05,6,2026-05-13,2026-09-14
+186,6,Review access permissions and audit events for appointment no-show signals,2026-08-17,3,2026-09-06,
+187,6,Test the latest workflow with a customer for appointment no-show signals,2026-08-14,11,2026-09-06,2026-10-13
+188,6,Measure processing time on a representative dataset for appointment no-show signals,2026-07-14,13,2026-08-15,2026-08-24
+189,6,Fix an issue found during user acceptance testing for appointment no-show signals,2026-03-24,13,2026-05-02,2026-05-04
+190,6,Prepare a short product feedback summary for appointment no-show signals,2026-10-14,14,2026-11-17,2026-10-21
+191,6,Update the onboarding guide and example files for appointment no-show signals,2026-04-13,11,2026-05-17,2026-04-23
+192,6,Refine the prompt and compare response quality for appointment no-show signals,2026-05-18,11,2026-06-01,2026-07-24
+193,6,Review access permissions and audit events for appointment no-show signals,2026-09-21,6,2026-11-04,2026-09-22
+194,6,Build validation checks for incoming data for appointment no-show signals,2026-07-06,11,2026-08-06,2026-09-15
+195,6,Refine the prompt and compare response quality for appointment no-show signals,2026-03-31,11,2026-04-28,2026-04-09
+196,6,Share a progress update with the project team for appointment no-show signals,2026-07-24,3,2026-08-22,2026-09-14
+197,6,Review access permissions and audit events for appointment no-show signals,2026-03-30,,2026-05-13,2026-08-12
+198,6,Test the latest workflow with a customer for appointment no-show signals,2026-04-29,14,2026-06-12,
+199,6,Review sample records and document edge cases for appointment no-show signals,2026-06-23,11,2026-07-09,2026-06-23
+200,6,Build validation checks for incoming data for appointment no-show signals,2026-04-13,11,2026-05-16,2026-10-26
+201,6,Review access permissions and audit events for appointment no-show signals,2026-04-01,6,2026-04-06,2026-08-28
+202,6,Prepare a short product feedback summary for appointment no-show signals,2026-10-12,,2026-10-30,2026-10-30
+203,6,Review sample records and document edge cases for appointment no-show signals,2026-04-10,6,2026-05-05,2026-04-21
+204,6,Build validation checks for incoming data for appointment no-show signals,2026-07-27,,2026-08-16,2026-09-18
+205,6,Review sample records and document edge cases for appointment no-show signals,2026-09-22,11,2026-10-15,2026-09-23
+206,6,Test the latest workflow with a customer for appointment no-show signals,2026-03-16,14,2026-04-20,2026-03-31
+207,7,Review access permissions and audit events for vendor document hub,2026-10-26,5,2026-12-10,
+208,7,Test the latest workflow with a customer for vendor document hub,2026-05-05,15,2026-05-27,2026-05-25
+209,7,Fix an issue found during user acceptance testing for vendor document hub,2026-10-28,7,2026-12-02,2026-10-28
+210,7,Build validation checks for incoming data for vendor document hub,2026-07-14,12,2026-07-23,2026-10-05
+211,7,Refine the prompt and compare response quality for vendor document hub,2026-10-14,15,2026-11-20,2026-10-21
+212,7,Update the onboarding guide and example files for vendor document hub,2026-05-29,5,2026-06-26,
+213,7,Refine the prompt and compare response quality for vendor document hub,2026-09-14,,2026-10-20,2026-10-26
+214,7,Share a progress update with the project team for vendor document hub,2026-05-27,12,2026-06-24,2026-06-26
+215,7,Update the onboarding guide and example files for vendor document hub,2026-07-20,5,2026-08-12,2026-10-30
+216,7,Measure processing time on a representative dataset for vendor document hub,2026-07-01,15,2026-07-08,2026-07-23
+217,7,Prepare a short product feedback summary for vendor document hub,2026-09-08,15,2026-10-04,2026-09-23
+218,7,Review access permissions and audit events for vendor document hub,2026-06-08,15,2026-06-28,2026-09-23
+219,7,Review access permissions and audit events for vendor document hub,2026-04-10,12,2026-05-04,2026-05-26
+220,7,Review access permissions and audit events for vendor document hub,2026-07-13,5,2026-08-19,
+221,7,Refine the prompt and compare response quality for vendor document hub,2026-09-08,5,2026-10-20,2026-09-14
+222,7,Share a progress update with the project team for vendor document hub,2026-07-08,15,2026-07-18,2026-09-14
+223,7,Prepare a short product feedback summary for vendor document hub,2026-08-14,7,2026-09-24,2026-09-03
+224,7,Test the latest workflow with a customer for vendor document hub,2026-04-15,7,2026-05-17,2026-06-18
+225,7,Review access permissions and audit events for vendor document hub,2026-08-17,15,2026-09-22,2026-09-24
+226,7,Build validation checks for incoming data for vendor document hub,2026-10-22,15,2026-11-06,2026-10-27
+227,7,Refine the prompt and compare response quality for vendor document hub,2026-10-30,15,2026-11-17,
+228,7,Test the latest workflow with a customer for vendor document hub,2026-08-31,7,2026-09-11,
+229,7,Fix an issue found during user acceptance testing for vendor document hub,2026-05-26,,2026-06-07,
+230,7,Measure processing time on a representative dataset for vendor document hub,2026-05-19,7,2026-06-10,2026-06-22
+231,7,Review sample records and document edge cases for vendor document hub,2026-08-24,,2026-09-19,2026-10-27
+232,7,Refine the prompt and compare response quality for vendor document hub,2026-08-19,15,2026-09-02,2026-09-25
+233,7,Test the latest workflow with a customer for vendor document hub,2026-05-22,,2026-06-23,
+234,7,Fix an issue found during user acceptance testing for vendor document hub,2026-10-16,5,2026-11-18,2026-10-27
+235,8,Review sample records and document edge cases for support metrics warehouse,2026-10-14,10,2026-11-09,
+236,8,Review sample records and document edge cases for support metrics warehouse,2025-12-09,8,2025-12-27,
+237,8,Review sample records and document edge cases for support metrics warehouse,2026-09-22,8,2026-11-06,2026-10-28
+238,8,Refine the prompt and compare response quality for support metrics warehouse,2026-08-25,,2026-09-11,2026-09-30
+239,8,Prepare a short product feedback summary for support metrics warehouse,2025-12-10,9,2026-01-16,
+240,8,Test the latest workflow with a customer for support metrics warehouse,2026-06-30,,2026-07-21,2026-08-17
+241,8,Update the onboarding guide and example files for support metrics warehouse,2025-11-10,9,2025-12-20,2026-03-02
+242,8,Prepare a short product feedback summary for support metrics warehouse,2026-08-25,13,2026-10-02,
+243,8,Refine the prompt and compare response quality for support metrics warehouse,2026-08-05,9,2026-08-29,2026-09-24
+244,8,Review sample records and document edge cases for support metrics warehouse,2026-06-15,13,2026-07-29,2026-07-17
+245,8,Share a progress update with the project team for support metrics warehouse,2026-09-04,10,2026-10-08,2026-10-09
+246,8,Share a progress update with the project team for support metrics warehouse,2026-05-19,10,2026-07-01,2026-09-17
+247,8,Review sample records and document edge cases for support metrics warehouse,2026-08-07,10,2026-09-01,2026-10-13
+248,8,Test the latest workflow with a customer for support metrics warehouse,2026-10-02,8,2026-10-30,
+249,8,Refine the prompt and compare response quality for support metrics warehouse,2026-01-14,10,2026-02-14,2026-05-06
+250,8,Review access permissions and audit events for support metrics warehouse,2026-02-23,10,2026-03-05,2026-09-16
+251,8,Review sample records and document edge cases for support metrics warehouse,2026-09-21,13,2026-11-01,
+252,8,Test the latest workflow with a customer for support metrics warehouse,2026-05-21,13,2026-06-23,2026-06-02
+253,9,Prepare a short product feedback summary for returns triage workflow,2026-08-12,,2026-09-22,
+254,9,Measure processing time on a representative dataset for returns triage workflow,2026-05-18,11,2026-05-21,2026-09-28
+255,9,Test the latest workflow with a customer for returns triage workflow,2026-02-23,9,2026-03-09,2026-08-11
+256,9,Test the latest workflow with a customer for returns triage workflow,2026-06-05,16,2026-06-26,2026-07-02
+257,9,Fix an issue found during user acceptance testing for returns triage workflow,2026-10-02,11,2026-10-20,2026-10-14
+258,9,Measure processing time on a representative dataset for returns triage workflow,2026-07-07,11,2026-08-05,2026-08-10
+259,9,Share a progress update with the project team for returns triage workflow,2026-10-16,9,2026-10-30,2026-10-16
+260,9,Share a progress update with the project team for returns triage workflow,2026-03-17,16,2026-04-23,2026-03-23
+261,9,Review access permissions and audit events for returns triage workflow,2026-06-02,,2026-06-10,
+262,9,Refine the prompt and compare response quality for returns triage workflow,2026-07-24,14,2026-08-28,2026-10-14
+263,9,Build validation checks for incoming data for returns triage workflow,2026-02-24,9,2026-03-02,
+264,9,Test the latest workflow with a customer for returns triage workflow,2026-02-09,9,2026-03-08,
+265,9,Prepare a short product feedback summary for returns triage workflow,2026-09-28,9,2026-10-24,2026-10-01
+266,9,Measure processing time on a representative dataset for returns triage workflow,2026-05-05,16,2026-05-18,2026-05-08
+267,9,Update the onboarding guide and example files for returns triage workflow,2026-06-01,9,2026-06-25,
+268,9,Review sample records and document edge cases for returns triage workflow,2026-08-31,16,2026-09-19,
+269,10,Measure processing time on a representative dataset for sales call notes search,2026-09-22,18,2026-10-30,
+270,10,Share a progress update with the project team for sales call notes search,2026-07-14,18,2026-08-04,2026-10-20
+271,10,Review access permissions and audit events for sales call notes search,2026-05-28,15,2026-06-08,
+272,10,Prepare a short product feedback summary for sales call notes search,2026-07-07,,2026-07-12,2026-08-03
+273,10,Review access permissions and audit events for sales call notes search,2026-07-20,17,2026-08-11,2026-10-05
+274,10,Review access permissions and audit events for sales call notes search,2026-07-08,18,2026-08-07,2026-09-14
+275,10,Share a progress update with the project team for sales call notes search,2026-06-18,12,2026-07-19,2026-08-25
+276,10,Prepare a short product feedback summary for sales call notes search,2026-07-14,15,2026-08-20,2026-09-14
+277,10,Fix an issue found during user acceptance testing for sales call notes search,2026-05-21,12,2026-06-24,
+278,10,Build validation checks for incoming data for sales call notes search,2026-07-06,18,2026-07-24,2026-09-07
+279,10,Fix an issue found during user acceptance testing for sales call notes search,2026-08-04,18,2026-09-11,
+280,10,Update the onboarding guide and example files for sales call notes search,2026-05-05,,2026-06-16,
+281,10,Review sample records and document edge cases for sales call notes search,2026-06-22,18,2026-07-15,
+282,10,Refine the prompt and compare response quality for sales call notes search,2026-10-13,15,2026-10-29,2026-10-22
+283,11,Build validation checks for incoming data for quick quote builder pilot,2026-10-19,,2026-11-01,2026-10-23
+284,11,Refine the prompt and compare response quality for quick quote builder pilot,2026-10-16,22,2026-11-26,
+285,12,Review sample records and document edge cases for team knowledge base refresh,2026-10-27,24,2026-11-14,2026-10-30

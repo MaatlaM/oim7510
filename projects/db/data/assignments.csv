@@ -1,0 +1,51 @@
+person_id,project_id,role,hours_per_week,joined_date
+3,1,Product lead,12,2025-11-13
+4,1,Engineering lead,13,2025-11-12
+5,1,Machine learning engineer,13,2025-11-10
+6,1,Data engineer,10,2025-11-17
+3,2,Product lead,12,2025-11-25
+4,2,Engineering lead,13,2025-11-20
+7,2,Product manager,24,2025-11-17
+8,2,Software engineer,22,2025-12-01
+3,3,Product lead,11,2025-12-11
+5,3,Machine learning engineer,13,2025-12-10
+8,3,Software engineer,15,2025-12-04
+9,3,UX designer,15,2025-12-08
+4,4,Engineering lead,12,2026-01-07
+6,4,Data engineer,10,2026-01-12
+9,4,UX designer,20,2026-01-14
+10,4,Machine learning engineer,14,2026-01-10
+11,4,Data analyst,21,2026-01-18
+4,5,Engineering lead,12,2026-02-12
+5,5,Machine learning engineer,15,2026-02-05
+10,5,Machine learning engineer,18,2026-02-06
+12,5,Software engineer,9,2026-02-09
+3,6,Product lead,11,2026-03-10
+6,6,Data engineer,10,2026-03-06
+11,6,Data analyst,8,2026-03-02
+13,6,Data engineer,20,2026-03-16
+14,6,Customer success lead,12,2026-03-05
+5,7,Machine learning engineer,12,2026-04-20
+7,7,Product manager,8,2026-04-14
+12,7,Software engineer,18,2026-04-08
+15,7,Product designer,15,2026-04-19
+8,8,Software engineer,22,2025-11-05
+9,8,UX designer,20,2025-11-07
+10,8,Machine learning engineer,14,2025-11-13
+13,8,Data engineer,24,2025-11-14
+9,9,UX designer,13,2026-01-12
+11,9,Data analyst,18,2026-01-13
+14,9,Customer success lead,22,2026-01-17
+16,9,Software engineer,10,2026-01-17
+12,10,Software engineer,12,2026-05-05
+15,10,Product designer,17,2026-05-06
+17,10,Solutions engineer,10,2026-05-17
+18,10,Data analyst,20,2026-05-15
+19,11,Machine learning engineer,11,2026-10-23
+20,11,Software engineer,8,2026-10-16
+21,11,Product manager,14,2026-10-16
+22,11,Customer success specialist,22,2026-10-16
+22,12,Customer success specialist,15,2026-10-31
+23,12,Data engineer,13,2026-10-21
+24,12,UX designer,18,2026-10-25
+25,12,Software engineer,17,2026-10-20

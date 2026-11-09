@@ -1,0 +1,181 @@
+expense_id,project_id,expense_date,amount,category,note
+1,1,2026-10-20,1157.00,data labeling,Invoice review batch
+2,1,2026-10-16,732.00,GPU cloud,Model evaluation compute
+3,1,2026-09-24,780.00,software,Monitoring subscription
+4,1,2026-10-15,2714.00,data labeling,Customer ticket classification
+5,1,2026-08-25,2899.00,data labeling,Invoice review batch
+6,1,2026-10-05,260.00,software,Workflow automation plan
+7,1,2026-08-10,315.00,software,Monitoring subscription
+8,1,2026-09-01,744.00,GPU cloud,Embedding index refresh
+9,1,2026-01-16,965.00,GPU cloud,Embedding index refresh
+10,1,2026-08-06,1381.00,travel,Regional client workshop
+11,1,2026-09-09,1263.00,software,Workflow automation plan
+12,1,2026-07-02,2117.00,GPU cloud,Prototype inference usage
+13,1,2026-05-05,875.00,software,Test environment license
+14,1,2026-06-09,1746.00,data labeling,Invoice review batch
+15,1,2026-10-26,1625.00,travel,Customer discovery visit
+16,1,2026-04-13,1156.00,software,Design collaboration seats
+17,1,2025-12-01,365.00,software,Design collaboration seats
+18,1,2026-06-16,357.00,travel,Customer discovery visit
+19,2,2026-08-31,3124.00,data labeling,Invoice review batch
+20,2,2026-10-01,1611.00,GPU cloud,Prototype inference usage
+21,2,2026-09-22,2819.00,GPU cloud,Prototype inference usage
+22,2,2026-10-30,624.00,GPU cloud,Embedding index refresh
+23,2,2026-09-07,2590.00,GPU cloud,GPU training run
+24,2,2026-09-07,2458.00,data labeling,Quality check for annotations
+25,2,2026-10-12,1688.00,GPU cloud,Model evaluation compute
+26,2,2026-10-14,2638.00,data labeling,Quality check for annotations
+27,2,2025-12-24,1989.00,GPU cloud,Embedding index refresh
+28,2,2026-03-19,937.00,software,Workflow automation plan
+29,2,2026-04-10,2087.00,GPU cloud,Prototype inference usage
+30,2,2026-05-26,1293.00,software,Monitoring subscription
+31,2,2025-11-27,643.00,travel,Pilot kickoff transit
+32,2,2026-02-02,261.00,software,Test environment license
+33,2,2026-04-03,406.00,software,Workflow automation plan
+34,2,2026-03-05,175.00,software,Workflow automation plan
+35,2,2026-10-14,2518.00,GPU cloud,GPU training run
+36,2,2026-10-19,2806.00,GPU cloud,Model evaluation compute
+37,3,2026-08-20,5533.00,GPU cloud,Prototype inference usage
+38,3,2026-09-01,1259.00,travel,On-site workflow review
+39,3,2026-10-05,172.00,travel,On-site workflow review
+40,3,2026-10-06,4114.00,GPU cloud,Embedding index refresh
+41,3,2026-10-26,4694.00,GPU cloud,Embedding index refresh
+42,3,2026-10-27,548.00,travel,Customer discovery visit
+43,3,2026-09-15,1326.00,travel,Regional client workshop
+44,3,2026-10-08,6561.00,data labeling,Labeled support examples
+45,3,2026-04-15,6097.00,GPU cloud,GPU training run
+46,3,2026-10-23,4240.00,data labeling,Quality check for annotations
+47,3,2026-02-16,3205.00,data labeling,Quality check for annotations
+48,3,2025-12-19,5378.00,GPU cloud,Model evaluation compute
+49,3,2026-01-08,8019.00,GPU cloud,Embedding index refresh
+50,3,2025-12-09,331.00,travel,On-site workflow review
+51,3,2026-08-07,3229.00,data labeling,Invoice review batch
+52,3,2026-02-02,1132.00,travel,On-site workflow review
+53,3,2026-05-25,415.00,software,Test environment license
+54,3,2026-03-23,5121.00,data labeling,Invoice review batch
+55,4,2026-10-23,293.00,travel,Customer discovery visit
+56,4,2026-08-19,1149.00,software,Monitoring subscription
+57,4,2026-09-30,1450.00,GPU cloud,Model evaluation compute
+58,4,2026-10-07,702.00,travel,Regional client workshop
+59,4,2026-09-14,2019.00,data labeling,Quality check for annotations
+60,4,2026-10-26,1063.00,data labeling,Labeled support examples
+61,4,2026-08-11,2135.00,data labeling,Invoice review batch
+62,4,2026-10-12,110.00,software,Monitoring subscription
+63,4,2026-01-06,1295.00,software,Monitoring subscription
+64,4,2026-02-02,1400.00,travel,On-site workflow review
+65,4,2026-07-27,3349.00,data labeling,Customer ticket classification
+66,4,2026-03-02,2301.00,GPU cloud,GPU training run
+67,4,2026-07-06,346.00,travel,On-site workflow review
+68,4,2026-09-03,903.00,data labeling,Quality check for annotations
+69,4,2026-06-15,1009.00,travel,Pilot kickoff transit
+70,4,2026-08-13,2572.00,GPU cloud,Embedding index refresh
+71,4,2026-08-04,2930.00,GPU cloud,Prototype inference usage
+72,4,2026-10-06,681.00,GPU cloud,GPU training run
+73,5,2026-09-24,1661.00,GPU cloud,GPU training run
+74,5,2026-09-15,1152.00,software,Monitoring subscription
+75,5,2026-09-07,736.00,software,Monitoring subscription
+76,5,2026-10-26,3720.00,data labeling,Customer ticket classification
+77,5,2026-09-22,341.00,travel,On-site workflow review
+78,5,2026-10-29,1465.00,software,Design collaboration seats
+79,5,2026-09-15,1405.00,GPU cloud,Model evaluation compute
+80,5,2026-08-05,304.00,software,Workflow automation plan
+81,5,2026-08-10,433.00,software,Monitoring subscription
+82,5,2026-02-25,3924.00,data labeling,Customer ticket classification
+83,5,2026-05-28,3412.00,data labeling,Customer ticket classification
+84,5,2026-03-23,1998.00,data labeling,Quality check for annotations
+85,5,2026-04-01,1294.00,GPU cloud,Embedding index refresh
+86,5,2026-09-10,472.00,travel,Pilot kickoff transit
+87,5,2026-06-22,253.00,travel,Regional client workshop
+88,5,2026-07-22,828.00,data labeling,Quality check for annotations
+89,5,2026-06-02,1412.00,software,Monitoring subscription
+90,5,2026-08-28,1910.00,data labeling,Invoice review batch
+91,6,2026-09-16,1368.00,travel,On-site workflow review
+92,6,2026-08-11,3432.00,data labeling,Invoice review batch
+93,6,2026-09-01,1751.00,data labeling,Quality check for annotations
+94,6,2026-10-19,2108.00,GPU cloud,Embedding index refresh
+95,6,2026-10-22,778.00,travel,Pilot kickoff transit
+96,6,2026-10-13,863.00,travel,Regional client workshop
+97,6,2026-10-14,2732.00,data labeling,Quality check for annotations
+98,6,2026-08-17,2133.00,data labeling,Quality check for annotations
+99,6,2026-03-23,2295.00,data labeling,Labeled support examples
+100,6,2026-07-13,227.00,travel,Pilot kickoff transit
+101,6,2026-08-21,1076.00,data labeling,Quality check for annotations
+102,6,2026-03-09,663.00,software,Monitoring subscription
+103,6,2026-10-06,2075.00,GPU cloud,Prototype inference usage
+104,6,2026-10-06,1707.00,data labeling,Invoice review batch
+105,6,2026-04-27,1006.00,software,Design collaboration seats
+106,6,2026-10-26,907.00,software,Monitoring subscription
+107,6,2026-10-23,594.00,software,Workflow automation plan
+108,6,2026-07-28,1897.00,GPU cloud,GPU training run
+109,7,2026-09-14,1393.00,travel,On-site workflow review
+110,7,2026-10-27,1124.00,data labeling,Customer ticket classification
+111,7,2026-09-01,1725.00,travel,On-site workflow review
+112,7,2026-09-28,444.00,travel,On-site workflow review
+113,7,2026-08-31,1487.00,travel,Customer discovery visit
+114,7,2026-10-29,1143.00,data labeling,Quality check for annotations
+115,7,2026-09-22,943.00,software,Design collaboration seats
+116,7,2026-08-25,531.00,software,Workflow automation plan
+117,7,2026-08-06,1395.00,travel,On-site workflow review
+118,7,2026-05-12,838.00,software,Design collaboration seats
+119,7,2026-10-01,1483.00,software,Monitoring subscription
+120,7,2026-09-29,996.00,software,Monitoring subscription
+121,7,2026-07-28,458.00,travel,On-site workflow review
+122,7,2026-08-31,572.00,GPU cloud,Prototype inference usage
+123,7,2026-08-25,847.00,travel,On-site workflow review
+124,7,2026-06-24,3172.00,data labeling,Customer ticket classification
+125,7,2026-08-14,1484.00,travel,Customer discovery visit
+126,7,2026-07-06,1251.00,GPU cloud,Model evaluation compute
+127,8,2026-08-06,1277.00,data labeling,Customer ticket classification
+128,8,2026-10-06,458.00,software,Monitoring subscription
+129,8,2026-09-03,2553.00,GPU cloud,GPU training run
+130,8,2026-10-29,559.00,software,Test environment license
+131,8,2026-08-18,358.00,travel,On-site workflow review
+132,8,2026-10-02,243.00,travel,Pilot kickoff transit
+133,8,2026-08-28,487.00,travel,Pilot kickoff transit
+134,8,2026-08-24,3055.00,data labeling,Quality check for annotations
+135,8,2026-04-14,1237.00,software,Monitoring subscription
+136,8,2026-01-27,3906.00,data labeling,Labeled support examples
+137,8,2026-01-30,1293.00,software,Test environment license
+138,8,2026-05-13,1651.00,travel,Regional client workshop
+139,8,2026-05-26,1115.00,software,Test environment license
+140,8,2026-04-06,3683.00,data labeling,Invoice review batch
+141,8,2026-07-06,1207.00,software,Test environment license
+142,8,2026-07-28,1391.00,data labeling,Customer ticket classification
+143,8,2026-04-02,2075.00,data labeling,Labeled support examples
+144,8,2026-01-13,1689.00,data labeling,Quality check for annotations
+145,9,2026-09-14,764.00,travel,On-site workflow review
+146,9,2026-10-16,1313.00,software,Design collaboration seats
+147,9,2026-10-21,475.00,travel,Customer discovery visit
+148,9,2026-08-24,1991.00,GPU cloud,Prototype inference usage
+149,9,2026-09-01,336.00,software,Workflow automation plan
+150,9,2026-09-11,2906.00,GPU cloud,Prototype inference usage
+151,9,2026-09-22,372.00,travel,Pilot kickoff transit
+152,9,2026-09-04,749.00,GPU cloud,Prototype inference usage
+153,9,2026-06-29,713.00,software,Test environment license
+154,9,2026-06-22,2511.00,GPU cloud,Prototype inference usage
+155,9,2026-06-12,583.00,software,Design collaboration seats
+156,9,2026-03-04,907.00,travel,Regional client workshop
+157,9,2026-03-10,984.00,software,Design collaboration seats
+158,9,2026-10-29,490.00,software,Monitoring subscription
+159,9,2026-06-22,875.00,travel,On-site workflow review
+160,9,2026-01-13,1123.00,software,Design collaboration seats
+161,9,2026-02-17,1018.00,software,Workflow automation plan
+162,9,2026-08-24,1462.00,software,Workflow automation plan
+163,10,2026-09-23,970.00,travel,Regional client workshop
+164,10,2026-09-25,2473.00,GPU cloud,GPU training run
+165,10,2026-09-03,946.00,software,Workflow automation plan
+166,10,2026-10-13,568.00,travel,Pilot kickoff transit
+167,10,2026-08-26,1684.00,travel,Pilot kickoff transit
+168,10,2026-08-10,2854.00,GPU cloud,Prototype inference usage
+169,10,2026-09-18,2694.00,GPU cloud,GPU training run
+170,10,2026-09-22,2756.00,data labeling,Labeled support examples
+171,10,2026-06-12,655.00,travel,On-site workflow review
+172,10,2026-05-20,2641.00,GPU cloud,Prototype inference usage
+173,10,2026-08-21,3319.00,data labeling,Quality check for annotations
+174,10,2026-09-25,1506.00,GPU cloud,Model evaluation compute
+175,10,2026-08-11,1335.00,travel,On-site workflow review
+176,10,2026-10-12,2234.00,GPU cloud,GPU training run
+177,10,2026-05-21,1233.00,data labeling,Customer ticket classification
+178,10,2026-07-03,224.00,travel,Regional client workshop
+179,10,2026-09-03,1555.00,software,Design collaboration seats
+180,10,2026-07-15,2337.00,data labeling,Quality check for annotations

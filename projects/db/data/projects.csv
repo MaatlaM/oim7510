@@ -1,0 +1,13 @@
+project_id,name,client_name,category,budget,start_date,status
+1,Smart Intake Copilot,Elm Street Dental,LLM app,175000.00,2025-11-10,active
+2,Inventory Forecast Studio,Harbor & Pine Market,LLM app,240000.00,2025-11-17,active
+3,Service Desk Reply Assistant,Northstar HVAC,LLM app,30000.00,2025-12-01,active
+4,Invoice Match Pipeline,Cornerstone Bookkeeping,data pipeline,180000.00,2026-01-05,active
+5,Local SEO Content Planner,Bloom & Birch Florist,LLM app,150000.00,2026-02-02,active
+6,Appointment No-Show Signals,Calm Harbor Wellness,data pipeline,220000.00,2026-03-02,active
+7,Vendor Document Hub,,internal tool,280000.00,2026-04-06,active
+8,Support Metrics Warehouse,,internal tool,95000.00,2025-11-03,done
+9,Returns Triage Workflow,Maple & Main Outfitters,LLM app,130000.00,2026-01-12,done
+10,Sales Call Notes Search,,internal tool,160000.00,2026-05-04,paused
+11,Quick Quote Builder Pilot,Cedar & Stone Renovation,LLM app,80000.00,2026-10-15,planned
+12,Team Knowledge Base Refresh,,internal tool,60000.00,2026-10-20,planned
